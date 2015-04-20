@@ -1,0 +1,13 @@
+AFS_ECE_PREFIX="/afs/ece.cmu.edu/support"
+
+CDS="${AFS_ECE_PREFIX}/cds/share/image/usr/cds"
+CDS_LICENSE_FILE="${CDS}/share/license/license.dat"
+TB_HOME="${CDS}/et-12.10.101/tools.lnx86"
+
+PATH="${TB_HOME}/bin:${PATH}"
+LD_LIBRARY_PATH="${TB_HOME}/lib:${LD_LIBRARY_PATH}"
+
+LM_LICENSE_FILE="${CDS_LICENSE_FILE}"
+
+export LM_LICENSE_FILE  PATH LD_LIBRARY_PATH
+
