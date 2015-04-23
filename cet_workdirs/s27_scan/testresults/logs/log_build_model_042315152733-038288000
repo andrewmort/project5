@@ -1,0 +1,124 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model stepid=pd__build_model_042315152733-038288000 workdir=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan designsource=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan/s27_scan.v  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Thursday Apr 23 15:27:33 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 13356.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan
+
+            logfile=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan/testresults/logs/log_build_model_042315152733-038288000
+            stepid=pd__build_model
+            DESIGNSOURCE=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan/s27_scan.v
+[end TDA_009]
+
+Build Model Controller starting:
+
+
+Search Order  1:  "/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan/s27_scan.v"
+
+
+
+Reading Verilog data from /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan/s27_scan.v
+
+NC Verilog Parser complete - 3 modules, 14 gates, 1 user defined primitives.
+
+INFO (TEI-003): The 'cell s27_scan' was selected as the top cell.   [end TEI_003] 
+
+
+Build Model - Hierarchical Model Build starting:
+
+
+
+Number of blocks in the hierarchical model is: 48.
+
+Build Model - Hierarchical Model Build completed.
+
+ defaultTIE = X
+ defaultDFN = T
+
+
+Circuit Summary
+---------------
+
+Hierarchical Model:                  Flattened Model:
+       48  Blocks                            43  Blocks
+      147  Pins                              43  Nodes
+       88  Nets
+
+Primary Inputs:                      Primary Outputs:
+        7  Input Only                         2  Output Only
+        0  Input/Output                       0  Input/Output
+        7  Total Inputs                       2  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        0  Tied to 0                          0  Two-State
+        0  Tied to 1                          0  Three-State
+        0  Tied to X                          0  Total Dotted Nets
+        0  Total Tied Nets
+
+Selected Primitive Functions:
+        0  Clock Chopper (CHOP) primitives 
+        0  RAMs
+        0  ROMs
+        0  TSDs
+        0  Resistors
+        0  Transistors
+        0  Latches
+
+        3  Flip-Flops
+
+
+Build Model - Flat Model Build completed.
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           77,228,272  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.67                    [end TDA_001]
+
+
+
+Build Model Controller completed.
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-003): The 'cell s27_scan' was selected as the top cell.    
+
+
+*******************************************************************************

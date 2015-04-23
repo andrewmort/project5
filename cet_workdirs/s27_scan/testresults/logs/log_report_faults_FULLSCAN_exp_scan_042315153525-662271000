@@ -1,0 +1,294 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            report_faults stepid=pd__report_faults_042315153525-662271000 faultstatus=untested,tested,untestable reportkey=yes experiment=exp_scan testmode=FULLSCAN inputcommitted=no workdir=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Thursday Apr 23 15:35:25 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 13502.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan
+            TESTMODE=FULLSCAN
+            EXPERIMENT=exp_scan
+
+            logfile=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_scan/testresults/logs/log_report_faults_FULLSCAN_exp_scan_042315153525-662271000
+            stepid=pd__report_faults
+            reportkey=yes
+            faultstatus=untested,tested,untestable
+          + inputcommitted=no
+[end TDA_009]
+
+TFMlist 
+
+Logic Model(GM)   04/23/15
+                  19:27:33
+File Id     faultModel        faultStatus         experiment
+Created (GM)  04/23/15           04/23/15           04/23/15
+              19:30:25           19:30:25           19:33:32
+Modified(GM)  04/23/15           04/23/15           04/23/15
+              19:30:25           19:30:25           19:33:32
+Code Level        2012.1             2012.1             2012.1            
+Max Fault Id         132
+
+
+Global Ignored Static Fault Count          0
+Global Ignored Dynamic Fault Count         0
+
+
+INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_scan Fault List:   
+
+Status key:
+   i    = inactive in test mode
+   c    = collapsed - listed after equiv. class representative fault 
+   u    = untested - not processed
+                               
+   I    = ignored (unclassified)
+   It   = ignored (tied)
+   Iu   = ignored (unconnected)
+   Ib   = ignored (blocked)
+                           
+   T    = tested by simulation
+   Ti   = tested by implication
+   P    = possibly tested (limit not reached)
+   Tpdl = tested (possibly detected limit reached)
+   Tm   = tested in another mode
+   Tus  = tested user specifed (fault rule DETECTED statement)
+                    
+   A    = Aborted
+   R    = redundant
+   Rus  = redundant:  user specified 
+                                     
+   Ud   = untestable: undetermined reason
+   Uus  = untestable: user specified
+   Ulh  = untestable: linehold inhibits fault control/observe
+   Utm  = untestable: testmode inhibits fault control/observe
+   Ucn  = untestable: constraint
+   Uxs  = untestable: X sourced or sinked
+   Usd  = untestable: sequential depth (may be testable with more sequential depth)
+   Ugt  = untestable: global termination
+                                        
+   Unio = untestable: Seq or control not specified to target fault (PI to PO Path)
+   Unil = untestable: Seq or control not specified to target fault (PI to LATCH Path)
+   Unlo = untestable: Seq or control not specified to target fault (LATCH to PO Path)
+   Uner = untestable: Seq or control not specified to target fault (interdomain LATCH to LATCH)
+   Unra = untestable: Seq or control not specified to target fault (intradomain LATCH to LATCH)
+                                
+   PTAB (Possibly Tested At Best) status:
+                                
+   3    = PTAB 3-state: Untested
+   P3   = PTAB 3-state: Possibly Tested
+   T3   = PTAB 3-state: Tested (limit reached)
+   X    = PTAB X-state: Untested
+   PX   = PTAB X-state: Possibly Tested
+   TX   = PTAB X-state: Tested (limit reached)
+   C    = PTAB Clock Stuck Off: Untested
+   PC   = PTAB Clock Stuck Off: Possibly Tested
+   TC   = PTAB Clock Stuck Off: Tested (limit reached)
+   TiC  = PTAB Clock Stuck Off: Tested by implication
+
+Type key:   &  = AND Grouped         |  = OR Grouped
+            ISA0 = stuck-at-zero fault on an input pin
+            ISA1 = stuck-at-one fault on an input pin
+            ISR  = slow-to-rise fault on an input pin
+            ISF  = slow-to-fall fault on an input pin
+            OSA0 = stuck-at-zero fault on an output pin
+            OSA1 = stuck-at-one fault on an output pin
+            OSR  = slow-to-rise fault on an output pin
+            OSF  = slow-to-fall fault on an output pin
+            DPAT = dynamic pattern fault
+            SPAT = static pattern fault
+            DRV0 = driver fault driving 0
+            DRV1 = driver fault driving 1
+            RCV0 = receiver fault receiving 0
+            RCV1 = receiver fault receiving 1
+            PSH0 = net shorted to 0 fault
+            PSH1 = net shorted to 1 fault
+            IDDQ0= Iddq logic 0 fault
+            IDDQ1= Iddq logic 1 fault
+            QPAT = Iddq pattern fault
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+         1 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q  PATTERN 1: DFF stuck at 0 when clock is on and data is 1
+         2 u       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q  PATTERN 2: DFF stuck at 1 when clock is on and data is 1
+         3 u       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q  PATTERN 3: DFF stuck at 0 when clock is on and data is 0
+         4 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q  PATTERN 4: DFF is stuck at 1 when clock is on and data is 0
+         5 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q  PATTERN 5: DFF stuck at 0 when clock is off
+         6 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q  PATTERN 6: DFF stuck at 1 when clock is off
+         7 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q  PATTERN 1: DFF stuck at 0 when clock is on and data is 1
+         8 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q  PATTERN 2: DFF stuck at 1 when clock is on and data is 1
+         9 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q  PATTERN 3: DFF stuck at 0 when clock is on and data is 0
+        10 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q  PATTERN 4: DFF is stuck at 1 when clock is on and data is 0
+        11 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q  PATTERN 5: DFF stuck at 0 when clock is off
+        12 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q  PATTERN 6: DFF stuck at 1 when clock is off
+        13 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q  PATTERN 1: DFF stuck at 0 when clock is on and data is 1
+        14 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q  PATTERN 2: DFF stuck at 1 when clock is on and data is 1
+        15 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q  PATTERN 3: DFF stuck at 0 when clock is on and data is 0
+        16 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q  PATTERN 4: DFF is stuck at 1 when clock is on and data is 0
+        17 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q  PATTERN 5: DFF stuck at 0 when clock is off
+        18 T       SPAT           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q  PATTERN 6: DFF stuck at 1 when clock is off
+        19 TiC     OSA0           PI                      Pin.f.l.s27_scan.nl.CK   
+        20 TiC     OSA1           PI                      Pin.f.l.s27_scan.nl.CK   
+        21 T       OSA0           PI                      Pin.f.l.s27_scan.nl.G0   
+        22 T       OSA1           PI                      Pin.f.l.s27_scan.nl.G0   
+        23 T       OSA0           PI                      Pin.f.l.s27_scan.nl.G1   
+        24 T       OSA1           PI                      Pin.f.l.s27_scan.nl.G1   
+        25 T       OSA0           PI                      Pin.f.l.s27_scan.nl.G2   
+        26 T       OSA1           PI                      Pin.f.l.s27_scan.nl.G2   
+        27 T       OSA0           PI                      Pin.f.l.s27_scan.nl.G3   
+        28 T       OSA1           PI                      Pin.f.l.s27_scan.nl.G3   
+        29 T       OSA0           PI                      Pin.f.l.s27_scan.nl.scan_en   
+        30 T       OSA1           PI                      Pin.f.l.s27_scan.nl.scan_en   
+        31 T       OSA0           PI                      Pin.f.l.s27_scan.nl.scan_in   
+        32 T       OSA1           PI                      Pin.f.l.s27_scan.nl.scan_in   
+        33 T       OSA0           PO                      Pin.f.l.s27_scan.nl.G17   
+       118 c       OSA0           NBUF                    Pin.f.l.s27_scan.nl.NOT_1.01   
+        34 T       OSA1           PO                      Pin.f.l.s27_scan.nl.G17   
+       117 c       OSA1           NBUF                    Pin.f.l.s27_scan.nl.NOT_1.01   
+        35 T       OSA0           PO                      Pin.f.l.s27_scan.nl.scan_out   
+        36 T       OSA1           PO                      Pin.f.l.s27_scan.nl.scan_out   
+        37 T       ISA1           AND                     Pin.f.l.s27_scan.nl.AND2_0.A1   
+        38 T       ISA1           AND                     Pin.f.l.s27_scan.nl.AND2_0.A2   
+        39 T       OSA0           AND                     Pin.f.l.s27_scan.nl.AND2_0.01   
+        40 T       OSA1           AND                     Pin.f.l.s27_scan.nl.AND2_0.01   
+        41 T       ISA1           NAND                    Pin.f.l.s27_scan.nl.NAND2_0.A1   
+       113 c       OSA1           OR                      Pin.f.l.s27_scan.nl.OR2_1.01   
+        42 T       ISA1           NAND                    Pin.f.l.s27_scan.nl.NAND2_0.A2   
+       115 c       OSA1           OR                      Pin.f.l.s27_scan.nl.OR2_0.01   
+        43 T       ISA0           OR                      Pin.f.l.s27_scan.nl.SFF_2.__i1.OR0.A2   
+       120 c       OSA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_3.01   
+       121 c       OSA0           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND0.01   
+       127 c       OSA0           NBUF                    Pin.f.l.s27_scan.nl.SFF_2.__i1.NOT0.01   
+        44 T       ISA0           OR                      Pin.f.l.s27_scan.nl.SFF_2.__i1.OR0.A1   
+       125 c       OSA0           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND1.01   
+        45 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_0.A1   
+        46 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_0.A2   
+        47 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND1.A2   
+        48 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND1.A1   
+        49 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_1.A1   
+        50 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_1.A2   
+       130 c       OSA0           NAND                    Pin.f.l.s27_scan.nl.NAND2_0.01   
+        51 T       OSA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_1.01   
+       114 c       OSA0           OR                      Pin.f.l.s27_scan.nl.OR2_1.01   
+       116 c       OSA0           OR                      Pin.f.l.s27_scan.nl.OR2_0.01   
+       129 c       OSA1           NAND                    Pin.f.l.s27_scan.nl.NAND2_0.01   
+        52 T       OSA1           NOR                     Pin.f.l.s27_scan.nl.NOR2_1.01   
+        53 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_2.A1   
+        54 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_2.A2   
+        55 T       OSA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_2.01   
+        56 T       OSA1           NOR                     Pin.f.l.s27_scan.nl.NOR2_2.01   
+        57 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_3.A1   
+        58 T       ISA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_3.A2   
+        59 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND0.A2   
+       119 c       OSA1           NOR                     Pin.f.l.s27_scan.nl.NOR2_3.01   
+        60 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND0.A1   
+       128 c       OSA1           NBUF                    Pin.f.l.s27_scan.nl.SFF_2.__i1.NOT0.01   
+        61 T       OSA0           NBUF                    Pin.f.l.s27_scan.nl.NOT_0.01   
+        62 T       OSA1           NBUF                    Pin.f.l.s27_scan.nl.NOT_0.01   
+        63 T       OSA1           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q   
+        64 T       OSA0           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.Q   
+        65 T       ISA0           OR                      Pin.f.l.s27_scan.nl.OR2_0.A1   
+        66 T       ISA0           OR                      Pin.f.l.s27_scan.nl.OR2_0.A2   
+        67 T       ISA1           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.D   
+       122 c       OSA1           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND0.01   
+       126 c       OSA1           AND                     Pin.f.l.s27_scan.nl.SFF_2.__i1.AND1.01   
+       132 c       OSA1           OR                      Pin.f.l.s27_scan.nl.SFF_2.__i1.OR0.01   
+        68 T       ISA0           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.D   
+       131 c       OSA0           OR                      Pin.f.l.s27_scan.nl.SFF_2.__i1.OR0.01   
+        69 T       ISA0           OR                      Pin.f.l.s27_scan.nl.OR2_1.A1   
+        70 T       ISA0           OR                      Pin.f.l.s27_scan.nl.OR2_1.A2   
+        71 TiC     ISA1           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.CLK   
+        72 TiC     ISA0           DFF                     Pin.f.l.s27_scan.nl.SFF_2.__i0.dff_primitive.CLK   
+        73 TiC     ISA0           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.CLK   
+        74 TiC     ISA1           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.CLK   
+        75 T       ISA0           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.D   
+        98 c       OSA0           OR                      Pin.f.l.s27_scan.nl.SFF_0.__i1.OR0.01   
+        76 T       ISA1           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.D   
+        97 c       OSA1           OR                      Pin.f.l.s27_scan.nl.SFF_0.__i1.OR0.01   
+       103 c       OSA1           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND1.01   
+       109 c       OSA1           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND0.01   
+        77 T       OSA0           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q   
+        78 T       OSA1           DFF                     Pin.f.l.s27_scan.nl.SFF_0.__i0.dff_primitive.Q   
+        79 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND0.A1   
+        99 c       OSA1           NBUF                    Pin.f.l.s27_scan.nl.SFF_0.__i1.NOT0.01   
+        80 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND0.A2   
+       123 c       OSA1           NOR                     Pin.f.l.s27_scan.nl.NOR2_0.01   
+        81 T       ISA0           OR                      Pin.f.l.s27_scan.nl.SFF_1.__i1.OR0.A2   
+       101 c       OSA0           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND0.01   
+       107 c       OSA0           NBUF                    Pin.f.l.s27_scan.nl.SFF_1.__i1.NOT0.01   
+        82 T       ISA0           OR                      Pin.f.l.s27_scan.nl.SFF_1.__i1.OR0.A1   
+       105 c       OSA0           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND1.01   
+        83 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND1.A1   
+        84 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND1.A2   
+        85 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND1.A2   
+        86 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND1.A1   
+        87 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND0.A2   
+        88 T       ISA1           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND0.A1   
+       108 c       OSA1           NBUF                    Pin.f.l.s27_scan.nl.SFF_1.__i1.NOT0.01   
+        89 T       ISA0           OR                      Pin.f.l.s27_scan.nl.SFF_0.__i1.OR0.A1   
+       104 c       OSA0           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND1.01   
+        90 T       ISA0           OR                      Pin.f.l.s27_scan.nl.SFF_0.__i1.OR0.A2   
+       100 c       OSA0           NBUF                    Pin.f.l.s27_scan.nl.SFF_0.__i1.NOT0.01   
+       110 c       OSA0           AND                     Pin.f.l.s27_scan.nl.SFF_0.__i1.AND0.01   
+       124 c       OSA0           NOR                     Pin.f.l.s27_scan.nl.NOR2_0.01   
+        91 T       OSA1           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q   
+        92 T       OSA0           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.Q   
+        93 TiC     ISA0           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.CLK   
+        94 TiC     ISA1           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.CLK   
+        95 T       ISA0           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.D   
+       111 c       OSA0           OR                      Pin.f.l.s27_scan.nl.SFF_1.__i1.OR0.01   
+        96 T       ISA1           DFF                     Pin.f.l.s27_scan.nl.SFF_1.__i0.dff_primitive.D   
+       102 c       OSA1           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND0.01   
+       106 c       OSA1           AND                     Pin.f.l.s27_scan.nl.SFF_1.__i1.AND1.01   
+       112 c       OSA1           OR                      Pin.f.l.s27_scan.nl.SFF_1.__i1.OR0.01   
+
+[end TFM_705]
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            9,237,936  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.04                    [end TDA_001]
+
+     Date Ended:  Thursday Apr 23 15:35:26 2015  EDT
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_scan Fault List:   
+
+
+*******************************************************************************
