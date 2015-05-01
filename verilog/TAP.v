@@ -1,4 +1,42 @@
 // tapcntlr.v
+module TAPtop(TDO, TCK, TDI, TMS, TRST_b);
+    output TDO;
+    input TCK, TDI, TMS, TRST_b;
+
+    wire [2:0] inst; //might not need 8 bits
+
+    tapcontroller tctrl(TCK, TRST, TMS, clkdr, shftdr, updr, 
+                        clkir, shftir, upir, sel, bs_en); 
+
+    ir_decode ird(b1i, b2i, b1o, b2o, inst);
+
+    //inst = 0 or 3 -> bsr, inst = 1 -> internal scan, inst = 2 -> bypass reg
+    mux4    dr_mux(dr_out, bsr_out, in_scan_out, bpass_out, bsr_out, inst);
+    u_mux2  ir_mux(regs_out , dr_out, ir_o, sel);
+    dff     sc_out(scan_out, TCK, regs_out);
+    bufif1  out_buf(TDO, scan_out, bs_en);  //not sure if it is enable high or low     
+
+    ir_reg ir_ff(inst, ir_o, shftir, upir, TDI);
+
+    //need IR decode
+
+endmodule //TAPtop
+
+//size: 6 (3 two input gates)
+module ir_decode(b1i, b2i, b1o, b2o, inst);
+    input [1:0] inst;
+    output b1i, b2i, b1o, b2o;
+
+    //used to control bilbo structure
+    //instruction itself encodes the mux select for DR
+    
+
+    xor XOR0(b1i, inst[1], inst[0]);
+    or  OR0(b1o, inst[1], inst[0]);
+    and AND0(b2i, inst[0], inst[1]);
+    assign b1i = b2i;
+
+endmodule // ir_decode
 
 module tapcontroller(TCK, TRST, TMS, clockdr, shiftdr, updatedr, clockir,
 		     shiftir, updateir, select, bs_en);
@@ -98,6 +136,42 @@ module tapcontroller(TCK, TRST, TMS, clockdr, shiftdr, updatedr, clockir,
    dff DFF_6(bs_en, nTCK, bsen);
 
 endmodule // tapcontroller
+
+
+//size: 2 DFFs * size of IR
+module ir_reg(inst, TDO, shift, update, TDI);
+    output [1:0] inst; //make whatever size is needed
+    output TDO;
+    input shift, update, TDI;
+
+    wire d;
+
+    //keep daisy-chaining ir_slices to get desired length
+    ir_slice ir0(inst[0], d, shift, update, TDI);
+    ir_slice ir1(inst[1], TDO, shift, update, d);
+    //ir_slice ir2(TDO, d[2], shift, update, d[1]);
+    //ir_slice ir3(inst[3], d[3], shift, update, d[2]);
+    //ir_slice ir4(inst[4], d[4], shift, update, d[3]);
+    //ir_slice ir5(inst[5], d[5], shift, update, d[4]);
+    //ir_slice ir6(inst[6], d[6], shift, update, d[5]);
+    //ir_slice ir7(inst[7], TDO, shift, update, d[6]);
+
+
+    
+
+endmodule //ir_reg
+
+//contains 2 DFFs
+module ir_slice(q, o, shift, update, d);
+    output q, o;
+    input shift, update, d;
+    
+    wire o;
+
+    dff DFF0(o, shift, d);
+    dff DFF1(q, update, o);
+
+endmodule //ir_slice
 
 
 		
