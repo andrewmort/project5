@@ -5,7 +5,7 @@ STIL 1.0;
 //Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121) //
 //***************************************************************************//
 //                                                                           //
-//  FILE CREATED..............April 23, 2015 at 21:20:47                     //
+//  FILE CREATED..............May 02, 2015 at 12:19:28                       //
 //                                                                           //
 //  PROJECT NAME..............tbdata                                         //
 //                                                                           //
@@ -98,7 +98,7 @@ Pattern
 //  The range of Tests in this Test Procedure....................1:9         //
 //                                                                           //
 //  SLOW TO TURN OFF..........false    SEQUENCES HAVE MEMORY.....no          //
-//  STATIC FAULTS.............58       PERCENT STATIC FAULTS.....100.000000  //
+//  STATIC FAULTS.............90       PERCENT STATIC FAULTS.....100.000000  //
 //  TEST SEQUENCE.............1        TYPE......................normal      //
 //***************************************************************************//
 
@@ -106,8 +106,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.1.2.1:  Measure_PO: 
   "1.1.1.2.1.2": 
   Macro "TEST" { 
-    "ALLPIs" = 1000100; 
-    "ALLPOs" = HLLH; } 
+    "ALLPIs" = 0100001; 
+    "ALLPOs" = LLHH; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............2        TYPE......................normal      //
@@ -117,8 +117,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.2.2.1:  Measure_PO: 
   "1.1.1.2.2.2": 
   Macro "TEST" { 
-    "ALLPIs" = 0011000; 
-    "ALLPOs" = LHLL; } 
+    "ALLPIs" = 0100010; 
+    "ALLPOs" = LHHL; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............3        TYPE......................normal      //
@@ -128,8 +128,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.3.2.1:  Measure_PO: 
   "1.1.1.2.3.2": 
   Macro "TEST" { 
-    "ALLPIs" = 0000011; 
-    "ALLPOs" = LHHL; } 
+    "ALLPIs" = 0000100; 
+    "ALLPOs" = LLLH; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............4        TYPE......................normal      //
@@ -139,8 +139,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.4.2.1:  Measure_PO: 
   "1.1.1.2.4.2": 
   Macro "TEST" { 
-    "ALLPIs" = 0100000; 
-    "ALLPOs" = LLHH; } 
+    "ALLPIs" = 1010000; 
+    "ALLPOs" = HLLH; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............5        TYPE......................normal      //
@@ -150,8 +150,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.5.2.1:  Measure_PO: 
   "1.1.1.2.5.2": 
   Macro "TEST" { 
-    "ALLPIs" = \r7 0 ; 
-    "ALLPOs" = LLLH; } 
+    "ALLPIs" = 1000011; 
+    "ALLPOs" = HLHH; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............6        TYPE......................normal      //
@@ -161,8 +161,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.6.2.1:  Measure_PO: 
   "1.1.1.2.6.2": 
   Macro "TEST" { 
-    "ALLPIs" = 0111001; 
-    "ALLPOs" = LLLH; } 
+    "ALLPIs" = 0001010; 
+    "ALLPOs" = LHLL; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............7        TYPE......................normal      //
@@ -172,8 +172,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.7.2.1:  Measure_PO: 
   "1.1.1.2.7.2": 
   Macro "TEST" { 
-    "ALLPIs" = 1000010; 
-    "ALLPOs" = HLLH; } 
+    "ALLPIs" = 0010111; 
+    "ALLPOs" = LLLH; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............8        TYPE......................normal      //
@@ -183,8 +183,8 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.8.2.1:  Measure_PO: 
   "1.1.1.2.8.2": 
   Macro "TEST" { 
-    "ALLPIs" = 0000110; 
-    "ALLPOs" = LLLH; } 
+    "ALLPIs" = 1001000; 
+    "ALLPOs" = LHLL; } 
 
 //***************************************************************************//
 //  TEST SEQUENCE.............9        TYPE......................normal      //
@@ -194,10 +194,10 @@ Pattern
 //  Processing the Static: EVENT 1.1.1.2.9.2.1:  Measure_PO: 
   "1.1.1.2.9.2": 
   Macro "TEST" { 
-    "ALLPIs" = 1001000; 
-    "ALLPOs" = LHLL; } 
+    "ALLPIs" = 0101001; 
+    "ALLPOs" = LLHH; } 
 // Inserted final non-scan Pattern
   Macro "TEST" { 
-    "ALLPIs" = 1001000; 
+    "ALLPIs" = 0101001; 
     "ALLPOs" = XXXX; } 
   } 

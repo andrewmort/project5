@@ -1,2 +1,3 @@
 SOURCE=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/s27_comb.v
+TECHLIB=
 RUNDIR=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/
