@@ -1,0 +1,1085 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            report_faults faulttype=static reportcircuit=yes faultstatus=redundant experiment=exp_comb testmode=FULLSCAN inputcommitted=no workdir=comb_dir  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Saturday May 02 16:29:56 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 13117.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=comb_dir
+            TESTMODE=FULLSCAN
+            EXPERIMENT=exp_comb
+
+            reportcircuit=yes
+            logfile=comb_dir/testresults/logs/log_report_faults_FULLSCAN_exp_comb_050215162956-344415000
+            faultstatus=redundant
+          + inputcommitted=no
+          + faulttype=static
+[end TDA_009]
+
+TFMlist 
+
+Logic Model(GM)   05/02/15
+                  20:29:45
+
+Circuit Summary
+---------------
+
+Hierarchical Model:                  Flattened Model:
+     6020  Blocks                          6094  Blocks
+    14909  Pins                            6094  Nodes
+     6688  Nets
+
+Primary Inputs:                      Primary Outputs:
+      247  Input Only                       250  Output Only
+        0  Input/Output                       0  Input/Output
+      247  Total Inputs                     250  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        0  Tied to 0                          0  Two-State
+        0  Tied to 1                          0  Three-State
+        0  Tied to X                          0  Total Dotted Nets
+        0  Total Tied Nets
+
+Selected Primitive Functions:
+        0  Clock Chopper (CHOP) primitives 
+        0  RAMs
+        0  ROMs
+        0  TSDs
+        0  Resistors
+        0  Transistors
+        0  Latches
+
+        0  Flip-Flops
+
+File Id     faultModel        faultStatus         experiment
+Created (GM)  05/02/15           05/02/15           05/02/15
+              20:29:47           20:29:47           20:29:50
+Modified(GM)  05/02/15           05/02/15           05/02/15
+              20:29:47           20:29:47           20:29:54
+Code Level        2012.1             2012.1             2012.1            
+Max Fault Id       16589
+
+
+Global Ignored Static Fault Count          0
+Global Ignored Dynamic Fault Count         0
+
+
+INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_comb Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+       549 R       OSA0           PO                      Pin.f.l.s9234.nl.g5692   
+      9425 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1823.01   
+      9546 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1878.01   
+      9763 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1976.01   
+      9878 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2026.01   
+     10158 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2152.01   
+     12153 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3050.01   
+     12437 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3179.01   
+     12888 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3381.01   
+     12915 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3394.01   
+     13317 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_362.01   
+     13328 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_367.01   
+     13352 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_378.01   
+     15871 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_335.01   
+       571 R       OSA0           PO                      Pin.f.l.s9234.nl.g6728   
+      7821 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1100.01   
+      8073 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1214.01   
+      8508 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_141.01   
+      8526 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1418.01   
+     10077 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2116.01   
+     10230 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2185.01   
+     10327 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2229.01   
+     11596 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_280.01   
+     11830 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2905.01   
+     12923 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3398.01   
+     13366 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_384.01   
+     14251 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_783.01   
+     16115 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_269.01   
+       995 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_0.A1   
+      1020 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_103.A2   
+      1060 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_112.A2   
+      1063 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_113.A1   
+      7679 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1037.01   
+     10675 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2386.01   
+     12444 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3181.01   
+     12764 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3325.01   
+      1064 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_113.A2   
+      7926 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1148.01   
+      8867 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1572.01   
+      9737 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1964.01   
+     14334 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_82.01   
+      1075 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_116.A1   
+      1076 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_116.A2   
+      7861 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1119.01   
+     14714 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_991.01   
+      1078 R       OSA1           AND                     Pin.f.l.s9234.nl.AND2_116.01   
+      1115 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_125.A1   
+      1116 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_125.A2   
+      1120 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_126.A2   
+     10482 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2299.01   
+      1160 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_135.A2   
+      1167 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_137.A1   
+      1188 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_141.A2   
+      8800 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1541.01   
+      1191 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_142.A1   
+      1196 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_143.A2   
+      9962 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2064.01   
+      1212 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_147.A2   
+      1218 R       ISA0           OR                      Pin.f.l.s9234.nl.OR4_39.A1   
+     15867 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_336.01   
+      1232 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_151.A2   
+     11366 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2697.01   
+      1291 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_165.A1   
+      8133 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1241.01   
+      8268 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1301.01   
+     11322 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_898.01   
+     12134 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_834.01   
+     13113 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3483.01   
+     13534 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_46.01   
+     16006 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_67.01   
+      1292 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_165.A2   
+      9689 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1942.01   
+     11367 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2698.01   
+     11946 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2958.01   
+     12230 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3085.01   
+     15420 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_464.01   
+     15590 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_291.01   
+     15988 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_303.01   
+      1332 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_174.A2   
+      1348 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_178.A2   
+      9632 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1916.01   
+      1360 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_180.A2   
+      1364 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_181.A2   
+      9256 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1747.01   
+      1367 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_182.A1   
+      1426 R       ISA0           OR                      Pin.f.l.s9234.nl.OR4_19.A1   
+     11463 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_886.01   
+      1463 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_203.A1   
+      1464 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_203.A2   
+      1465 R       OSA0           AND                     Pin.f.l.s9234.nl.AND2_203.01   
+      1466 R       OSA1           AND                     Pin.f.l.s9234.nl.AND2_203.01   
+      1499 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_211.A1   
+      1539 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_220.A1   
+      1572 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_228.A2   
+     10918 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2495.01   
+      1573 R       ISA0           OR                      Pin.f.l.s9234.nl.OR3_6.A2   
+      1627 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_240.A1   
+      1628 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_240.A2   
+      1629 R       ISA0           OR                      Pin.f.l.s9234.nl.OR3_16.A3   
+      7200 c       OSA0           NOR                     Pin.f.l.s9234.nl.NOR2_36.01   
+      8380 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1352.01   
+      8453 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1386.01   
+      9337 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1784.01   
+     10314 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2222.01   
+      1630 R       ISA0           OR                      Pin.f.l.s9234.nl.OR3_16.A2   
+      7224 c       OSA0           NOR                     Pin.f.l.s9234.nl.NOR2_41.01   
+      7956 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1161.01   
+      8026 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1193.01   
+      8506 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1409.01   
+     11709 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2851.01   
+     14073 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_702.01   
+      1631 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_241.A1   
+      1632 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_241.A2   
+      1641 R       ISA0           OR                      Pin.f.l.s9234.nl.OR3_15.A2   
+      1644 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_244.A2   
+      8044 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1200.01   
+      1645 R       ISA0           OR                      Pin.f.l.s9234.nl.OR3_14.A3   
+      7304 c       OSA0           NOR                     Pin.f.l.s9234.nl.NOR2_6.01   
+      8981 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1623.01   
+     13420 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_408.01   
+     13642 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_508.01   
+     14183 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_752.01   
+      1646 R       ISA0           OR                      Pin.f.l.s9234.nl.OR3_14.A2   
+      7256 c       OSA0           NOR                     Pin.f.l.s9234.nl.NOR2_49.01   
+      8472 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1394.01   
+      8696 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1495.01   
+      9950 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2059.01   
+     10361 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2244.01   
+     13617 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_498.01   
+      1656 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_247.A2   
+      7792 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1088.01   
+      1659 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_248.A1   
+      1668 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_25.A2   
+     14648 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_961.01   
+      1675 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_251.A1   
+      1676 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_251.A2   
+      9187 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1716.01   
+     13882 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_616.01   
+      1678 R       OSA1           AND                     Pin.f.l.s9234.nl.AND2_251.01   
+      1704 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_258.A2   
+     12662 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_328.01   
+      1732 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_264.A2   
+      1748 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_268.A2   
+      1754 R       OSA1           OR                      Pin.f.l.s9234.nl.OR2_91.01   
+     14732 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_665.01   
+     15748 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_368.01   
+      1756 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_27.A2   
+     13212 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3527.01   
+      1757 R       OSA0           OR                      Pin.f.l.s9234.nl.OR2_91.01   
+      1758 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_91.A2   
+     15751 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_368.01   
+      1761 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_91.A1   
+      9695 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1945.01   
+     14735 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_665.01   
+      1773 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_9.A1   
+      1799 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_28.A1   
+      8208 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1275.01   
+     14100 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_714.01   
+     14379 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_840.01   
+     14623 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_950.01   
+      1800 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_28.A2   
+      8165 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1256.01   
+      8955 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1611.01   
+     12770 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3328.01   
+     14516 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_901.01   
+      1822 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_79.A2   
+     14875 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_621.01   
+      1827 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_286.A1   
+      8714 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1502.01   
+      9980 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2072.01   
+     11305 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_267.01   
+     14175 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_749.01   
+      1828 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_286.A2   
+      8278 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1306.01   
+     12270 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3102.01   
+     13095 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3475.01   
+     13219 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3530.01   
+      1854 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_73.A2   
+      1890 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_67.A2   
+     11337 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_898.01   
+      1893 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_67.A1   
+     12143 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_834.01   
+     12681 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3289.01   
+      1899 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_301.A1   
+      1900 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_301.A2   
+      9020 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1640.01   
+      1907 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_303.A1   
+      1908 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_303.A2   
+      1936 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_31.A2   
+      1948 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_312.A2   
+     11902 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2938.01   
+      1967 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_317.A1   
+      1968 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_317.A2   
+     14630 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_953.01   
+      1988 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_321.A2   
+     10638 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2369.01   
+      1994 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_48.A2   
+      8134 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1241.01   
+      8267 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1301.01   
+      9690 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1942.01   
+     11368 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2698.01   
+     11945 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2958.01   
+     12229 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3085.01   
+     13114 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3483.01   
+     13533 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_46.01   
+     15589 c       OSA0           OR                      Pin.f.l.s9234.nl.OR2_291.01   
+     16005 c       OSA0           OR                      Pin.f.l.s9234.nl.OR2_67.01   
+     16393 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_165.01   
+      2000 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_324.A2   
+      2020 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_329.A2   
+     10926 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2499.01   
+      2022 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_42.A2   
+      7146 c       OSA1           NAND                    Pin.f.l.s9234.nl.NAND4_7.01   
+     12595 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_325.01   
+      2026 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_41.A2   
+     15579 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_419.01   
+      2044 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_334.A2   
+     10168 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2157.01   
+      2056 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_337.A2   
+     14394 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_847.01   
+      2086 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_347.A2   
+      8675 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1486.01   
+      9598 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1900.01   
+      9683 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_194.01   
+      9727 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_196.01   
+     10090 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2121.01   
+     11007 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_99.01   
+     12108 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_303.01   
+     14327 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_817.01   
+     14666 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_97.01   
+      2088 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_344.A2   
+     10914 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2493.01   
+      2089 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_347.A1   
+      8166 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1256.01   
+      8207 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1275.01   
+      8956 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1611.01   
+     12769 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3328.01   
+     14099 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_714.01   
+     14380 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_840.01   
+     14515 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_901.01   
+     14624 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_950.01   
+     16079 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_28.01   
+      2102 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_343.A2   
+      8624 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1462.01   
+      9069 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1663.01   
+      9654 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1926.01   
+      9801 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1993.01   
+     11051 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2555.01   
+     13645 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_51.01   
+     14038 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_687.01   
+     14078 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_704.01   
+     14585 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_68.01   
+     14997 c       OSA0           OR                      Pin.f.l.s9234.nl.OR2_158.01   
+     15629 c       OSA0           OR                      Pin.f.l.s9234.nl.OR2_30.01   
+      2133 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_339.A1   
+      2191 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_368.A1   
+      2192 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_368.A2   
+      2194 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_327.A2   
+     16455 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_142.01   
+      2204 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_370.A2   
+      2221 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_321.A1   
+      2222 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_320.A2   
+     16587 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_0.01   
+      2231 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_377.A1   
+      8334 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1331.01   
+      8502 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1407.01   
+      9989 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2077.01   
+     13549 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_467.01   
+      2232 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_377.A2   
+     11123 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2588.01   
+     12592 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3248.01   
+     12637 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3269.01   
+     14250 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_782.01   
+      2266 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_314.A2   
+      2294 R       OSA1           OR                      Pin.f.l.s9234.nl.OR2_31.01   
+     11644 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_87.01   
+     14602 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_677.01   
+      2297 R       OSA0           OR                      Pin.f.l.s9234.nl.OR2_31.01   
+      2298 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_31.A2   
+     14621 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_677.01   
+      2301 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_31.A1   
+      8251 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1295.01   
+     11647 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_87.01   
+      2302 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_309.A2   
+      8987 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1626.01   
+     10150 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2149.01   
+     11165 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2606.01   
+     12738 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3313.01   
+     13230 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3535.01   
+     13621 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_5.01   
+     13715 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_738.01   
+     13869 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_610.01   
+     14096 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_712.01   
+      2305 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_309.A1   
+      8266 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1300.01   
+      9375 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1800.01   
+      9662 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_193.01   
+     10133 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2141.01   
+     12239 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_309.01   
+     12666 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3281.01   
+     12959 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3413.01   
+     13171 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_772.01   
+     13520 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_453.01   
+      2344 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_401.A2   
+      2346 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_30.A2   
+     12791 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_802.01   
+      2349 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_30.A1   
+      7763 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1075.01   
+     14971 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_593.01   
+      2363 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_406.A1   
+      2377 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_295.A1   
+      8302 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1317.01   
+      9105 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_168.01   
+      9712 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1952.01   
+     13863 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_608.01   
+     15243 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_510.01   
+     15361 c       OSA0           OR                      Pin.f.l.s9234.nl.OR2_24.01   
+      2388 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_411.A2   
+      7952 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_116.01   
+      2394 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_291.A2   
+     15989 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_303.01   
+      2397 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_291.A1   
+     12529 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_322.01   
+     15423 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_464.01   
+      2419 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_419.A1   
+      2427 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_420.A1   
+      2428 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_420.A2   
+      2432 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_421.A2   
+      2460 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_428.A2   
+     11278 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2657.01   
+      2482 R       OSA1           OR                      Pin.f.l.s9234.nl.OR2_277.01   
+     11614 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_873.01   
+     16508 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_125.01   
+      2484 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_433.A2   
+      2485 R       OSA0           OR                      Pin.f.l.s9234.nl.OR2_277.01   
+      2486 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_277.A2   
+     16509 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_125.01   
+      2489 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_277.A1   
+     11619 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_873.01   
+     14089 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_71.01   
+      2506 R       OSA1           OR                      Pin.f.l.s9234.nl.OR2_273.01   
+     12382 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_821.01   
+     13928 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_721.01   
+      2509 R       OSA0           OR                      Pin.f.l.s9234.nl.OR2_273.01   
+      2510 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_273.A2   
+     13931 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_721.01   
+      2513 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_273.A1   
+      9561 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1885.01   
+     12405 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_821.01   
+      2516 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_440.A2   
+     10894 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2484.01   
+      2532 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_444.A2   
+      9818 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_20.01   
+      2567 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_452.A1   
+      2619 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_464.A1   
+      2620 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_464.A2   
+     12530 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_322.01   
+      2621 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_254.A1   
+      2628 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_466.A2   
+      9452 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1835.01   
+      2664 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_474.A2   
+      2675 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_477.A1   
+      2676 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_477.A2   
+     14490 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_890.01   
+      2694 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_24.A2   
+     16187 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_241.01   
+      2697 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_24.A1   
+      9019 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1640.01   
+     15995 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_301.01   
+      2708 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_484.A2   
+      8308 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_132.01   
+      2764 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_497.A2   
+      8578 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1441.01   
+      2782 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_220.A2   
+      8849 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1564.01   
+      9399 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1811.01   
+     10103 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2128.01   
+     10250 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2194.01   
+     10633 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2367.01   
+     11416 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2719.01   
+     12164 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3055.01   
+     13302 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3568.01   
+     15271 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_501.01   
+      2785 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_220.A1   
+      7802 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1092.01   
+      7865 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1120.01   
+      8055 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1206.01   
+      8062 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1209.01   
+      8594 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1449.01   
+      8766 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1526.01   
+     11915 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_855.01   
+     12593 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3249.01   
+     12907 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3390.01   
+      2787 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_501.A1   
+      9400 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1811.01   
+     10104 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2128.01   
+     11415 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2719.01   
+     12163 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3055.01   
+      2788 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_501.A2   
+      8850 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1564.01   
+     10249 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2194.01   
+     10634 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2367.01   
+     13301 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3568.01   
+      2799 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_504.A1   
+      9325 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1779.01   
+      9870 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2022.01   
+      9991 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2078.01   
+     12290 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3111.01   
+      2800 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_504.A2   
+     11186 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2615.01   
+     12147 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3048.01   
+     12712 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3301.01   
+     13197 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3520.01   
+      2816 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_508.A2   
+     13894 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_621.01   
+      2820 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_509.A2   
+      9622 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1911.01   
+      2826 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_213.A2   
+     16243 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_220.01   
+      2827 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_510.A1   
+      8301 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1317.01   
+      9106 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_168.01   
+      9711 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1952.01   
+     13864 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_608.01   
+     15362 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_24.01   
+     15992 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_301.01   
+     16186 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_241.01   
+      2844 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_514.A2   
+      2874 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_205.A2   
+     12903 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_794.01   
+      2877 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_205.A1   
+      8967 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1617.01   
+     13401 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_755.01   
+      2901 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_20.A1   
+      8936 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1602.01   
+      9378 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1801.01   
+     12439 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_318.01   
+     13381 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_391.01   
+     14947 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_600.01   
+     15209 c       OSA0           OR                      Pin.f.l.s9234.nl.OR2_205.01   
+      2904 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_528.A2   
+      2907 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_529.A1   
+      2912 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_53.A2   
+      2924 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_532.A2   
+      2936 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_535.A2   
+      2966 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_186.A2   
+      8846 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1562.01   
+      9745 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1968.01   
+      9816 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2.01   
+     11127 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_259.01   
+     11276 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2656.01   
+     12673 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3285.01   
+     13195 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_352.01   
+     14050 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_692.01   
+     14871 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_622.01   
+      2969 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_186.A1   
+      8277 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1306.01   
+      8713 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1502.01   
+      9979 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2072.01   
+     11306 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_267.01   
+     12269 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3102.01   
+     13096 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3475.01   
+     13220 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3530.01   
+     14176 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_749.01   
+     16051 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_286.01   
+      2996 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_549.A2   
+      3018 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_178.A2   
+     14215 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_700.01   
+      3052 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_561.A2   
+     14364 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_833.01   
+      3056 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_562.A2   
+      3108 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_574.A2   
+      3160 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_586.A2   
+     10464 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2290.01   
+      3162 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_158.A2   
+     15573 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_420.01   
+      3165 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_158.A1   
+     14069 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_700.01   
+     14767 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_651.01   
+      3171 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_589.A1   
+      8264 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_130.01   
+      9734 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1962.01   
+     11705 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_285.01   
+     13409 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_403.01   
+      3172 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_589.A2   
+      9601 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1902.01   
+     11590 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2798.01   
+     14266 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_79.01   
+     14593 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_937.01   
+      3188 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_592.A2   
+      3191 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_593.A1   
+      3192 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_593.A2   
+      7764 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1075.01   
+      3218 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_149.A2   
+      7218 c       OSA1           NAND                    Pin.f.l.s9234.nl.NAND4_13.01   
+     14407 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_853.01   
+      3220 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_6.A2   
+     13490 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_44.01   
+      3224 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_60.A2   
+      3227 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_600.A1   
+      8935 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1602.01   
+      9377 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1801.01   
+     12440 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_318.01   
+     12896 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_794.01   
+     13382 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_391.01   
+     13392 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_755.01   
+     15210 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_205.01   
+      3240 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_603.A2   
+      9660 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1929.01   
+      3242 R       OSA1           OR                      Pin.f.l.s9234.nl.OR2_144.01   
+     13924 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_722.01   
+     15944 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_317.01   
+      3245 R       OSA0           OR                      Pin.f.l.s9234.nl.OR2_144.01   
+      3246 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_144.A2   
+     13927 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_722.01   
+      3247 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_605.A1   
+      3249 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_144.A1   
+     14629 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_953.01   
+     15945 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_317.01   
+      3254 R       OSA1           OR                      Pin.f.l.s9234.nl.OR2_142.01   
+     15376 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_477.01   
+     16188 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_240.01   
+      3257 R       OSA0           OR                      Pin.f.l.s9234.nl.OR2_142.01   
+      3258 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_142.A2   
+     16189 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_240.01   
+      3260 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_608.A2   
+     14362 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_832.01   
+      3261 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_142.A1   
+     14489 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_890.01   
+     15379 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_477.01   
+      3266 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_140.A2   
+     11597 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_875.01   
+      3276 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_611.A2   
+      8416 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1369.01   
+      3319 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_621.A1   
+      3323 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_622.A1   
+      9815 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2.01   
+     11128 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_259.01   
+     12674 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3285.01   
+     14049 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_692.01   
+      3324 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_622.A2   
+      8845 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1562.01   
+      9746 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1968.01   
+     11275 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2656.01   
+     13196 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_352.01   
+      3343 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_627.A1   
+      3346 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_124.A2   
+     14935 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_605.01   
+      3359 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_630.A1   
+      3412 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_642.A2   
+      3414 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_112.A2   
+      7128 c       OSA0           NOR                     Pin.f.l.s9234.nl.NOR2_2.01   
+      7230 c       OSA1           NAND                    Pin.f.l.s9234.nl.NAND4_10.01   
+      3424 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_645.A2   
+      3440 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_649.A2   
+      3443 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_65.A1   
+     11004 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_99.01   
+     15838 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_347.01   
+     16076 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_28.01   
+      3444 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_65.A2   
+     14868 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_622.01   
+     15122 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_186.01   
+     16048 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_286.01   
+      3451 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_651.A1   
+      3452 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_651.A2   
+     14070 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_700.01   
+      3482 R       ISA0           OR                      Pin.f.l.s9234.nl.OR2_102.A2   
+      3511 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_665.A1   
+      3512 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_665.A2   
+      9696 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1945.01   
+      3530 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_984.01   
+      3560 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_676.A2   
+      3563 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_677.A1   
+      3564 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_677.A2   
+      3575 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_68.A1   
+      9070 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1663.01   
+      9653 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1926.01   
+      9802 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1993.01   
+     14037 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_687.01   
+     14764 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_651.01   
+     14998 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_158.01   
+     15572 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_420.01   
+      3576 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_68.A2   
+      8623 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1462.01   
+     11052 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2555.01   
+     12744 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_802.01   
+     13646 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_51.01   
+     14077 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_704.01   
+     14968 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_593.01   
+     15630 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_30.01   
+      3579 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_680.A1   
+      3584 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_681.A2   
+      3598 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_888.01   
+     12323 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3127.01   
+      3601 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_888.01   
+     12324 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3127.01   
+      3625 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_829.01   
+      3646 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_800.01   
+     10625 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2363.01   
+      3649 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_800.01   
+     10626 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2363.01   
+      3671 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_700.A1   
+      3683 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_703.A1   
+     11892 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_855.01   
+     15268 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_501.01   
+     15278 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_220.01   
+      3684 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_703.A2   
+     13154 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_772.01   
+     13712 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_738.01   
+     15670 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_309.01   
+      3686 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_755.01   
+      8797 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1540.01   
+      3689 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_755.01   
+      8798 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1540.01   
+      3749 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_671.01   
+      3763 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_721.A1   
+      3764 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_721.A2   
+      3767 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_722.A1   
+      3768 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_722.A2   
+      3814 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_575.01   
+     11767 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2878.01   
+      3817 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_575.01   
+     11768 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2878.01   
+      3835 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_738.A1   
+      8988 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1626.01   
+     13229 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3535.01   
+     13622 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_5.01   
+     14095 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_712.01   
+      3836 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_738.A2   
+     10149 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2149.01   
+     11166 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2606.01   
+     12737 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3313.01   
+     13870 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_610.01   
+      3837 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_541.01   
+      8568 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1437.01   
+      3870 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_472.01   
+     10021 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2091.01   
+      3873 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_472.01   
+     10022 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2091.01   
+      3894 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_424.01   
+     13649 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_511.01   
+      3897 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_424.01   
+     13650 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_511.01   
+      3903 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_753.A1   
+      3911 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_755.A1   
+      3912 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_755.A2   
+      8968 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1617.01   
+      3954 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3554.01   
+      8569 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1438.01   
+      3957 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3554.01   
+      8570 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1438.01   
+      3958 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3546.01   
+     11849 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2914.01   
+      3960 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_766.A2   
+      3961 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3546.01   
+     11850 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2914.01   
+      3972 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_769.A2   
+     10044 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2100.01   
+      3987 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_772.A1   
+      8265 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1300.01   
+      9376 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1800.01   
+     12665 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3281.01   
+     12960 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3413.01   
+      3988 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_772.A2   
+      9661 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_193.01   
+     10134 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2141.01   
+     12240 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_309.01   
+     13519 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_453.01   
+      4016 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_779.A2   
+     10074 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2114.01   
+      4018 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3489.01   
+      7689 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1041.01   
+      4021 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3489.01   
+      7690 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1041.01   
+      4040 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_784.A2   
+      4066 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3418.01   
+      4083 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_794.A1   
+      4084 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_794.A2   
+      4102 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3360.01   
+      8135 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1242.01   
+      4105 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3360.01   
+      8136 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1242.01   
+      4123 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_802.A1   
+      4124 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_802.A2   
+      4130 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3314.01   
+      9765 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1977.01   
+      4133 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3314.01   
+      9766 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1977.01   
+      4141 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3267.01   
+     11378 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2701.01   
+      4144 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_807.A2   
+      4156 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_81.A2   
+      4170 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3216.01   
+     10387 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2256.01   
+      4173 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3216.01   
+     10388 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2256.01   
+      4181 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3197.01   
+      4194 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3172.01   
+     13547 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_466.01   
+      4197 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3172.01   
+     13548 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_466.01   
+      4202 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3166.01   
+     14247 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_781.01   
+      4205 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3166.01   
+     14248 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_781.01   
+      4207 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_821.A1   
+      4208 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_821.A2   
+      9562 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1885.01   
+      4220 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_824.A2   
+      8654 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1476.01   
+      4224 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_825.A2   
+     10546 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2327.01   
+      4226 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3094.01   
+     11533 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2772.01   
+      4229 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3094.01   
+     11534 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2772.01   
+      4238 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3081.01   
+     13763 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_563.01   
+      4244 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_83.A2   
+      4245 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3081.01   
+     13764 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_563.01   
+      4263 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_834.A1   
+      4264 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_834.A2   
+     12682 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3289.01   
+      4281 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3031.01   
+      4306 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3006.01   
+     11633 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2817.01   
+      4309 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3006.01   
+     11634 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2817.01   
+      4337 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2956.01   
+      8178 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1261.01   
+      4355 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_855.A1   
+      8593 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1449.01   
+      8765 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1526.01   
+     12594 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3249.01   
+     12908 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3390.01   
+      4356 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_855.A2   
+      7801 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1092.01   
+      7866 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1120.01   
+      8056 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1206.01   
+      8061 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1209.01   
+      4412 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_868.A2   
+     11302 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2668.01   
+      4419 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_87.A1   
+      4420 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_87.A2   
+      8252 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1295.01   
+      4432 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_872.A2   
+      8556 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1431.01   
+      4435 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_873.A1   
+      4436 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_873.A2   
+     14090 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_71.01   
+      4438 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2808.01   
+     11631 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2816.01   
+      4441 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2808.01   
+     11632 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2816.01   
+      4443 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_875.A1   
+      4462 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2768.01   
+     10067 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2111.01   
+      4465 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2768.01   
+     10068 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2111.01   
+      4480 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_883.A2   
+      4485 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2745.01   
+     14570 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_926.01   
+      4486 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2743.01   
+     10721 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2406.01   
+      4489 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2743.01   
+     10722 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2406.01   
+      4532 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_895.A2   
+     13806 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_582.01   
+      4534 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2693.01   
+     14531 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_909.01   
+      4537 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2693.01   
+     14532 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_909.01   
+      4543 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_898.A1   
+      4544 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_898.A2   
+      4564 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_901.A2   
+     10298 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2215.01   
+      4566 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2648.01   
+     10287 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2210.01   
+      4569 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2648.01   
+     10288 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2210.01   
+      4577 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2633.01   
+      4604 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_910.A2   
+      9904 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2038.01   
+      4647 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_99.A1   
+      8676 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1486.01   
+      9597 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1900.01   
+      9728 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_196.01   
+     12107 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_303.01   
+      4648 R       ISA1           AND                     Pin.f.l.s9234.nl.AND2_99.A2   
+      9684 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_194.01   
+     10089 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2121.01   
+     14328 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_817.01   
+     14665 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_97.01   
+      4708 R       ISA1           AND                     Pin.f.l.s9234.nl.AND3_19.A3   
+      4738 R       ISA1           AND                     Pin.f.l.s9234.nl.AND3_24.A3   
+      4750 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2440.01   
+     14129 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_728.01   
+      4754 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2440.01   
+     14130 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_728.01   
+      4765 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2431.01   
+      9819 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_200.01   
+      4769 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2431.01   
+      9820 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_200.01   
+      4794 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2425.01   
+     12090 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3021.01   
+      4863 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_24.01   
+      4864 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2395.01   
+      4986 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_125.A2   
+      5048 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2138.01   
+     12983 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3424.01   
+      5051 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2138.01   
+     12984 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3424.01   
+      5052 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2137.01   
+      5072 R       OSA1           NAND                    Pin.f.l.s9234.nl.NAND2_144.01   
+      5116 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2096.01   
+      5179 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2014.01   
+     13482 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_436.01   
+      5280 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_189.01   
+      7781 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1083.01   
+      5283 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_189.01   
+      7782 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1083.01   
+      5290 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_194.A2   
+      5304 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1848.01   
+     13035 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3448.01   
+      5307 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1848.01   
+     13036 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3448.01   
+      5320 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1829.01   
+      5368 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1750.01   
+      5380 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1744.01   
+     13857 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_605.01   
+      5391 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1744.01   
+     13858 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_605.01   
+      5408 R       OSA1           NAND                    Pin.f.l.s9234.nl.NAND2_22.01   
+      5430 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_225.A2   
+      5462 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_232.A2   
+      5494 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_24.A2   
+      5496 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1669.01   
+      8181 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1263.01   
+      5499 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1669.01   
+      8182 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1263.01   
+      5580 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_161.01   
+     10939 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_2504.01   
+      5583 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_161.01   
+     10940 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2504.01   
+      5619 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1577.01   
+     11296 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_2665.01   
+      5692 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1497.01   
+     14611 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_945.01   
+      5699 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1497.01   
+     14612 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_945.01   
+      5774 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_302.A2   
+      5798 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_308.A2   
+      5878 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_326.A2   
+      5880 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1311.01   
+     13065 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_3461.01   
+      5883 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1311.01   
+     13066 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_3461.01   
+      5892 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_13.01   
+      5902 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_331.A2   
+      5929 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_338.A1   
+      5932 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1250.01   
+      5943 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_124.01   
+      5944 R       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1231.01   
+      7979 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1172.01   
+      5947 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1231.01   
+      7980 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_1172.01   
+      6129 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_383.A1   
+      6155 R       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1031.01   
+     14704 c       OSA1           NBUF                    Pin.f.l.s9234.nl.NOT_987.01   
+      6184 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_9.A4   
+      6191 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_9.A3   
+      6192 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_9.A2   
+      6204 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_7.A4   
+      6207 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_7.A3   
+      6208 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_7.A2   
+      6252 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_3.A4   
+      6255 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_3.A3   
+      6256 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_3.A2   
+      6260 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_24.A4   
+      6267 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_24.A3   
+      6268 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_24.A2   
+      6272 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_23.A4   
+      6279 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_23.A3   
+      6280 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_23.A2   
+      6284 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_22.A4   
+      6291 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_22.A3   
+      6292 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_22.A2   
+      6312 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_20.A4   
+      6315 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_20.A3   
+      6316 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_20.A2   
+      6324 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_2.A4   
+      6327 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_2.A3   
+      6328 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_2.A2   
+      6332 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_19.A4   
+      6335 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_19.A3   
+      6336 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_19.A2   
+      6344 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_18.A4   
+      6347 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_18.A3   
+      6348 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_18.A2   
+      6364 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_16.A4   
+      6367 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_16.A3   
+      6368 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_16.A2   
+      6372 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_15.A4   
+      6375 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_15.A3   
+      6376 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_15.A2   
+      6388 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_13.A4   
+      6391 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_13.A3   
+      6392 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_13.A2   
+      6400 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_12.A4   
+      6403 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_12.A3   
+      6404 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_12.A2   
+      6424 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_10.A4   
+      6439 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_10.A3   
+      6440 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_10.A2   
+      6445 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_454.A1   
+      7346 c       OSA1           NAND                    Pin.f.l.s9234.nl.NAND2_77.01   
+      6452 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_0.A4   
+      6455 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_0.A3   
+      6456 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR4_0.A2   
+      6474 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_460.A2   
+      6628 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_68.A1   
+      6653 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND2_85.A1   
+      7528 c       OSA1           NAND                    Pin.f.l.s9234.nl.NAND2_421.01   
+      6664 R       OSA1           NAND                    Pin.f.l.s9234.nl.NAND2_87.01   
+      6700 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_6.A1   
+      6727 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND3_10.A1   
+      6729 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND3_10.A3   
+      6731 R       OSA1           NAND                    Pin.f.l.s9234.nl.NAND3_10.01   
+      6732 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND3_11.A1   
+     15922 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_48.01   
+     16392 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_165.01   
+     16542 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_113.01   
+      6763 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND3_17.A2   
+      6792 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND3_22.A1   
+     14578 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_68.01   
+     15712 c       OSA1           AND                     Pin.f.l.s9234.nl.AND2_377.01   
+     15822 c       OSA1           OR                      Pin.f.l.s9234.nl.OR2_343.01   
+      6817 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND3_27.A1   
+      6819 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND3_27.A3   
+      6821 R       OSA1           NAND                    Pin.f.l.s9234.nl.NAND3_27.01   
+      6835 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_49.A2   
+      8695 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1495.01   
+      6850 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_47.A2   
+     15175 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_529.01   
+      6875 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_10.A2   
+      6876 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_10.A3   
+      6877 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_10.A4   
+      6890 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_41.A2   
+      8025 c       OSA0           NBUF                    Pin.f.l.s9234.nl.NOT_1193.01   
+      6893 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_13.A2   
+      6894 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_13.A3   
+      6895 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_13.A4   
+      6933 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_36.A1   
+      7052 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_26.A2   
+     14577 c       OSA0           AND                     Pin.f.l.s9234.nl.AND2_680.01   
+      7061 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_7.A2   
+      7062 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_7.A3   
+      7063 R       ISA1           NAND                    Pin.f.l.s9234.nl.NAND4_7.A4   
+      7089 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_2.A1   
+      7099 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_13.A2   
+      7107 R       ISA0           NOR                     Pin.f.l.s9234.nl.NOR2_15.A2   
+
+[end TFM_705]
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            9,937,952  bytes
+
+                      CPU Time =    0:00:00.04
+                  Elapsed Time =    0:00:00.07                    [end TDA_001]
+
+     Date Ended:  Saturday May 02 16:29:56 2015  EDT
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_comb Fault List:   
+
+
+*******************************************************************************

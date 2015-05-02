@@ -1,0 +1,93 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            report_faults stepid=pd__report_faults_050215161541-485669000 faultstatus=untested,redundant experiment=exp_comb testmode=FULLSCAN inputcommitted=no workdir=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Saturday May 02 16:15:41 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 10470.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb
+            TESTMODE=FULLSCAN
+            EXPERIMENT=exp_comb
+
+            logfile=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/testresults/logs/log_report_faults_FULLSCAN_exp_comb_050215161541-485669000
+            stepid=pd__report_faults
+            faultstatus=untested,redundant
+          + inputcommitted=no
+[end TDA_009]
+
+TFMlist 
+
+Logic Model(GM)   05/02/15
+                  16:11:37
+File Id     faultModel        faultStatus         experiment
+Created (GM)  05/02/15           05/02/15           05/02/15
+              16:17:57           16:17:57           16:18:21
+Modified(GM)  05/02/15           05/02/15           05/02/15
+              16:17:57           16:17:57           16:18:22
+Code Level        2012.1             2012.1             2012.1            
+Max Fault Id          58
+
+
+Global Ignored Static Fault Count          0
+Global Ignored Dynamic Fault Count         0
+
+
+INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_comb Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+
+[end TFM_705]
+INFO (TFM-112): No faults were found which met the selection criteria.  [end TFM_112] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            9,209,424  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.03                    [end TDA_001]
+
+     Date Ended:  Saturday May 02 16:15:41 2015  EDT
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-112): No faults were found which met the selection criteria.   
+      1 INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_comb Fault List:   
+
+
+*******************************************************************************
