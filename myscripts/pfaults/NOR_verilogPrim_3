@@ -1,0 +1,44 @@
+ENTITY=NOR_verilogPrim_3 {
+
+Static {
+	REQ {  PIN "A1"=1 PIN "A2"=1 PIN "A3"=1 }
+	PROP { PIN "01"=0/1 }
+}
+
+Static {
+	REQ {  PIN "A1"=1 PIN "A2"=1 PIN "A3"=0 }
+	PROP { PIN "01"=0/1 }
+}
+
+Static {
+	REQ {  PIN "A1"=1 PIN "A2"=0 PIN "A3"=1 }
+	PROP { PIN "01"=0/1 }
+}
+
+Static {
+	REQ {  PIN "A1"=1 PIN "A2"=0 PIN "A3"=0 }
+	PROP { PIN "01"=0/1 }
+}
+
+Static {
+	REQ {  PIN "A1"=0 PIN "A2"=1 PIN "A3"=1 }
+	PROP { PIN "01"=0/1 }
+}
+
+Static {
+	REQ {  PIN "A1"=0 PIN "A2"=1 PIN "A3"=0 }
+	PROP { PIN "01"=0/1 }
+}
+
+Static {
+	REQ {  PIN "A1"=0 PIN "A2"=0 PIN "A3"=1 }
+	PROP { PIN "01"=0/1 }
+}
+
+Static {
+	REQ {  PIN "A1"=0 PIN "A2"=0 PIN "A3"=0 }
+	PROP { PIN "01"=1/0 }
+}
+
+}
+

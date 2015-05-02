@@ -1,0 +1,95 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model WORKDIR=comb_dir DESIGNSOURCE=../verilog/s9234_comb.v  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Saturday May 02 15:02:14 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 5993.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=comb_dir
+
+            logfile=comb_dir/testresults/logs/log_build_model_050215150214-735077000
+            DESIGNSOURCE=../verilog/s9234_comb.v
+[end TDA_009]
+
+Build Model Controller starting:
+
+
+Search Order  1:  "../verilog/s9234_comb.v"
+
+
+
+Reading Verilog data from ../verilog/s9234_comb.v
+
+input [42:0] in;
+              |
+ncvlog: *E,NOPORT (../verilog/s9234_comb.v,17|14): input/output/inout 'in' not declared in port list [12.3.2(IEEE)].
+WARNING (TEI-813): [Severe] Build Model NC (IEEE 2001 Standard) Verilog Parser: 
+           return code of 1 received from ncvlog process.  It is recommended  
+           to check for ncvlog messages in the Build Model log.  [end TEI_813] 
+NC Verilog Parser complete - 0 modules, 0 gates, 0 user defined primitives.
+
+INFO (TEI-003): The 'cell noCellNameFound' was selected as the top cell.   [end TEI_003] 
+ERROR (TEI-002): The 'cell noCellNameFound' was not found in the design source file(s) specified.   Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.  [end TEI_002] 
+ERROR (TEI-400): Build Model FAILED:
+  Cell named 'noCellNameFound' could not be resolved
+  Unexpected Model Build Failure
+  [end TEI_400] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           25,573,136  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.25                    [end TDA_001]
+
+
+
+Build Model Controller completed.
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-003): The 'cell noCellNameFound' was selected as the top cell.    
+
+  WARNING [Severe] Messages...
+      1 WARNING (TEI-813): [Severe] Build Model NC (IEEE 2001 Standard) Verilog Parser: 
+
+  ERROR Messages...
+      1 ERROR (TEI-002): The 'cell noCellNameFound' was not found in the design source file(s) specified.   Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.   
+      1 ERROR (TEI-400): Build Model FAILED:
+
+
+*******************************************************************************
