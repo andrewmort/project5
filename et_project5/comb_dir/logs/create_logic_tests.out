@@ -1,0 +1,130 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            create_logic_tests WORKDIR=comb_dir TESTMODE=FULLSCAN EXPERIMENT=exp_comb  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Saturday May 02 15:03:00 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 6639.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=comb_dir
+            TESTMODE=FULLSCAN
+            EXPERIMENT=exp_comb
+
+            logfile=comb_dir/testresults/logs/log_create_logic_tests_FULLSCAN_exp_comb_050215150300-679819000
+[end TDA_009]
+
+
+**************************************************************************************
+Coverage Definitions:
+ #Faults  : Number of Active Faults (observable).
+ #Tested  : Number of Active Faults marked tested.
+ #Possibly: Number of Active Faults marked possibly tested
+            (good value is 0 or 1; fault value is X).
+ #Redund  : Number of Active Faults untestable due to redundancy.
+ #Untested: Number of Active Faults untested.
+ %TCov  (%Test Coverage)                      : #Tested / #Faults
+ %ATCov (%Adjusted TCov)                      : #Tested / (#Faults-#Redund)
+**************************************************************************************
+**************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               24539         0         0         0     24539   0.00   0.00
+
+                            Global Statistics
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               24539         0         0         0     24539   0.00   0.00
+**************************************************************************************
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----    ----- Faults -----    ------ CPU Time ------  - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global    Aborted   Untested       Sim.        Total                      [end TDA_220] 
+INFO (TDA-220):     32      32      15702    64.23%   64.23%          0       8743     00:00.03     00:00.44        00:01.42    [end TDA_220] 
+INFO (TDA-220):     64      64       1709    72.23%   72.23%          4       6693     00:00.04     00:00.94        00:02.59    [end TDA_220] 
+INFO (TDA-220):     96      96       1575    81.19%   81.19%          7       4398     00:00.05     00:01.78        00:04.28    [end TDA_220] 
+INFO (TDA-220):    128     128        756    86.85%   86.85%          8       2989     00:00.05     00:02.28        00:05.26    [end TDA_220] 
+INFO (TDA-220):    160     160        542    92.31%   92.31%          8       1689     00:00.06     00:02.75        00:06.13    [end TDA_220] 
+INFO (TDA-220):    192     192        364    95.66%   95.66%         10        937     00:00.07     00:03.00        00:06.57    [end TDA_220] 
+INFO (TDA-220):    224     221        247    96.80%   96.80%         10        690     00:00.07     00:03.01        00:06.58    [end TDA_220] 
+INFO (TDA-220):    256     252        190    97.68%   97.68%         10        500     00:00.07     00:03.02        00:06.59    [end TDA_220] 
+INFO (TDA-220):    288     282        157    98.41%   98.41%         10        343     00:00.07     00:03.02        00:06.60    [end TDA_220] 
+INFO (TDA-220):    320     310        105    98.90%   98.90%         10        238     00:00.08     00:03.03        00:06.61    [end TDA_220] 
+INFO (TDA-220):    352     339         71    99.23%   99.23%         10        167     00:00.08     00:03.03        00:06.62    [end TDA_220] 
+INFO (TDA-220):    384     367         65    99.53%   99.53%         10        102     00:00.08     00:03.04        00:06.62    [end TDA_220] 
+INFO (TDA-220):    416     397         55    99.78%   99.78%         10         47     00:00.08     00:03.04        00:06.63    [end TDA_220] 
+INFO (TDA-220):    443     423         37    99.95%   99.95%         10         10     00:00.09     00:03.04        00:06.64    [end TDA_220] 
+
+**************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               24539     21575         0      2954        10  87.92  99.95
+
+                            Global Statistics
+
+                         #Faults   #Tested #Possibly   #Redund #Untested  %TCov %ATCov
+Total Static               24539     21575         0      2954        10  87.92  99.95
+**************************************************************************************
+
+
+              ----Final Pattern Statistics----
+
+ Test Section Type                       # Test Sequences
+----------------------------------------------------------
+ Logic                                          423
+----------------------------------------------------------
+ Total                                          423
+
+(I) File(s) generated (bytes and name):
+
+         114688 comb_dir/tbdata/faultStatus.FULLSCAN.exp_comb
+         254861 comb_dir/tbdata/TBDbin.FULLSCAN.exp_comb
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           10,430,960  bytes
+
+                      CPU Time =    0:00:03.06
+                  Elapsed Time =    0:00:06.89                    [end TDA_001]
+
+     Date Ended:  Saturday May 02 15:03:07 2015  EDT
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+     16 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----    ----- Faults -----    ------ CPU Time ------  - Elapsed Time -   
+
+
+*******************************************************************************
