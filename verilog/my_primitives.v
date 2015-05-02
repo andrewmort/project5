@@ -38,9 +38,9 @@ module bsr(q, scan_out, capture, data, scan_in, shift, update, sel, en);
     u_mux2 MUX0(o, data, scan_in, shift);
 
     //make sure flop holds state when DR_CLK pulses, but BSR not selected
-    u_mux2 MUX1(p, scan_out, o, en);
+    //u_mux2 MUX1(p, scan_out, o, en);
 
-    dff DFF_0(scan_out, capture, p);
+    dff DFF_0(scan_out, capture, o);
     dff DFF_1(x, update, scan_out);
 
     u_mux2 MUX_1(q, data, x, sel);

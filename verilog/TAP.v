@@ -17,29 +17,32 @@ module top(TDO, TCK, TDI, TMS, TRST_b,
         g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
         g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098;
     
-    wire clkdr, dr_shift, bs_sel, in_sl, bsr_tdo, in_scan_tdo, bsr_en;    
+    wire clkdr, shftdr, bsr_sel, in_sel, bsr_tdo, in_scan_tdo, bsr_en;
+    //clkdr is the capture_dr signal from the TAP controller (pulses during capture state and shift state)
+    //bsr_en effectively gates clkdr inside bsr module, so as to not load regs except during BSR scan
+    //bsr_sel controls    
 
     s9234 CUT(TCK,g102i,g107i,g1290,g1293,g22i,g23i,g2584,g301i,g306i,g310i,g314i,g319i,g32i,
   g3222,g36i,g3600,g37i,g38i,g39i,g40i,g4098,g4099,g41i,g4100,g4101,g4102,g4103,
   g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42i,g4307,g4321,g44i,
   g4422,g45i,g46i,g47i,g4809,g5137,g5468,g5469,g557i,g558i,g559i,g560i,g561i,g562i,g563i,
   g564i,g567i,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
-  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, clkdr, dr_shift, bsr_sel, in_sel, bsr_tdo, in_scan_tdo, bsr_en);
+  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, clkdr, shftdr, bsr_sel, in_sel, bsr_tdo, in_scan_tdo, bsr_en);
 
     //instantiate Tap moduule
 
     Tap control(TDO, TCK, TDI, TMS, TRST_b,
-            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en);
+            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en, in_sel);
     
 
 endmodule //top
 
 module Tap(TDO, TCK, TDI, TMS, TRST_b,
-            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en);
+            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en, in_sel);
     output TDO;
     input TCK, TDI, TMS, TRST_b;
     input bsr_tdo, in_scan_tdo;
-    output clkdr, shftdr, updr, bsr_en;
+    output clkdr, shftdr, updr, bsr_en, in_sel;
     
 
     wire [2:0] inst; //might not need 8 bits
@@ -47,7 +50,7 @@ module Tap(TDO, TCK, TDI, TMS, TRST_b,
     tapcontroller tctrl(TCK, TRST, TMS, clkdr, shftdr, updr, 
                         clkir, shftir, upir, sel, bs_en); 
 
-    ir_decode ird(b1i, b2i, b1o, b2o, inst, bsr_en);
+    ir_decode ird(b1i, b2i, b1o, b2o, inst, bsr_en, shftdr, in_sel);
 
     
     dff     bypass(bpass_out, clkdr, TDI); 
@@ -65,15 +68,23 @@ module Tap(TDO, TCK, TDI, TMS, TRST_b,
 endmodule //Tap
 
 //size: 6 (3 two input gates)
-module ir_decode(b1i, b2i, b1o, b2o, inst, bsr_en);
+module ir_decode(b1i, b2i, b1o, b2o, inst, bsr_en, shftdr, in_sel);
     input [1:0] inst;
-    output b1i, b2i, b1o, b2o, bsr_en;
-
+    input shftdr;
+    output b1i, b2i, b1o, b2o, bsr_en, in_sel;
+    
     //used to control bilbo structure
     //instruction itself encodes the mux select for DR
-    
+    wire inst1_b;    
+
+    //enables BSR to load from scan chain
     nor NOR0(bsr_en, inst[1], inst[0]);
     
+    //in_sel enables internal scan to load serially
+    not NOT0(inst1_b, inst[1]);
+    and AND1(in_sel, inst1_b, inst[0], shftdr);
+    
+    //b1 and b2 were for BILBO
     xor XOR0(b1i, inst[1], inst[0]);
     or  OR0(b1o, inst[1], inst[0]);
     and AND0(b2i, inst[0], inst[1]);
