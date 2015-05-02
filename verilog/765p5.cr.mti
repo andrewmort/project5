@@ -1,23 +1,19 @@
-/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v {0 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v
+/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 -- Compiling module sc_dff
 -- Compiling module sc_dff_r
+-- Compiling module bsr
 -- Compiling module bilbo_bsr
-** Error: /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v(55): (vlog-2730) Undefined variable: 'capture'.
-** Error: /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v(33): Identifier must be declared with a port mode: capture.
 -- Compiling module bilbo_dff
 -- Compiling module mux4
 
-} {6.0 8.0} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v
-Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
--- Compiling module TAPtop
--- Compiling module ir_decode
--- Compiling module tapcontroller
--- Compiling module ir_reg
--- Compiling module ir_slice
-
 Top level modules:
-	TAPtop
+	sc_dff
+	sc_dff_r
+	bsr
+	bilbo_bsr
+	bilbo_dff
+	mux4
 
 } {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234.v
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
@@ -26,12 +22,12 @@ Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 Top level modules:
 	s9234
 
-} {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v
+} {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
--- Compiling module bsr_tb
+-- Compiling module s9234
 
 Top level modules:
-	bsr_tb
+	s9234
 
 } {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
@@ -46,7 +42,11 @@ Top level modules:
 	dff
 	u_mux2
 
-} {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/BS_controller.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/BS_controller.v
+} {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module bsr_tb
+
+Top level modules:
+	bsr_tb
 
 } {} {}}

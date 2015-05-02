@@ -77,6 +77,14 @@ entity s9234 is
         g705i           : in     vl_logic;
         g89i            : in     vl_logic;
         g94i            : in     vl_logic;
-        g98i            : in     vl_logic
+        g98i            : in     vl_logic;
+        TDI             : in     vl_logic;
+        dr_update       : in     vl_logic;
+        dr_shift        : in     vl_logic;
+        bsr_sel         : in     vl_logic;
+        in_sel          : in     vl_logic;
+        bsr_tdo         : out    vl_logic;
+        in_scan_tdo     : out    vl_logic;
+        bsr_en          : in     vl_logic
     );
 end s9234;
