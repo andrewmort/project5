@@ -15,7 +15,7 @@ L0 51
 Z8 OV;L;10.1b;51
 r1
 31
-Z9 !s108 1430587255.445516
+Z9 !s108 1430589518.836519
 Z10 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v|
 Z11 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v|
 Z12 o-work work -O0
@@ -74,7 +74,7 @@ R8
 r1
 !s85 0
 31
-!s108 1430587256.196324
+!s108 1430589519.952736
 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v|
 Z25 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v|
 !s101 -O0
@@ -91,7 +91,7 @@ L0 69
 R8
 r1
 31
-Z32 !s108 1430587255.547814
+Z32 !s108 1430589519.044959
 Z33 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v|
 Z34 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v|
 R12
@@ -118,58 +118,58 @@ R12
 !s85 0
 !s101 -O0
 vir_decode
-Z38 I;0zO4kbLSl38akdok<lPz1
-Z39 V<HDE9G;5^nUc]]2JmEIez2
+Z38 !s100 oPcJ00WREzE7?OXP6FClI3
+Z39 I@50TI]lTQ]`2@PQ5l;8L40
+Z40 VRgV[BA_M32gJJPFLghg401
 R4
-Z40 w1430587245
-Z41 8/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v
-Z42 F/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v
+Z41 w1430589502
+Z42 8/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v
+Z43 F/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v
 L0 68
 R8
 r1
 31
-Z43 !s108 1430587256.073363
-Z44 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v|
-Z45 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v|
+Z44 !s108 1430589519.684792
+Z45 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v|
+Z46 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v|
 R12
 !i10b 1
-Z46 !s100 DAb`OgNK8zMz<_1l1D1bP3
 !s85 0
 !s101 -O0
 vir_reg
-Z47 !s100 Rz03W0Nh>LJi1_<@R<f=Q2
-Z48 Iodi8KnBZlEG1Q_8kiJHj]2
+Z47 !s100 EP2zcQ`b3]PEhh8FDY4gX1
+Z48 Ic;;74k<EGH;5]Sld:J_Qe1
 Z49 VO23kHAdgVJ5k^;KXCO3Ki3
 R4
-R40
 R41
 R42
-Z50 L0 185
+R43
+Z50 L0 193
 R8
 r1
 31
-R43
 R44
 R45
+R46
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vir_slice
-Z51 !s100 [^;b<RBIH`SCDHDMcNnR82
-Z52 IgUe=RVRQlYVlL7fF=I>TW3
+Z51 !s100 ]=GkbIJ`T<bg_gTHZcP2B1
+Z52 ILSGKnPD7D^XG7_J7foeX`0
 Z53 V]8XNKGHnfF=IUdCoB6<AR0
 R4
-R40
 R41
 R42
-Z54 L0 210
+R43
+Z54 L0 218
 R8
 r1
 31
-R43
 R44
 R45
+R46
 R12
 !i10b 1
 !s85 0
@@ -206,7 +206,7 @@ r1
 31
 R12
 Z63 !s100 AD6Qg=5CQ^5lQAMhlcOeW1
-Z64 !s108 1430587255.834572
+Z64 !s108 1430589519.473501
 Z65 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v|
 Z66 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v|
 !i10b 1
@@ -251,40 +251,40 @@ R12
 !s85 0
 !s101 -O0
 vTap
-Z73 !s100 NkDa6V>ZQWUZbag8j2]oG0
-Z74 I`?B];=_98kT_B5f0X=>jY2
-Z75 V42jB8^FiE[i9d;4jh5=oJ1
+Z73 !s100 I7gSb@bi5lRYz7MmGY]M33
+Z74 ICWz`:FWWkDTA;mJb=T8SC3
+Z75 VYj:ZcefzG0:YU=GUBAP_S3
 R4
-R40
 R41
 R42
+R43
 L0 37
 R8
 r1
 31
-R43
 R44
 R45
+R46
 R12
 n@tap
 !i10b 1
 !s85 0
 !s101 -O0
 vtapcontroller
-Z76 !s100 G_PU?GM2R;gC0`<=QcZAf1
-Z77 I@FiH_oamRV:J5lf=JFcNA3
+Z76 !s100 EE9=1dk>lbI9MiFbUbhSl0
+Z77 IVL<RS?CjWHna=bkZdeIH@3
 Z78 VJRNmEHJ1o]_Beh`PE9aiU3
 R4
-R40
 R41
 R42
-L0 84
+R43
+L0 92
 R8
 r1
 31
-R43
 R44
 R45
+R46
 R12
 !i10b 1
 !s85 0
@@ -295,35 +295,35 @@ Z80 I]7bVa3^H_09T=Qjdkd8TE2
 Z81 V:B1AoEW72a<QooXDP;aBo0
 R4
 Z82 w1430516843
-R41
 R42
+R43
 L0 2
 R8
 r1
 31
 Z83 !s108 1430580640.073816
-R44
 R45
+R46
 R12
 Z84 n@t@a@ptop
 !i10b 1
 !s85 0
 !s101 -O0
 vtop
-Z85 !s100 zJD=9aP3<R3[:F:g3V2<M2
-Z86 I2VF:7zAe8N2M@DZ<PobLc0
+Z85 !s100 czBOlTdzzH3SZLMjT_bE>2
+Z86 I>10l9:?B<hjicJSKNZ<kn3
 Z87 Vd=4?F8o1D?G8`o675GXAU3
 R4
-R40
 R41
 R42
+R43
 L0 2
 R8
 r1
 31
-R43
 R44
 R45
+R46
 R12
 !i10b 1
 !s85 0

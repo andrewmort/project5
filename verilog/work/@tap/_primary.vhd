@@ -12,6 +12,7 @@ entity Tap is
         clkdr           : out    vl_logic;
         shftdr          : out    vl_logic;
         updr            : out    vl_logic;
-        bsr_en          : out    vl_logic
+        bsr_en          : out    vl_logic;
+        in_sel          : out    vl_logic
     );
 end Tap;
