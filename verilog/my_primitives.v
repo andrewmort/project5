@@ -29,15 +29,18 @@ module sc_dff_r(q, clock, data, tdata, sel, rst_l);
 
 endmodule //sc_dff_r
 
-module bsr(q, scan_out, clock, data, scan_in, shift, upate, sel);
+module bsr(q, scan_out, capture, data, scan_in, shift, update, sel, en);
     output q, scan_out;
-    input clock, data, scan_in, shift, update, sel;
+    input capture, data, scan_in, shift, update, sel, en;
 
-    wire o, x;
+    wire o, p, x;
 
     u_mux2 MUX0(o, data, scan_in, shift);
 
-    dff DFF_0(scan_out, clock, o);
+    //make sure flop holds state when DR_CLK pulses, but BSR not selected
+    u_mux2 MUX1(p, scan_out, o, en);
+
+    dff DFF_0(scan_out, capture, p);
     dff DFF_1(x, update, scan_out);
 
     u_mux2 MUX_1(q, data, x, sel);

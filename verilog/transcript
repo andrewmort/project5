@@ -1,0 +1,394 @@
+# Loading project 765p5
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v failed with 1 errors.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 2 failed with 1 error. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v failed with 1 errors.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v failed with 1 errors.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim work.bsr_tb
+# vsim work.bsr_tb 
+# Loading work.bsr_tb
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# ** Warning: (vsim-3017) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(63): [TFMPC] - Too few port connections. Expected 8, found 7.
+#         Region: /bsr_tb/a
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(63): Illegal output or inout port connection for "port 'scan_out'".
+#         Region: /bsr_tb/a
+# ** Warning: (vsim-3722) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(63): [TFMPC] - Missing connection for port 'sel'.
+# Loading work.udff
+# ** Warning: (vsim-3017) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(64): [TFMPC] - Too few port connections. Expected 8, found 7.
+#         Region: /bsr_tb/b
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(64): Illegal output or inout port connection for "port 'scan_out'".
+#         Region: /bsr_tb/b
+# ** Warning: (vsim-3722) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(64): [TFMPC] - Missing connection for port 'sel'.
+# ** Warning: (vsim-3017) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(65): [TFMPC] - Too few port connections. Expected 8, found 7.
+#         Region: /bsr_tb/c
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(65): Illegal output or inout port connection for "port 'scan_out'".
+#         Region: /bsr_tb/c
+# ** Warning: (vsim-3722) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(65): [TFMPC] - Missing connection for port 'sel'.
+# ** Warning: (vsim-3017) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(66): [TFMPC] - Too few port connections. Expected 8, found 7.
+#         Region: /bsr_tb/d
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(66): Illegal output or inout port connection for "port 'scan_out'".
+#         Region: /bsr_tb/d
+# ** Warning: (vsim-3722) /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(66): [TFMPC] - Missing connection for port 'sel'.
+# Error loading design
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v failed with 1 errors.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+vsim work.bsr_tb
+# vsim work.bsr_tb 
+# Loading work.bsr_tb
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.udff
+run -all
+#                    0 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x
+#                    5 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0
+#                   15 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0
+#                   16 b1=1, b2=0, tdi=0, in=1, out=x, tdo=0
+#                   17 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0
+#                   25 b1=1, b2=0, tdi=0, in=2, out=2, tdo=0
+#                   25 b1=1, b2=0, tdi=0, in=2, out=2, tdo=1
+#                   35 b1=1, b2=0, tdi=0, in=3, out=3, tdo=1
+#                   35 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0
+#                   36 b1=1, b2=0, tdi=0, in=3, out=x, tdo=0
+#                   37 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0
+#                   45 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0
+#                   45 b1=1, b2=0, tdi=0, in=4, out=4, tdo=1
+#                   55 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0
+#                   65 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0
+#                   95 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0
+#                  135 b1=0, b2=0, tdi=0, in=0, out=0, tdo=0
+# ** Note: $finish    : /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(48)
+#    Time: 145 ns  Iteration: 1  Instance: /bsr_tb
+# 1
+# Break in Module bsr_tb at /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v line 48
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart -f
+# Loading work.bsr_tb
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.udff
+run -all
+#                    0 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    1 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=1, sel=0
+#                    2 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    5 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   15 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   16 b1=1, b2=0, tdi=0, in=1, out=x, tdo=0, shift=0, update=0, sel=1
+#                   17 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   25 b1=1, b2=0, tdi=0, in=2, out=2, tdo=0, shift=0, update=0, sel=0
+#                   25 b1=1, b2=0, tdi=0, in=2, out=2, tdo=1, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=3, out=3, tdo=1, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   36 b1=1, b2=0, tdi=0, in=3, out=x, tdo=0, shift=0, update=0, sel=1
+#                   37 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=4, out=4, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   95 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                  135 b1=0, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+# ** Note: $finish    : /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(48)
+#    Time: 145 ns  Iteration: 1  Instance: /bsr_tb
+# 1
+# Break in Module bsr_tb at /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v line 48
+add wave -position insertpoint sim:/bsr_tb/d/*
+restart -f
+run -all
+#                    0 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    1 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=1, sel=0
+#                    2 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    5 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   15 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   16 b1=1, b2=0, tdi=0, in=1, out=x, tdo=0, shift=0, update=0, sel=1
+#                   17 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   25 b1=1, b2=0, tdi=0, in=2, out=2, tdo=0, shift=0, update=0, sel=0
+#                   25 b1=1, b2=0, tdi=0, in=2, out=2, tdo=1, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=3, out=3, tdo=1, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   36 b1=1, b2=0, tdi=0, in=3, out=x, tdo=0, shift=0, update=0, sel=1
+#                   37 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=4, out=4, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   95 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                  135 b1=0, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+# ** Note: $finish    : /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(48)
+#    Time: 145 ns  Iteration: 1  Instance: /bsr_tb
+# 1
+# Break in Module bsr_tb at /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v line 48
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart -f
+# Loading work.bsr_tb
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.udff
+run -all
+#                    0 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    5 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   16 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=1, sel=0
+#                   17 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   36 b1=1, b2=0, tdi=0, in=1, out=0, tdo=0, shift=0, update=0, sel=1
+#                   37 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   56 b1=1, b2=0, tdi=0, in=3, out=0, tdo=0, shift=0, update=0, sel=1
+#                   57 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=1, shift=0, update=0, sel=0
+#                   75 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   85 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                  115 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                  155 b1=0, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+# ** Note: $finish    : /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(49)
+#    Time: 165 ns  Iteration: 1  Instance: /bsr_tb
+# 1
+# Break in Module bsr_tb at /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v line 49
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart -f
+# Loading work.bsr_tb
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.udff
+run -all
+#                    0 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    5 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   16 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=1, sel=0
+#                   17 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   36 b1=1, b2=0, tdi=0, in=1, out=0, tdo=0, shift=0, update=0, sel=1
+#                   37 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   56 b1=1, b2=0, tdi=0, in=3, out=0, tdo=0, shift=0, update=0, sel=1
+#                   57 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=1, shift=0, update=0, sel=0
+#                   75 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   85 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                  115 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  116 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=1
+#                  117 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  126 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=1
+#                  127 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  136 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=1
+#                  137 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  146 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=1
+#                  147 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  155 b1=0, b2=0, tdi=1, in=0, out=0, tdo=1, shift=1, update=0, sel=0
+#                  156 b1=0, b2=0, tdi=1, in=0, out=0, tdo=1, shift=1, update=0, sel=1
+#                  157 b1=0, b2=0, tdi=0, in=0, out=0, tdo=1, shift=1, update=0, sel=0
+# ** Note: $finish    : /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(54)
+#    Time: 165 ns  Iteration: 1  Instance: /bsr_tb
+# 1
+# Break in Module bsr_tb at /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v line 54
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart -f
+# Loading work.bsr_tb
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.udff
+run -all
+#                    0 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    5 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   16 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=1, sel=0
+#                   17 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   36 b1=1, b2=0, tdi=0, in=1, out=0, tdo=0, shift=0, update=0, sel=1
+#                   37 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   56 b1=1, b2=0, tdi=0, in=3, out=0, tdo=0, shift=0, update=0, sel=1
+#                   57 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=1, shift=0, update=0, sel=0
+#                   75 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   85 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                  115 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  116 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=1, sel=0
+#                  117 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  126 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=1, sel=0
+#                  127 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  136 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=1, sel=0
+#                  137 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  146 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=1, sel=0
+#                  147 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=0
+#                  155 b1=0, b2=0, tdi=1, in=0, out=0, tdo=1, shift=1, update=0, sel=0
+#                  156 b1=0, b2=0, tdi=1, in=0, out=0, tdo=1, shift=1, update=1, sel=0
+#                  157 b1=0, b2=0, tdi=0, in=0, out=0, tdo=1, shift=1, update=0, sel=0
+# ** Note: $finish    : /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(54)
+#    Time: 165 ns  Iteration: 1  Instance: /bsr_tb
+# 1
+# Break in Module bsr_tb at /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v line 54
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+restart -f
+# Loading work.bsr_tb
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.udff
+run -all
+#                    0 b1=1, b2=0, tdi=0, in=0, out=0, tdo=x, shift=0, update=0, sel=0
+#                    5 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   16 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=1, sel=0
+#                   17 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                   35 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   36 b1=1, b2=0, tdi=0, in=1, out=0, tdo=0, shift=0, update=0, sel=1
+#                   37 b1=1, b2=0, tdi=0, in=1, out=1, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=0, shift=0, update=0, sel=0
+#                   45 b1=1, b2=0, tdi=0, in=2, out=2, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=1, shift=0, update=0, sel=0
+#                   55 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   56 b1=1, b2=0, tdi=0, in=3, out=0, tdo=0, shift=0, update=0, sel=1
+#                   57 b1=1, b2=0, tdi=0, in=3, out=3, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   65 b1=1, b2=0, tdi=0, in=4, out=4, tdo=1, shift=0, update=0, sel=0
+#                   75 b1=1, b2=0, tdi=0, in=4, out=4, tdo=0, shift=0, update=0, sel=0
+#                   85 b1=1, b2=0, tdi=0, in=0, out=0, tdo=0, shift=0, update=0, sel=0
+#                  115 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=1
+#                  116 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=1, sel=1
+#                  117 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=0, sel=1
+#                  126 b1=0, b2=0, tdi=1, in=0, out=0, tdo=0, shift=1, update=1, sel=1
+#                  126 b1=0, b2=0, tdi=1, in=0, out=8, tdo=0, shift=1, update=1, sel=1
+#                  127 b1=0, b2=0, tdi=1, in=0, out=8, tdo=0, shift=1, update=0, sel=1
+#                  136 b1=0, b2=0, tdi=1, in=0, out=8, tdo=0, shift=1, update=1, sel=1
+#                  136 b1=0, b2=0, tdi=1, in=0, out=c, tdo=0, shift=1, update=1, sel=1
+#                  137 b1=0, b2=0, tdi=1, in=0, out=c, tdo=0, shift=1, update=0, sel=1
+#                  146 b1=0, b2=0, tdi=1, in=0, out=c, tdo=0, shift=1, update=1, sel=1
+#                  146 b1=0, b2=0, tdi=1, in=0, out=e, tdo=0, shift=1, update=1, sel=1
+#                  147 b1=0, b2=0, tdi=1, in=0, out=e, tdo=0, shift=1, update=0, sel=1
+#                  155 b1=0, b2=0, tdi=1, in=0, out=e, tdo=1, shift=1, update=0, sel=1
+#                  156 b1=0, b2=0, tdi=1, in=0, out=e, tdo=1, shift=1, update=1, sel=1
+#                  156 b1=0, b2=0, tdi=1, in=0, out=f, tdo=1, shift=1, update=1, sel=1
+#                  157 b1=0, b2=0, tdi=0, in=0, out=f, tdo=1, shift=1, update=0, sel=1
+# ** Note: $finish    : /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v(54)
+#    Time: 165 ns  Iteration: 1  Instance: /bsr_tb
+# 1
+# Break in Module bsr_tb at /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v line 54
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v failed with 1 errors.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v was successful.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 0 failed with no errors. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v failed with 1 errors.
+# Compile of TAP.v failed with 1 errors.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 2 failed with 2 errors. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v failed with 1 errors.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234.v was successful.
+# Compile of s9234_BIST.v was successful.
+# Compile of TAP.v failed with 1 errors.
+# Compile of bsr_tb.v was successful.
+# 6 compiles, 1 failed with 1 error. 

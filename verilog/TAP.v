@@ -1,14 +1,56 @@
 // tapcntlr.v
-module TAPtop(TDO, TCK, TDI, TMS, TRST_b);
+module top(TDO, TCK, TDI, TMS, TRST_b,
+            g89i,g94i,g98i,g102i,g107i,g301i,g306i,g310i,g314i,g319i,g557i,g558i,g559i,g560i,g561i,
+        g562i,g563i,g564i,g705i,g639i,g567i,g45i,g42i,g39i,g702i,g32i,g38i,g46i,g36i,g47i,g40i,g37i,
+        g41i,g22i,g44i,g23i,
+        g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g6284,g6360,
+        g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
+        g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098);
+    //TEST IO
     output TDO;
     input TCK, TDI, TMS, TRST_b;
+    //CUT IO
+    input g89i,g94i,g98i,g102i,g107i,g301i,g306i,g310i,g314i,g319i,g557i,g558i,g559i,g560i,g561i,
+        g562i,g563i,g564i,g705i,g639i,g567i,g45i,g42i,g39i,g702i,g32i,g38i,g46i,g36i,g47i,g40i,g37i,
+        g41i,g22i,g44i,g23i;
+    output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g6284,g6360,
+        g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
+        g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098;
+    
+    wire clkdr, dr_shift, bs_sel, in_sl, bsr_tdo, in_scan_tdo, bsr_en;    
+
+    s9234 CUT(TCK,g102i,g107i,g1290,g1293,g22i,g23i,g2584,g301i,g306i,g310i,g314i,g319i,g32i,
+  g3222,g36i,g3600,g37i,g38i,g39i,g40i,g4098,g4099,g41i,g4100,g4101,g4102,g4103,
+  g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42i,g4307,g4321,g44i,
+  g4422,g45i,g46i,g47i,g4809,g5137,g5468,g5469,g557i,g558i,g559i,g560i,g561i,g562i,g563i,
+  g564i,g567i,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
+  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, clkdr, dr_shift, bsr_sel, in_sel, bsr_tdo, in_scan_tdo, bsr_en);
+
+    //instantiate Tap moduule
+
+    Tap control(TDO, TCK, TDI, TMS, TRST_b,
+            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en);
+    
+
+endmodule //top
+
+module Tap(TDO, TCK, TDI, TMS, TRST_b,
+            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en);
+    output TDO;
+    input TCK, TDI, TMS, TRST_b;
+    input bsr_tdo, in_scan_tdo;
+    output clkdr, shftdr, updr, bsr_en;
+    
 
     wire [2:0] inst; //might not need 8 bits
 
     tapcontroller tctrl(TCK, TRST, TMS, clkdr, shftdr, updr, 
                         clkir, shftir, upir, sel, bs_en); 
 
-    ir_decode ird(b1i, b2i, b1o, b2o, inst);
+    ir_decode ird(b1i, b2i, b1o, b2o, inst, bsr_en);
+
+    
+    dff     bypass(bpass_out, clkdr, TDI); 
 
     //inst = 0 or 3 -> bsr, inst = 1 -> internal scan, inst = 2 -> bypass reg
     mux4    dr_mux(dr_out, bsr_out, in_scan_out, bpass_out, bsr_out, inst);
@@ -20,17 +62,18 @@ module TAPtop(TDO, TCK, TDI, TMS, TRST_b);
 
     //need IR decode
 
-endmodule //TAPtop
+endmodule //Tap
 
 //size: 6 (3 two input gates)
-module ir_decode(b1i, b2i, b1o, b2o, inst);
+module ir_decode(b1i, b2i, b1o, b2o, inst, bsr_en);
     input [1:0] inst;
-    output b1i, b2i, b1o, b2o;
+    output b1i, b2i, b1o, b2o, bsr_en;
 
     //used to control bilbo structure
     //instruction itself encodes the mux select for DR
     
-
+    nor NOR0(bsr_en, inst[1], inst[0]);
+    
     xor XOR0(b1i, inst[1], inst[0]);
     or  OR0(b1o, inst[1], inst[0]);
     and AND0(b2i, inst[0], inst[1]);
@@ -145,6 +188,8 @@ module ir_reg(inst, TDO, shift, update, TDI);
     input shift, update, TDI;
 
     wire d;
+    //see slide 22-38
+    //shift is the clock
 
     //keep daisy-chaining ir_slices to get desired length
     ir_slice ir0(inst[0], d, shift, update, TDI);
