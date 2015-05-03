@@ -1,3 +1,3 @@
 #!/bin/bash
 
-../../../scripts/p5convert.py input/STIL.FULLSCAN.exp_comb.logic.ex1.ts1.stil -f stil -t etr --map output/s9234
+../../../scripts/p5serialize.py input/s9234.etr input/s9234.p5map output/s9234_scan
