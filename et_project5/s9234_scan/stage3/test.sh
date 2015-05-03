@@ -1,3 +1,4 @@
 #!/bin/bash
 
-../../../scripts/p5convert.py input/s9234_scan.etr -f etr -t stil output/s9234_scan
+cd .. 
+../../scripts/p5convert.py stage3/input/s9234_scan.etr -f etr -t stil stage3/output/s9234_scan

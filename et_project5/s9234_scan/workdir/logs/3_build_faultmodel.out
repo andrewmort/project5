@@ -22,9 +22,9 @@ Perl Copyright 1987-2002, Larry Wall
 ***********************************************************************
 
 INFO (TDA-007): Job Information:
-            Date Started: Sunday May 03 10:43:10 2015  EDT
+            Date Started: Sunday May 03 13:17:39 2015  EDT
             Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
-            This job is process number 8872.
+            This job is process number 17473.
 [end TDA_007]
 
 INFO (TDA-009): Keywords/Values information.
@@ -34,7 +34,7 @@ INFO (TDA-009): Keywords/Values information.
             WORKDIR=workdir
 
             FAULTPATH=../pfaults
-            logfile=workdir/testresults/logs/log_build_faultmodel_050315104310-133378000
+            logfile=workdir/testresults/logs/log_build_faultmodel_050315131738-980546000
             cellnamefaultrules=yes
             includedynamic=no
           + cellfaults=no
@@ -44,10 +44,16 @@ INFO (TDA-009): Keywords/Values information.
 [end TDA_009]
 INFO (TFM-099): Build Fault Model started.  [end TFM_099] 
 INFO (TFM-102): Creating faultModel file workdir/tbdata/faultModel.  [end TFM_102] 
+INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/NOR_verilogPrim_3.  [end TFM_098] 
+INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/NOR_verilogPrim_2.  [end TFM_098] 
+INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/NAND_verilogPrim_2.  [end TFM_098] 
+INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/NAND_verilogPrim_3.  [end TFM_098] 
+INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/OR_verilogPrim_3.  [end TFM_098] 
+INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/AND_verilogPrim_3.  [end TFM_098] 
 INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/OR_verilogPrim_2.  [end TFM_098] 
 INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/AND_verilogPrim_2.  [end TFM_098] 
 
-Global Ignored Static Fault Count          0
+Global Ignored Static Fault Count        441
 
 Global Ignored Dynamic Fault Count         0
 
@@ -58,16 +64,16 @@ Global Ignored Dynamic Fault Count         0
                  -- ATCov --   ------------- Global Faults ----------------------
                    Global      Total     Tested   Possibly  Redundant   Untested
 
-Total Static         0.00         48          0          0          0         48
-Collapsed Static     0.00         38          0          0          0         38
-PI Static            0.00          8          0          0          0          8
+Total Static         0.00      34121          0          0          0      34121
+Collapsed Static     0.00      22341          0          0          0      22341
+PI Static            0.00          6          0          0          0          6
 PO Static            0.00          2          0          0          0          2
 
 Total Dynamic                      0
 
 Parametric        
 
-IDDq                 0.00         48          0                               48
+IDDq                 0.00      34121          0                            34121
 
 
 
@@ -78,16 +84,16 @@ INFO (TFM-103): Creating faultStatus file workdir/tbdata/faultStatus.  [end TFM_
                    ---- ATCov ----   ---------------- Testmode Faults --------------------  ------------------ Global Faults --------------------
                  Testmode Global      Total     Tested   Possibly  Redundant   Untested      Total     Tested   Possibly  Redundant   Untested
 
-Total Static         0.00   0.00         48          0          0          0         48         48          0          0          0         48
-Collapsed Static     0.00   0.00         38          0          0          0         38         38          0          0          0         38
-PI Static            0.00   0.00          8          0          0          0          8          8          0          0          0          8
+Total Static         0.00   0.00      34121          0          0          0      34121      34121          0          0          0      34121
+Collapsed Static     0.00   0.00      22341          0          0          0      22341      22341          0          0          0      22341
+PI Static            0.00   0.00          6          0          0          0          6          6          0          0          0          6
 PO Static            0.00   0.00          2          0          0          0          2          2          0          0          0          2
 
 Total Dynamic                             0
 
 Parametric        
 
-IDDq                 0.00   0.00         48          0                               48         48          0                               48
+IDDq                 0.00   0.00      34121          0                            34121      34121          0                            34121
 
 Path                 0.00   0.00          0          0                                0          0          0                                0
 
@@ -95,9 +101,9 @@ Path                 0.00   0.00          0          0                          
 INFO (TFM-704): Maximum Global Test Coverage Statistics: 
 
                   %Active    #Faults    #Active  #Inactive
-Total Static       100.00         48         48          0
-Collapsed Static   100.00         38         38          0
-PI Static          100.00          8          8          0
+Total Static       100.00      34121      34121          0
+Collapsed Static   100.00      22341      22341          0
+PI Static          100.00          6          6          0
 PO Static          100.00          2          2          0
 
 Total Dynamic                      0
@@ -112,12 +118,12 @@ INFO (TFM-109): Build Fault Model has completed with highest level severity mess
 
 INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
 
-                  Total Memory =            6,045,136  bytes
+                  Total Memory =           11,334,336  bytes
 
-                      CPU Time =    0:00:00.01
-                  Elapsed Time =    0:00:00.32                    [end TDA_001]
+                      CPU Time =    0:00:00.07
+                  Elapsed Time =    0:00:00.59                    [end TDA_001]
 
-     Date Ended:  Sunday May 03 10:43:10 2015  EDT
+     Date Ended:  Sunday May 03 13:17:39 2015  EDT
 
 
 
@@ -129,7 +135,7 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
 ------- ------             ------------------------------
 
   INFO Messages...
-      2 INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/OR_verilogPrim_2.   
+      8 INFO (TFM-098): Build Fault Model: now processing fault rule file ../pfaults/NOR_verilogPrim_3.   
       1 INFO (TFM-099): Build Fault Model started.   
       1 INFO (TFM-102): Creating faultModel file workdir/tbdata/faultModel.   
       1 INFO (TFM-103): Creating faultStatus file workdir/tbdata/faultStatus.   

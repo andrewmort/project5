@@ -59,16 +59,9 @@ module s9234_scan(CK, scan_in, scan_out, scan_en);
   input CK, scan_in, scan_en;
   output scan_out;
 
-  wire [35:0] inputs;
-  wire [38:0] outputs;
 
-  wire o211, bsr_tdo, bsr_capture, bsr_update, bsr_shift, bsr_sel, scan_en, scan_out, bsr_en;
+  wire o211; 
 
-  assign bsr_update = 1;
-  assign bsr_shift = scan_en;
-  assign bsr_en = scan_en;
-  assign bsr_capture = CK;
-  assign bsr_sel = scan_en;
 
 
   wire g89,g94,g98,g102,g107,g301,g306,g310,g314,g319,g557,g558,g559,g560,g561,
@@ -554,54 +547,54 @@ module s9234_scan(CK, scan_in, scan_out, scan_en);
     I5258,I7564,I5648,I5649,I5243,I2683,I7578,I5659,I4184,g3528,g3664,g3656,
     g3647,g1449,g1418,g1879;
 
+    wire g2584p, g3222p, g3600p, g4307p, g4321p, g4422p, g4809p, g5137p,
+        g5468p, g5469p, g5692p, g6282p, g6284p, g6360p, g6362p, g6364p, g6366p,
+        g6368p, g6370p, g6372p, g6374p, g6728p, g1290p, g4121p, g4108p, g4106p,
+        g4103p, g1293p, g4099p, g4102p, g4109p, g4100p, g4112p, g4105p, g4101p,
+        g4110p, g4104p, g4107p, g4098p;
 
-  wire [73:0] sc_out;
-  wire bsr_scan_in;//, bsr_tdo;
-  wire bsr_capture;//, bsr_shift, bsr_update, bsr_sel;
-  assign bsr_capture = CK;
 
   //input BSR
-  scanff BSR_0(g89, CK, g89i, scan_in, scan_en);
-  scanff BSR_1(g94, CK, g94i, g89, scan_en); 
-  scanff BSR_2(g98, CK, g98i, g94, scan_en); 
-  scanff BSR_3(g102, CK, g102i, g98, scan_en); 
-  scanff BSR_4(g107, CK, g107i, g102, scan_en); 
-  scanff BSR_5(g301, CK, g301i, g107, scan_en); 
-  scanff BSR_6(g306, CK, g306i, g301, scan_en); 
-  scanff BSR_7(g310, CK, g310i, g306, scan_en); 
-  scanff BSR_8(g314, CK, g314i, g310, scan_en); 
-  scanff BSR_9(g319, CK, g319i, g314, scan_en); 
-  scanff BSR_10(g557, CK, g557i, g319, scan_en); 
-  scanff BSR_11(g558, CK, g558i, g557, scan_en); 
-  scanff BSR_12(g559, CK, g559i, g558, scan_en); 
-  scanff BSR_13(g560, CK, g560i, g559, scan_en); 
-  scanff BSR_14(g561, CK, g561i, g560, scan_en); 
-  scanff BSR_15(g562, CK, g562i, g561, scan_en); 
-  scanff BSR_16(g563, CK, g563i, g562, scan_en); 
-  scanff BSR_17(g564, CK, g564i, g563, scan_en); 
-  scanff BSR_18(g705, CK, g705i, g564, scan_en); 
-  scanff BSR_19(g639, CK, g639i, g705, scan_en); 
-  scanff BSR_20(g567, CK, g567i, g639, scan_en); 
-  scanff BSR_21(g45, CK, g45i, g567, scan_en); 
-  scanff BSR_22(g42, CK, g42i, g45, scan_en); 
-  scanff BSR_23(g39, CK, g39i, g42, scan_en); 
-  scanff BSR_24(g702, CK, g702i, g39, scan_en); 
-  scanff BSR_25(g32, CK, g32i, g702, scan_en); 
-  scanff BSR_26(g38, CK, g38i, g32, scan_en); 
-  scanff BSR_27(g46, CK, g46i, g38, scan_en); 
-  scanff BSR_28(g36, CK, g36i, g46, scan_en); 
-  scanff BSR_29(g47, CK, g47i, g36, scan_en); 
-  scanff BSR_30(g40, CK, g40i, g47, scan_en); 
-  scanff BSR_31(g37, CK, g37i, g40, scan_en); 
-  scanff BSR_32(g41, CK, g41i, g37, scan_en); 
-  scanff BSR_33(g22, CK, g22i, g41, scan_en); 
-  scanff BSR_34(g44, CK, g44i, g22, scan_en); 
-  scanff BSR_35(g23, CK, g23i, g44, scan_en); 
+  scanff BSR_0(g89, CK, 1'bX, scan_in, scan_en);
+  scanff BSR_1(g94, CK, 1'bX, g89, scan_en); 
+  scanff BSR_2(g98, CK, 1'bX, g94, scan_en); 
+  scanff BSR_3(g102, CK, 1'bX, g98, scan_en); 
+  scanff BSR_4(g107, CK, 1'bX, g102, scan_en); 
+  scanff BSR_5(g301, CK, 1'bX, g107, scan_en); 
+  scanff BSR_6(g306, CK, 1'bX, g301, scan_en); 
+  scanff BSR_7(g310, CK, 1'bX, g306, scan_en); 
+  scanff BSR_8(g314, CK, 1'bX, g310, scan_en); 
+  scanff BSR_9(g319, CK, 1'bX, g314, scan_en); 
+  scanff BSR_10(g557, CK, 1'bX, g319, scan_en); 
+  scanff BSR_11(g558, CK, 1'bX, g557, scan_en); 
+  scanff BSR_12(g559, CK, 1'bX, g558, scan_en); 
+  scanff BSR_13(g560, CK, 1'bX, g559, scan_en); 
+  scanff BSR_14(g561, CK, 1'bX, g560, scan_en); 
+  scanff BSR_15(g562, CK, 1'bX, g561, scan_en); 
+  scanff BSR_16(g563, CK, 1'bX, g562, scan_en); 
+  scanff BSR_17(g564, CK, 1'bX, g563, scan_en); 
+  scanff BSR_18(g705, CK, 1'bX, g564, scan_en); 
+  scanff BSR_19(g639, CK, 1'bX, g705, scan_en); 
+  scanff BSR_20(g567, CK, 1'bX, g639, scan_en); 
+  scanff BSR_21(g45, CK, 1'bX, g567, scan_en); 
+  scanff BSR_22(g42, CK, 1'bX, g45, scan_en); 
+  scanff BSR_23(g39, CK, 1'bX, g42, scan_en); 
+  scanff BSR_24(g702, CK, 1'bX, g39, scan_en); 
+  scanff BSR_25(g32, CK, 1'bX, g702, scan_en); 
+  scanff BSR_26(g38, CK, 1'bX, g32, scan_en); 
+  scanff BSR_27(g46, CK, 1'bX, g38, scan_en); 
+  scanff BSR_28(g36, CK, 1'bX, g46, scan_en); 
+  scanff BSR_29(g47, CK, 1'bX, g36, scan_en); 
+  scanff BSR_30(g40, CK, 1'bX, g47, scan_en); 
+  scanff BSR_31(g37, CK, 1'bX, g40, scan_en); 
+  scanff BSR_32(g41, CK, 1'bX, g37, scan_en); 
+  scanff BSR_33(g22, CK, 1'bX, g41, scan_en); 
+  scanff BSR_34(g44, CK, 1'bX, g22, scan_en); 
+  scanff BSR_35(g23, CK, 1'bX, g44, scan_en); 
 
   //Output BSR
   //bsr_sel = 0 -> get value from circuit
   //bsr_sel = 1 -> get value from scan chain
-  scanff BSR_35(g23, CK, g23i, g44, scan_en); 
   scanff BSR_36(g2584p, CK, g2584, g23, scan_en); 
   scanff BSR_37(g3222p, CK, g3222, g2584p, scan_en); 
   scanff BSR_38(g3600p, CK, g3600, g3222p, scan_en); 
@@ -865,7 +858,7 @@ module s9234_scan(CK, scan_in, scan_out, scan_en);
   scanff DFF_211(o211,CK,0, g59, scan_en);
 
   // Set output for scan chain
-  xor XOR_SC(scan_out, o211, g578, g541, g206, bsr_tdo);
+  xor XOR_SC(scan_out, o211, g578, g541, g206, g4098p);
    
   not NOT_0(I8854,g6696);
   not NOT_1(g1289,I2272);

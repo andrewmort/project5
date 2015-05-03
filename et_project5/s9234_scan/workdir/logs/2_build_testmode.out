@@ -22,9 +22,9 @@ Perl Copyright 1987-2002, Larry Wall
 ***********************************************************************
 
 INFO (TDA-007): Job Information:
-            Date Started: Sunday May 03 10:43:08 2015  EDT
+            Date Started: Sunday May 03 13:17:37 2015  EDT
             Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
-            This job is process number 8861.
+            This job is process number 17462.
 [end TDA_007]
 
 INFO (TDA-009): Keywords/Values information.
@@ -35,7 +35,7 @@ INFO (TDA-009): Keywords/Values information.
             TESTMODE=FULLSCAN
 
             ASSIGNFILE=s9234_scan.FULLSCAN.pinassign
-            logfile=workdir/testresults/logs/log_build_testmode_FULLSCAN_050315104308-933146000
+            logfile=workdir/testresults/logs/log_build_testmode_FULLSCAN_050315131737-721984000
 [end TDA_009]
 MODEDEFPATH set to:  /afs/ece.cmu.edu/support/cds/share/image/usr/cds/et-12.10.101/tools.lnx86/tb/defaults/rules/modedef 
 TDRPATH set to: /afs/ece.cmu.edu/support/cds/share/image/usr/cds/et-12.10.101/tools.lnx86/tb/defaults/rules/tdr 
@@ -50,7 +50,7 @@ Encounter Test Build Test Mode(s) beginning...
    OUT           =  PO 
 
 INFO (TTM-391): A default modeinit sequence will be generated.   [end TTM_391] 
-INFO (THM-814): Testmode contains 100.00% active logic,  0.00% inactive logic and  0.00% constraint logic.   [end THM_814] 
+INFO (THM-814): Testmode contains 99.99% active logic,  0.01% inactive logic and  0.00% constraint logic.   [end THM_814] 
 
 There are no PPIs for Test Mode:  FULLSCAN
 
@@ -66,7 +66,7 @@ Information for Test Mode:  FULLSCAN
  Test Constraint (TC)            0           0           0 
  Scan Enable     (SE)            0           0           0 
  Fixed Value     (FV)            0           0           0 
- Floating                        2           0           2 
+ Floating                      574           0         574 
  Finite State    (FSM)           0           0           0 
 
 INFO (TTM-800): build_testmode has created mode FULLSCAN. [end TTM_800] 
@@ -96,8 +96,8 @@ Test Function Pin Information for Test Mode:  FULLSCAN
 
 
             Cumulative Time in hours:minutes:seconds:
-                   CPU Time =   0:00:00.25
-               Elapsed Time =   0:00:01.01
+                   CPU Time =   0:00:00.29
+               Elapsed Time =   0:00:01.07
 
 
 
@@ -109,7 +109,7 @@ Test Function Pin Information for Test Mode:  FULLSCAN
 ------- ------             ------------------------------
 
   INFO Messages...
-      1 INFO (THM-814): Testmode contains 100.00% active logic,  0.00% inactive logic and  0.00% constraint logic.    
+      1 INFO (THM-814): Testmode contains 99.99% active logic,  0.01% inactive logic and  0.00% constraint logic.    
       1 INFO (TTM-391): A default modeinit sequence will be generated.    
       1 INFO (TTM-800): build_testmode has created mode FULLSCAN.  
 
