@@ -1,29 +1,26 @@
-/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234.v
+/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module sc_dff
+-- Compiling module sc_dff_r
+-- Compiling module bsr
+-- Compiling module bilbo_bsr
+-- Compiling module bilbo_dff
+-- Compiling module mux4
+
+Top level modules:
+	sc_dff
+	sc_dff_r
+	bsr
+	bilbo_bsr
+	bilbo_dff
+	mux4
+
+} {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234.v
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 -- Compiling module s9234
 
 Top level modules:
 	s9234
-
-} {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v
-Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
--- Compiling module s9234
-
-Top level modules:
-	s9234
-
-} {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v
-Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
--- Compiling UDP udff_r
--- Compiling module dff_r
--- Compiling UDP udff
--- Compiling module dff
--- Compiling module u_mux2
-
-Top level modules:
-	dff_r
-	dff
-	u_mux2
 
 } {} {}} /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v {1 {vlog -work work /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/bsr_tb.v
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012

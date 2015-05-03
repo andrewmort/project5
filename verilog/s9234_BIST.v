@@ -10,11 +10,11 @@ module s9234(CK,g102i,g107i,g1290,g1293,g22i,g23i,g2584,g301i,g306i,g310i,g314i,
   g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42i,g4307,g4321,g44i,
   g4422,g45i,g46i,g47i,g4809,g5137,g5468,g5469,g557i,g558i,g559i,g560i,g561i,g562i,g563i,
   g564i,g567i,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
-  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, bsr_capture, bsr_update, bsr_shift, bsr_sel, in_sel, bsr_tdo, in_scan_tdo, bsr_en);
+  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, bsr_capture, bsr_update, bsr_shift, bsr_sel, bsr_tdo, in_scan_tdo);
 input CK,g89i,g94i,g98i,g102i,g107i,g301i,g306i,g310i,g314i,g319i,g557i,g558i,g559i,g560i,g561i,
   g562i,g563i,g564i,g705i,g639i,g567i,g45i,g42i,g39i,g702i,g32i,g38i,g46i,g36i,g47i,g40i,g37i,
   g41i,g22i,g44i,g23i,//begin testing inputs
-  TDI, bsr_capture, bsr_update, bsr_shift, bsr_sel, in_sel, bsr_en;
+  TDI, bsr_capture, bsr_update, bsr_shift, bsr_sel;
 output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g6284,g6360,
   g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
   g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098,//begin testing outputs
@@ -597,6 +597,10 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g
   //wire in_scan_in, in_scan_out, in_sel;
   //in_sel chooses between normal operation and scan mode operation
   wire [211:0] sco;
+  wire in_sel, clk_dr, sc_en;
+  assign in_sel = bsr_sel;
+  assign clk_dr = bsr_capture;
+  assign sc_en = bsr_sel;
 
   //sc_dff     q, clk, data, tdata, sel, scan_out, clk_dr, en
   sc_dff DFF_0(g678,CK,g4130, TDI, in_sel, sco[0], clk_dr, sc_en);
@@ -815,7 +819,7 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g
   sc_dff DFF_210(g59,CK,g6585, sco[209], in_sel, sco[210], clk_dr, sc_en);
 
   // Extra flop to make 
-  sc_dff DFF_211(o211,CK,0, sco[210], in_sel, sco[211], clk_dr, sc_en);
+  sc_dff DFF_211(o211,CK,1'b0, sco[210], in_sel, sco[211], clk_dr, sc_en);
 
   // Set output for scan chain
   xor XOR_SC(in_scan_tdo, sco[211], sco[158], sco[105], sco[52], bsr_tdo);

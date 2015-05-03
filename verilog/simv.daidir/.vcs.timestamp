@@ -1,0 +1,99 @@
+0 
+20
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -O -I/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags= -melf_i386 -m32
+-Mobjects= /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libvirsim.so /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/librterrorinf.so /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/vcs_save_restore_new.o
+-Msyslibs=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-gen_obj
+/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/bin/vcs1
+TAP.v
+my_primitives.v
+primitives.v
+s9234_BIST.v
+63
+sysc_uni_pwd=/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog
+XMODIFIERS=@im=none
+XDG_SESSION_COOKIE=dc796f3d86623803f96bafd300000036-1430576995.587967-802954274
+VNCDESKTOP=masters04.ece.cmu.edu:4 (mkusbit)
+VMR_MODE_FLAG=32
+VCS_MX_HOME_INTERNAL=1
+VCS_LIC_EXPIRE_WARNING=0
+VCS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1
+VCS_EM64T_PURE32=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=suse32
+VCS_ARCH=suse32
+UNAME=/bin/uname
+TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32
+SYSFONT=latarcyrheb-sun16
+SYN_DIR=/usr/local/synopsys/synopsys-2007.03-SP5
+SYNOPSYS=/afs/ece/support/synopsys/synopsys
+SSH_TTY=/dev/pts/2
+SSH_CONNECTION=128.237.171.252 49750 128.2.133.54 22
+SSH_CLIENT=128.237.171.252 49750 22
+SSH_AUTH_SOCK=/tmp/keyring-byHW5s/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=31286
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/31285,unix/unix:/tmp/.ICE-unix/31285
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-mkusbit
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
+LIBGL_DRIVERS_PATH=/usr/lib/dri:/usr/lib64/dri
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+LC_CTYPE=en_US.UTF-8
+KRB5CCNAME=FILE:/var/tmp/krb5cc_mkusbit_DY0MaQ
+KDE_IS_PRELINKED=1
+KDEDIRS=/usr
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HOSTNAME=masters04.ece.cmu.edu
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/afs/ece.cmu.edu/usr/mkusbit/.gtkrc-1.2-gnome2
+GTK_IM_MODULE=gtk-im-context-simple
+GPG_AGENT_INFO=/tmp/seahorse-rh04Qp/S.gpg-agent:31269:1;
+GNOME_KEYRING_SOCKET=/tmp/keyring-byHW5s/socket
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GIO_LAUNCHED_DESKTOP_FILE_PID=31630
+GIO_LAUNCHED_DESKTOP_FILE=/afs/ece.cmu.edu/usr/mkusbit/Desktop/gnome-terminal.desktop
+DC_HOME=/usr/local/synopsys/synopsys-2007.03-SP5/linux/syn
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-lTKLTdiiSy,guid=352afa730cd3b4859807a58d0072ba52
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+AKLOG=/usr/bin/aklog
+0
+4
+1430672928 primitives.v
+1430671973 my_primitives.v
+1430673254 s9234_BIST.v
+1430673196 TAP.v
+4
+0 
+1338179553 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libvirsim.so
+1338176222 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/librterrorinf.so
+1338176038 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libsnpsmalloc.so
+1430673257 simv.daidir

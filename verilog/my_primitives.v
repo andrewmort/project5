@@ -9,6 +9,9 @@ module sc_dff(q,  clock,  data, tdata, sel, scan_out, clk_dr, en);
     
     wire d, x;
 
+    //sel chooses between data vs scan_in data - assign to dr_shift
+    //en chooses between normal operation and scanned/captured data as output
+
     u_mux2 MUX0(d, data, tdata, sel);
 
     dff DFF0(scan_out, clk_dr, d);

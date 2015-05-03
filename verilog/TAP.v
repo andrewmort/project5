@@ -27,36 +27,37 @@ module top(TDO, TCK, TDI, TMS, TRST_b,
   g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42i,g4307,g4321,g44i,
   g4422,g45i,g46i,g47i,g4809,g5137,g5468,g5469,g557i,g558i,g559i,g560i,g561i,g562i,g563i,
   g564i,g567i,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
-  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, clkdr, shftdr, bsr_sel, in_sel, bsr_tdo, in_scan_tdo, bsr_en);
+  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, clkdr, updr, shftdr, bs_en, bsr_tdo, in_scan_tdo);
 
     //instantiate Tap moduule
 
     Tap control(TDO, TCK, TDI, TMS, TRST_b,
-            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en, in_sel);
+            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bs_en);
     
 
 endmodule //top
 
 module Tap(TDO, TCK, TDI, TMS, TRST_b,
-            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bsr_en, in_sel);
+            bsr_tdo, in_scan_tdo, clkdr, shftdr, updr, bs_en);
     output TDO;
     input TCK, TDI, TMS, TRST_b;
     input bsr_tdo, in_scan_tdo;
-    output clkdr, shftdr, updr, bsr_en, in_sel;
+    output clkdr, shftdr, updr, bs_en;
     
 
-    wire [2:0] inst; //might not need 8 bits
+    wire [1:0] inst; //might not need 8 bits
+    wire bpass_out;
 
     tapcontroller tctrl(TCK, TRST, TMS, clkdr, shftdr, updr, 
                         clkir, shftir, upir, sel, bs_en); 
 
-    ir_decode ird(b1i, b2i, b1o, b2o, inst, bsr_en, shftdr, in_sel);
+    //ir_decode ird(b1i, b2i, b1o, b2o, inst, bsr_en, shftdr, in_sel);
 
     
     dff     bypass(bpass_out, clkdr, TDI); 
 
     //inst = 0 or 3 -> bsr, inst = 1 -> internal scan, inst = 2 -> bypass reg
-    mux4    dr_mux(dr_out, bsr_out, in_scan_out, bpass_out, bsr_out, inst);
+    mux4    dr_mux(dr_out, bsr_tdo, in_scan_tdo, bpass_out, bsr_tdo, inst);
     u_mux2  ir_mux(regs_out , dr_out, ir_o, sel);
     dff     sc_out(scan_out, TCK, regs_out);
     bufif1  out_buf(TDO, scan_out, bs_en);  //not sure if it is enable high or low     
@@ -75,6 +76,8 @@ module ir_decode(b1i, b2i, b1o, b2o, inst, bsr_en, shftdr, in_sel);
     //in_sel - selects between data and scan of scan_df
     //in_sel - selects between data and scan of scan_dfff
 
+    
+
     //sc_en - selects b/n normal DFF and test DFF in scan_dff
     //probably want testmode_en OR'd with SCAN inst
 
@@ -88,20 +91,20 @@ module ir_decode(b1i, b2i, b1o, b2o, inst, bsr_en, shftdr, in_sel);
     
     //used to control bilbo structure
     //instruction itself encodes the mux select for DR
-    wire inst1_b;    
+    //wire inst1_b;    
 
     //enables BSR to load from scan chain
-    nor NOR0(bsr_en, inst[1], inst[0]);
+    //nor NOR0(bsr_en, inst[1], inst[0]);
     
     //in_sel enables internal scan to load serially
-    not NOT0(inst1_b, inst[1]);
-    and AND1(in_sel, inst1_b, inst[0], shftdr);
+    //not NOT0(inst1_b, inst[1]);
+    //and AND1(in_sel, inst1_b, inst[0], shftdr);
     
     //b1 and b2 were for BILBO
-    xor XOR0(b1i, inst[1], inst[0]);
-    or  OR0(b1o, inst[1], inst[0]);
-    and AND0(b2i, inst[0], inst[1]);
-    assign b1i = b2i;
+    //xor XOR0(b1i, inst[1], inst[0]);
+    //or  OR0(b1o, inst[1], inst[0]);
+    //and AND0(b2i, inst[0], inst[1]);
+    //assign b1i = b2i;
 
 endmodule // ir_decode
 
