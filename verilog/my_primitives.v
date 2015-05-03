@@ -43,7 +43,9 @@ module bsr(q, scan_out, capture, data, scan_in, shift, update, sel, en);
     dff DFF_0(scan_out, capture, o);
     dff DFF_1(x, update, scan_out);
 
-    u_mux2 MUX_1(q, data, x, sel);
+    // TODO modified this for testing
+    //u_mux2 MUX_1(q, data, x, sel);
+    u_mux2 MUX_1(q, data, scan_out, sel);
 
 endmodule //bsr
 
