@@ -1,0 +1,135 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model WORKDIR=workdir DESIGNSOURCE=verilog/s9234_scan.v  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Sunday May 03 10:43:08 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 8834.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=workdir
+
+            logfile=workdir/testresults/logs/log_build_model_050315104307-974547000
+            DESIGNSOURCE=verilog/s9234_scan.v
+[end TDA_009]
+
+Build Model Controller starting:
+
+
+Search Order  1:  "verilog/s9234_scan.v"
+
+
+
+Reading Verilog data from verilog/s9234_scan.v
+
+  wire bsr_capture;//, bsr_shift, bsr_update, bsr_sel;
+                 |
+ncvlog: *E,DUPIDN (verilog/s9234_scan.v,560|17): identifier 'bsr_capture' previously declared [12.5(IEEE)].
+  scanff BSR_35(g23, CK, g23i, g44, scan_en); 
+              |
+ncvlog: *E,DUPIDN (verilog/s9234_scan.v,604|14): identifier 'BSR_35' previously declared [12.5(IEEE)].
+WARNING (TEI-813): [Severe] Build Model NC (IEEE 2001 Standard) Verilog Parser: 
+           return code of 1 received from ncvlog process.  It is recommended  
+           to check for ncvlog messages in the Build Model log.  [end TEI_813] 
+NC Verilog Parser complete - 2 modules, 4 gates, 1 user defined primitives.
+
+INFO (TEI-003): The 'cell scanff' was selected as the top cell.   [end TEI_003] 
+
+
+Build Model - Hierarchical Model Build starting:
+
+
+
+Number of blocks in the hierarchical model is: 12.
+
+Build Model - Hierarchical Model Build completed.
+
+ defaultTIE = X
+ defaultDFN = T
+
+
+Circuit Summary
+---------------
+
+Hierarchical Model:                  Flattened Model:
+       12  Blocks                            13  Blocks
+       36  Pins                              13  Nodes
+       22  Nets
+
+Primary Inputs:                      Primary Outputs:
+        4  Input Only                         1  Output Only
+        0  Input/Output                       0  Input/Output
+        4  Total Inputs                       1  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        0  Tied to 0                          0  Two-State
+        0  Tied to 1                          0  Three-State
+        0  Tied to X                          0  Total Dotted Nets
+        0  Total Tied Nets
+
+Selected Primitive Functions:
+        0  Clock Chopper (CHOP) primitives 
+        0  RAMs
+        0  ROMs
+        0  TSDs
+        0  Resistors
+        0  Transistors
+        0  Latches
+
+        1  Flip-Flops
+
+
+Build Model - Flat Model Build completed.
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           77,220,496  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.62                    [end TDA_001]
+
+
+
+Build Model Controller completed.
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-003): The 'cell scanff' was selected as the top cell.    
+
+  WARNING [Severe] Messages...
+      1 WARNING (TEI-813): [Severe] Build Model NC (IEEE 2001 Standard) Verilog Parser: 
+
+
+*******************************************************************************

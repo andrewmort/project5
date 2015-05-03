@@ -55,8 +55,8 @@ endmodule // scanff
 `endcelldefine
 
 
-module s9234_scan(CK, scanin, scan_out, scan_en);
-  input CK, scanin, scan_en;
+module s9234_scan(CK, scan_in, scan_out, scan_en);
+  input CK, scan_in, scan_en;
   output scan_out;
 
   wire [35:0] inputs;
@@ -561,9 +561,7 @@ module s9234_scan(CK, scanin, scan_out, scan_en);
   assign bsr_capture = CK;
 
   //input BSR
-  bsr(      q,   scan_out,  capture,    data, scan_in, shift,    update,      sel,     en)
-
-  scanff BSR_0(g89, CK, g89i, scanin, scan_en);
+  scanff BSR_0(g89, CK, g89i, scan_in, scan_en);
   scanff BSR_1(g94, CK, g94i, g89, scan_en); 
   scanff BSR_2(g98, CK, g98i, g94, scan_en); 
   scanff BSR_3(g102, CK, g102i, g98, scan_en); 
@@ -648,7 +646,7 @@ module s9234_scan(CK, scanin, scan_out, scan_en);
   //wire in_scan_in, in_scan_out, scan_en;
   //scan_en chooses between normal operation and scan mode operation
 
-  scanff DFF_0(g678,CK,g4130, scanin, scan_en );
+  scanff DFF_0(g678,CK,g4130, scan_in, scan_en );
   scanff DFF_1(g332,CK,g6823, g678, scan_en);
   scanff DFF_2(g123,CK,g6940, g332, scan_en);
   scanff DFF_3(g207,CK,g6102, g123, scan_en);
@@ -702,7 +700,7 @@ module s9234_scan(CK, scanin, scan_out, scan_en);
   scanff DFF_51(g697,CK,g4149, g282, scan_en);
   scanff DFF_52(g206,CK,g6101, g697, scan_en);
 
-  scanff DFF_53(g449,CK,g4844, scanin, scan_en);
+  scanff DFF_53(g449,CK,g4844, scan_in, scan_en);
   scanff DFF_54(g118,CK,g4113, g449, scan_en);
   scanff DFF_55(g528,CK,g6504, g118, scan_en);
   scanff DFF_56(g284,CK,g3224, g528, scan_en);
@@ -756,7 +754,7 @@ module s9234_scan(CK, scanin, scan_out, scan_en);
   scanff DFF_104(g166,CK,g5471, g665, scan_en);
   scanff DFF_105(g541,CK,g6505, g166, scan_en);
 
-  scanff DFF_106(g74,CK,g6588, scanin, scan_en);
+  scanff DFF_106(g74,CK,g6588, scan_in, scan_en);
   scanff DFF_107(g338,CK,g5475, g74, scan_en);
   scanff DFF_108(g696,CK,g4148, g338, scan_en);
   scanff DFF_109(g516,CK,g6501, g696, scan_en);
@@ -810,7 +808,7 @@ module s9234_scan(CK, scanin, scan_out, scan_en);
   scanff DFF_157(g242,CK,g3238, g218, scan_en);
   scanff DFF_158(g578,CK,g6592, g242, scan_en);
 
-  scanff DFF_159(g184,CK,g5473, scanin, scan_en);
+  scanff DFF_159(g184,CK,g5473, scan_in, scan_en);
   scanff DFF_160(g119,CK,g4114, g184, scan_en);
   scanff DFF_161(g668,CK,g6800, g119, scan_en);
   scanff DFF_162(g139,CK,g5141, g668, scan_en);

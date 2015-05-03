@@ -1,0 +1,82 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            simulate_vectors WORKDIR=workdir TESTMODE=FULLSCAN EXPERIMENT=exp_scan faulttype=static importfile=stage3/output/s9234_scan.vectors.stil  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Sunday May 03 10:43:12 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 8887.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=workdir
+            TESTMODE=FULLSCAN
+            EXPERIMENT=exp_scan
+
+            faulttype=static
+            logfile=workdir/testresults/logs/log_simulate_vectors_FULLSCAN_exp_scan_050315104312-708810000
+            importfile=stage3/output/s9234_scan.vectors.stil
+[end TDA_009]
+INFO (TIS-804): TISwriteTBD started.  [end TIS_804] 
+INFO (TIS-807): Including file: /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/s9234_scan/stage3/output/s9234_scan.vectors.stil.  [end TIS_807] 
+WARNING (TIS-424): [Severe] Unable to open file output/s9234_scan.signals.stil.  [end TIS_424] 
+ERROR (TIS-001): The STIL parser discovered a file include error processing token ; on line 18 of file /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/s9234_scan/stage3/output/s9234_scan.vectors.stil. Processing ends.  [end TIS_001] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            7,436,288  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.01                    [end TDA_001]
+
+     Date Ended:  Sunday May 03 10:43:12 2015  EDT
+
+INFO (TWC-015): STIL has been saved in tbdata as experiment exp_scan_read.  To resimulate the 
+  same source, specify INEXPERIMENT=exp_scan_read, rather than language=STIL and importfile, 
+  on subsequent simulate_vectors commands. [end TWC_015] 
+ERROR (TWC-019): Import file did not process properly.  Simulation will not be performed. [end TWC_019] 
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TIS-804): TISwriteTBD started.   
+      1 INFO (TIS-807): Including file: /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/s9234_scan/stage3/output/s9234_scan.vectors.stil.   
+      1 INFO (TWC-015): STIL has been saved in tbdata as experiment exp_scan_read.  To resimulate the 
+
+  WARNING [Severe] Messages...
+      1 WARNING (TIS-424): [Severe] Unable to open file output/s9234_scan.signals.stil.   
+
+  ERROR Messages...
+      1 ERROR (TIS-001): The STIL parser discovered a file include error processing token ; on line 18 of file /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/s9234_scan/stage3/output/s9234_scan.vectors.stil. Processing ends.   
+      1 ERROR (TWC-019): Import file did not process properly.  Simulation will not be performed.  
+
+
+*******************************************************************************

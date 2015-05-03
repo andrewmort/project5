@@ -1,0 +1,2 @@
+SOURCE=verilog/s9234_scan.v
+RUNDIR=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/s9234_scan/
