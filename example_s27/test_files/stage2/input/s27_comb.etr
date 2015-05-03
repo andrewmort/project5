@@ -1,0 +1,26 @@
+EASY-TO-READ ** do not remove, file type detection
+-- s27_comb.etr --
+Initial input: ../../cet_workdirs/s27_comb/testresults/stil/STIL.FULLSCAN.exp_comb.logic.ex1.ts1.stil
+Converted from stil to easy-to-read
+10 vectors in file
+0 clock signals present
+7 input signals present (not including clocks)
+4 output signals preset
+
+INPUTS: G0, G1, G2, G3, G5, G6, G7
+OUTPUTS: G10, G11, G13, G17
+Ordering of signals corresponds to order of bits in test vector
+
+
+#	IN     	OUT
+1:	1000100	HLLH
+2:	0011000	LHLL
+3:	0000011	LHHL
+4:	0100000	LLHH
+5:	0000000	LLLH
+6:	0111001	LLLH
+7:	1000010	HLLH
+8:	0000110	LLLH
+9:	1001000	LHLL
+10:	1001000	XXXX
+

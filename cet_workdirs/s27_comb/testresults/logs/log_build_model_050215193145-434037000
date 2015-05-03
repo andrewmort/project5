@@ -1,0 +1,81 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model stepid=pd__build_model_050215193145-434037000 workdir=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb designsource=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/s27_comb.v  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Saturday May 02 19:31:45 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 19281.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb
+
+            logfile=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/testresults/logs/log_build_model_050215193145-434037000
+            stepid=pd__build_model
+            DESIGNSOURCE=/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/s27_comb.v
+[end TDA_009]
+
+Build Model Controller starting:
+
+
+Search Order  1:  "/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/s27_comb.v"
+
+
+WARNING (TFW-069): [Severe] A write lock could not be obtained for
+ '/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/tbdata/locks/hierModel'.
+ The system reason for this message is >>Resource temporarily unavailable<<.
+ Write locking has failed.  If you are using the Encounter Test GUI on this same
+ project, it may be using resources that are needed to run this application.
+ If so, press the 'Unlock GUI Resources' button on the main window toolbar and
+ rerun this application. [end TFW_069] 
+Unable to obtain exclusive access to /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/cet_workdirs/s27_comb/tbdata/hierModel2.
+  Circuit may currently be in use OR ensure permissions allow file creation.
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =              725,488  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:24.05                    [end TDA_001]
+
+
+
+Build Model Controller completed.
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  WARNING [Severe] Messages...
+      1 WARNING (TFW-069): [Severe] A write lock could not be obtained for
+
+
+*******************************************************************************
