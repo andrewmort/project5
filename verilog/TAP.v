@@ -72,6 +72,19 @@ module ir_decode(b1i, b2i, b1o, b2o, inst, bsr_en, shftdr, in_sel);
     input [1:0] inst;
     input shftdr;
     output b1i, b2i, b1o, b2o, bsr_en, in_sel;
+    //in_sel - selects between data and scan of scan_df
+    //in_sel - selects between data and scan of scan_dfff
+
+    //sc_en - selects b/n normal DFF and test DFF in scan_dff
+    //probably want testmode_en OR'd with SCAN inst
+
+    //bsr_capture - loads capture flop of BSR
+
+    //bsr_shift - selects TDI (scan) on input mux in BSR
+
+    //bsr_update - loads update flop
+
+    //bsr_sel - selects output from data or update flop, probably use testmode_en
     
     //used to control bilbo structure
     //instruction itself encodes the mux select for DR

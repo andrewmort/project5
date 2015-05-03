@@ -3,15 +3,18 @@
 
 //scan DFF, can also be used on outputs for boundary scan
 //size: 1 DFF, 2 inputs (mux)
-module sc_dff(q, clock, data, tdata, sel);
-    output q;
-    input clock, data, tdata, sel;
+module sc_dff(q,  clock,  data, tdata, sel, scan_out, clk_dr, en);
+    output q, scan_out;
+    input clock, data, tdata, sel, clk_dr, en;
     
-    wire d;
+    wire d, x;
 
-    u_mux2(d, data, tdata, sel);
-    
-    dff DFF0(q, clock, d);
+    u_mux2 MUX0(d, data, tdata, sel);
+
+    dff DFF0(scan_out, clk_dr, d);
+    dff DFF1(x, clock, data);  
+
+    u_mux2 MUX1(q, scan_out, x, en);
 
 endmodule //sc_dff
 
@@ -35,6 +38,7 @@ module bsr(q, scan_out, capture, data, scan_in, shift, update, sel, en);
 
     wire o, p, x;
 
+    //shift selects data or scan inhhu
     u_mux2 MUX0(o, data, scan_in, shift);
 
     //make sure flop holds state when DR_CLK pulses, but BSR not selected
