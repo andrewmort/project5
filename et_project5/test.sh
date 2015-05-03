@@ -6,6 +6,8 @@ LOG_DIR=$ARG_WORKDIR/logs5new
 PFAULT_DIR=pfaults
 
 mkdir -p $LOG_DIR
+rm -rf $ARG_WORKDIR/tbdata
+rm -rf $ARG_WORKDIR/testresults
 
 
 # ----------- Tasks to Generate Test Vectors ------------

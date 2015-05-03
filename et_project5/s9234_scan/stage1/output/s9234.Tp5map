@@ -5,8 +5,8 @@ File used to define scan chains for use with 'p5serialize.py' script
 
 
 ** Input/output definitions do not need modification
-INPUTS: in[34], in[21], g102, g107, in[4], in[30], in[2], in[9], in[26], in[24], in[0], in[33], in[3], in[32], in[27], in[10], in[8], in[17], in[22], in[1], in[31], in[29], in[19], in[28], in[6], in[14], in[12], g22, in[7], g23, in[13], in[20], in[23], in[25], in[5], in[15], g301, g306, g310, g314, g319, g32, in[11], in[18], in[16], g36, g37, g38, g39, g40, g41, g42, g44, g45, g46, g47, g557, g558, g559, g560, g561, g562, g563, g564, g567, in[35], g639, g702, g705, g89, g94, g98
-OUTPUTS: g1290, g1293, g2584, g3222, g3600, g4098, g4099, g4100, g4101, g4102, g4103, g4104, g4105, g4106, g4107, g4108, g4109, g4110, g4112, g4121, g4307, g4321, g4422, g4809, g5137, g5468, g5469, g5692, g6282, g6284, g6360, g6362, g6364, g6366, g6368, g6370, g6372, g6374, g6728, out[0], out[10], out[11], out[12], out[13], out[14], out[15], out[16], out[17], out[18], out[19], out[1], out[20], out[21], out[22], out[23], out[24], out[25], out[26], out[27], out[28], out[29], out[2], out[30], out[31], out[32], out[33], out[34], out[35], out[3], out[4], out[5], out[6], out[7], out[8], out[9]
+INPUTS: in50, in21, in3, in4, in27, in25, in22, in16, in1, in43, in2, in18, in26, in34, in24, in39, in10, in40, in49, in44, in51, in30, in9, in6, in0, in29, in28, in33, in20, in11, in19, in52, in37, in5, in23, in46, in35, in7, in17, in38, in8, in42, in36, in12, in32, in13, in41, in45, in31, in14, in47, in15, in48
+OUTPUTS: out0, out1, out10, out11, out12, out13, out14, out15, out16, out17, out18, out19, out2, out20, out21, out22, out23, out24, out25, out26, out27, out28, out29, out3, out30, out31, out32, out33, out34, out35, out36, out37, out38, out39, out4, out40, out41, out42, out43, out44, out45, out46, out47, out48, out49, out5, out50, out51, out52, out6, out7, out8, out9
 
 
 ** EACH OF THE ABOVE SIGNALS MUST BE ASSIGNED TO ONE OF THE FOLLOWING GROUPS **

@@ -5,10 +5,38 @@
 //# 2027 gates (955 ANDs + 528 NANDs + 431 ORs + 113 NORs)
 
 
-module s9234(out, in);
-input [52:0] in;
-output [52:0] out;
+module s9234_comb5new(
+out0, out1, out2, out3, out4, out5, out6, out7, out8, out9, out10, out11, 
+out12, out13, out14, out15, out16, out17, out18, out19, out20, out21, out22, 
+out23, out24, out25, out26, out27, out28, out29, out30, out31, out32, out33, 
+out34, out35, out36, out37, out38, out39, out40, out41, out42, out43, out44, 
+out45, out46, out47, out48, out49, out50, out51, out52, 
+in0, in1, in2, in3, in4, in5, in6, in7, in8, in9, in10, in11, in12, in13,
+in14, in15, in16, in17, in18, in19, in20, in21, in22, in23, in24, in25,
+in26, in27, in28, in29, in30, in31, in32, in33, in34, in35, in36, in37,
+in38, in39, in40, in41, in42, in43, in44, in45, in46, in47, in48, in49,
+in50, in51, in52);
 
+output out0, out1, out2, out3, out4, out5, out6, out7, out8, out9, out10, out11, 
+out12, out13, out14, out15, out16, out17, out18, out19, out20, out21, out22, 
+out23, out24, out25, out26, out27, out28, out29, out30, out31, out32, out33, 
+out34, out35, out36, out37, out38, out39, out40, out41, out42, out43, out44, 
+out45, out46, out47, out48, out49, out50, out51, out52;
+
+input in0, in1, in2, in3, in4, in5, in6, in7, in8, in9, in10, in11, in12, in13,
+in14, in15, in16, in17, in18, in19, in20, in21, in22, in23, in24, in25,
+in26, in27, in28, in29, in30, in31, in32, in33, in34, in35, in36, in37,
+in38, in39, in40, in41, in42, in43, in44, in45, in46, in47, in48, in49,
+in50, in51, in52;
+
+
+    wire g89,g94,g98,g102,g107,g301,g306,g310,g314,g319,g557,g558,g559,g560,g561,
+  g562,g563,g564,g705,g639,g567,g45,g42,g39,g702,g32,g38,g46,g36,g47,g40,g37,
+  g41,g22,g44,g23;
+    wire g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,
+  g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,
+  g4108,g4106,g4103,g1293,g4099,g4102,g4109,g4100,g4112,g4105,g4101,g4110,
+  g4104,g4107,g4098;
   wire g678,g4130,g332,g6823,g123,g6940,g207,g6102,g695,g4147,g461,g4841,g18,
     g6725,g292,g3232,g331,g4119,g689,g4141,g24,g6726,g465,g6507,g84,g6590,g291,
     g3231,g676,g5330,g622,g5147,g117,g4839,g278,g6105,g128,g5138,g598,g4122,
@@ -490,42 +518,42 @@ output [52:0] out;
 
     wire [52:0] o0, o1, o2, o3, o4;
 
-    assign g89 = in[0];
-    assign g94 = in[1];
-    assign g98 = in[2];
-    assign g102 = in[3];
-    assign g107 = in[4];
-    assign g301 = in[5];
-    assign g306 = in[6];
-    assign g310 = in[7];
-    assign g314 = in[8];
-    assign g319 = in[9];
-    assign g557 = in[10];
-    assign g558 = in[11];
-    assign g559 = in[12];
-    assign g560 = in[13];
-    assign g561 = in[14];
-    assign g562 = in[15];
-    assign g563 = in[16];
-    assign g564 = in[17];
-    assign g705 = in[18];
-    assign g639 = in[19];
-    assign g567 = in[20];
-    assign g45 = in[21];
-    assign g42 = in[22];
-    assign g39 = in[23];
-    assign g702 = in[24];
-    assign g32 = in[25];
-    assign g38 = in[26];
-    assign g46 = in[27];
-    assign g36 = in[28];
-    assign g47 = in[29];
-    assign g40 = in[30];
-    assign g37 = in[31];
-    assign g41 = in[32];
-    assign g22 = in[33];
-    assign g44 = in[34];
-    assign g23 = in[35];
+    assign g89 = in0;
+    assign g94 = in1;
+    assign g98 = in2;
+    assign g102 = in3;
+    assign g107 = in4;
+    assign g301 = in5;
+    assign g306 = in6;
+    assign g310 = in7;
+    assign g314 = in8;
+    assign g319 = in9;
+    assign g557 = in10;
+    assign g558 = in11;
+    assign g559 = in12;
+    assign g560 = in13;
+    assign g561 = in14;
+    assign g562 = in15;
+    assign g563 = in16;
+    assign g564 = in17;
+    assign g705 = in18;
+    assign g639 = in19;
+    assign g567 = in20;
+    assign g45 = in21;
+    assign g42 = in22;
+    assign g39 = in23;
+    assign g702 = in24;
+    assign g32 = in25;
+    assign g38 = in26;
+    assign g46 = in27;
+    assign g36 = in28;
+    assign g47 = in29;
+    assign g40 = in30;
+    assign g37 = in31;
+    assign g41 = in32;
+    assign g22 = in33;
+    assign g44 = in34;
+    assign g23 = in35;
 
     assign o4[0] = g42;
     assign o4[1] = g39;
@@ -582,908 +610,908 @@ output [52:0] out;
     assign o4[52] = g4098;
 
   //dff DFF_0(g678,CK,g4130);
-  assign g678 = in[0];
+  assign g678 = in0;
   assign o0[0] = g4130;
 
   //dff DFF_1(g332,CK,g6823);
-  assign g332 = in[1];
+  assign g332 = in1;
   assign o0[1] = g6823;
 
   //dff DFF_2(g123,CK,g6940);
-  assign g123 = in[2];
+  assign g123 = in2;
   assign o0[2] = g6940;
 
   //dff DFF_3(g207,CK,g6102);
-  assign g207 = in[3];
+  assign g207 = in3;
   assign o0[3] = g6102;
 
   //dff DFF_4(g695,CK,g4147);
-  assign g695 = in[4];
+  assign g695 = in4;
   assign o0[4] = g4147;
 
   //dff DFF_5(g461,CK,g4841);
-  assign g461 = in[5];
+  assign g461 = in5;
   assign o0[5] = g4841;
 
   //dff DFF_6(g18,CK,g6725);
-  assign g18 = in[6];
+  assign g18 = in6;
   assign o0[6] = g6725;
 
   //dff DFF_7(g292,CK,g3232);
-  assign g292 = in[7];
+  assign g292 = in7;
   assign o0[7] = g3232;
 
   //dff DFF_8(g331,CK,g4119);
-  assign g331 = in[8];
+  assign g331 = in8;
   assign o0[8] = g4119;
 
   //dff DFF_9(g689,CK,g4141);
-  assign g689 = in[9];
+  assign g689 = in9;
   assign o0[9] = g4141;
 
   //dff DFF_10(g24,CK,g6726);
-  assign g24 = in[10];
+  assign g24 = in10;
   assign o0[10] = g6726;
 
   //dff DFF_11(g465,CK,g6507);
-  assign g465 = in[11];
+  assign g465 = in11;
   assign o0[11] = g6507;
 
   //dff DFF_12(g84,CK,g6590);
-  assign g84 = in[12];
+  assign g84 = in12;
   assign o0[12] = g6590;
 
   //dff DFF_13(g291,CK,g3231);
-  assign g291 = in[13];
+  assign g291 = in13;
   assign o0[13] = g3231;
 
   //dff DFF_14(g676,CK,g5330);
-  assign g676 = in[14];
+  assign g676 = in14;
   assign o0[14] = g5330;
 
   //dff DFF_15(g622,CK,g5147);
-  assign g622 = in[15];
+  assign g622 = in15;
   assign o0[15] = g5147;
 
   //dff DFF_16(g117,CK,g4839);
-  assign g117 = in[16];
+  assign g117 = in16;
   assign o0[16] = g4839;
 
   //dff DFF_17(g278,CK,g6105);
-  assign g278 = in[17];
+  assign g278 = in17;
   assign o0[17] = g6105;
 
   //dff DFF_18(g128,CK,g5138);
-  assign g128 = in[18];
+  assign g128 = in18;
   assign o0[18] = g5138;
 
   //dff DFF_19(g598,CK,g4122);
-  assign g598 = in[19];
+  assign g598 = in19;
   assign o0[19] = g4122;
 
   //dff DFF_20(g554,CK,g6827);
-  assign g554 = in[20];
+  assign g554 = in20;
   assign o0[20] = g6827;
 
   //dff DFF_21(g496,CK,g6745);
-  assign g496 = in[21];
+  assign g496 = in21;
   assign o0[21] = g6745;
 
   //dff DFF_22(g179,CK,g6405);
-  assign g179 = in[22];
+  assign g179 = in22;
   assign o0[22] = g6405;
 
   //dff DFF_23(g48,CK,g6729);
-  assign g48 = in[23];
+  assign g48 = in23;
   assign o0[23] = g6729;
 
   //dff DFF_24(g590,CK,g6595);
-  assign g590 = in[24];
+  assign g590 = in24;
   assign o0[24] = g6595;
 
   //dff DFF_25(g551,CK,g6826);
-  assign g551 = in[25];
+  assign g551 = in25;
   assign o0[25] = g6826;
 
   //dff DFF_26(g682,CK,g4134);
-  assign g682 = in[26];
+  assign g682 = in26;
   assign o0[26] = g4134;
 
   //dff DFF_27(g11,CK,g6599);
-  assign g11 = in[27];
+  assign g11 = in27;
   assign o0[27] = g6599;
 
   //dff DFF_28(g606,CK,g4857);
-  assign g606 = in[28];
+  assign g606 = in28;
   assign o0[28] = g4857;
 
   //dff DFF_29(g188,CK,g6406);
-  assign g188 = in[29];
+  assign g188 = in29;
   assign o0[29] = g6406;
 
   //dff DFF_30(g646,CK,g5148);
-  assign g646 = in[30];
+  assign g646 = in30;
   assign o0[30] = g5148;
 
   //dff DFF_31(g327,CK,g4117);
-  assign g327 = in[31];
+  assign g327 = in31;
   assign o0[31] = g4117;
 
   //dff DFF_32(g361,CK,g6582);
-  assign g361 = in[32];
+  assign g361 = in32;
   assign o0[32] = g6582;
 
   //dff DFF_33(g289,CK,g3229);
-  assign g289 = in[33];
+  assign g289 = in33;
   assign o0[33] = g3229;
 
   //dff DFF_34(g398,CK,g5700);
-  assign g398 = in[34];
+  assign g398 = in34;
   assign o0[34] = g5700;
 
   //dff DFF_35(g684,CK,g4136);
-  assign g684 = in[35];
+  assign g684 = in35;
   assign o0[35] = g4136;
 
   //dff DFF_36(g619,CK,g4858);
-  assign g619 = in[36];
+  assign g619 = in36;
   assign o0[36] = g4858;
 
   //dff DFF_37(g208,CK,g5876);
-  assign g208 = in[37];
+  assign g208 = in37;
   assign o0[37] = g5876;
 
   //dff DFF_38(g248,CK,g3239);
-  assign g248 = in[38];
+  assign g248 = in38;
   assign o0[38] = g3239;
 
   //dff DFF_39(g390,CK,g5698);
-  assign g390 = in[39];
+  assign g390 = in39;
   assign o0[39] = g5698;
 
   //dff DFF_40(g625,CK,g5328);
-  assign g625 = in[40];
+  assign g625 = in40;
   assign o0[40] = g5328;
 
   //dff DFF_41(g681,CK,g4133);
-  assign g681 = in[41];
+  assign g681 = in41;
   assign o0[41] = g4133;
 
   //dff DFF_42(g437,CK,g4847);
-  assign g437 = in[42];
+  assign g437 = in42;
   assign o0[42] = g4847;
 
   //dff DFF_43(g276,CK,g5877);
-  assign g276 = in[43];
+  assign g276 = in43;
   assign o0[43] = g5877;
 
   //dff DFF_44(g3,CK,g6597);
-  assign g3 = in[44];
+  assign g3 = in44;
   assign o0[44] = g6597;
 
   //dff DFF_45(g323,CK,g4120);
-  assign g323 = in[45];
+  assign g323 = in45;
   assign o0[45] = g4120;
 
   //dff DFF_46(g224,CK,g3235);
-  assign g224 = in[46];
+  assign g224 = in46;
   assign o0[46] = g3235;
 
   //dff DFF_47(g685,CK,g4137);
-  assign g685 = in[47];
+  assign g685 = in47;
   assign o0[47] = g4137;
 
   //dff DFF_48(g43,CK,g6407);
-  assign g43 = in[48];
+  assign g43 = in48;
   assign o0[48] = g6407;
 
   //dff DFF_49(g157,CK,g5470);
-  assign g157 = in[49];
+  assign g157 = in49;
   assign o0[49] = g5470;
 
   //dff DFF_50(g282,CK,g6841);
-  assign g282 = in[50];
+  assign g282 = in50;
   assign o0[50] = g6841;
 
   //dff DFF_51(g697,CK,g4149);
-  assign g697 = in[51];
+  assign g697 = in51;
   assign o0[51] = g4149;
 
   //dff DFF_52(g206,CK,g6101);
-  assign g206 = in[52];
+  assign g206 = in52;
   assign o0[52] = g6101;
 
   // *************************************************
   //dff DFF_53(g449,CK,g4844);
-  assign g449 = in[0];
+  assign g449 = in0;
   assign o1[0] = g4844;
 
   //dff DFF_54(g118,CK,g4113);
-  assign g118 = in[1];
+  assign g118 = in1;
   assign o1[1] = g4113;
 
   //dff DFF_55(g528,CK,g6504);
-  assign g528 = in[2];
+  assign g528 = in2;
   assign o1[2] = g6504;
 
   //dff DFF_56(g284,CK,g3224);
-  assign g284 = in[3];
+  assign g284 = in3;
   assign o1[3] = g3224;
 
   //dff DFF_57(g426,CK,g4855);
-  assign g426 = in[4];
+  assign g426 = in4;
   assign o1[4] = g4855;
 
   //dff DFF_58(g634,CK,g4424);
-  assign g634 = in[5];
+  assign g634 = in5;
   assign o1[5] = g4424;
 
   //dff DFF_59(g669,CK,g5582);
-  assign g669 = in[6];
+  assign g669 = in6;
   assign o1[6] = g5582;
 
   //dff DFF_60(g520,CK,g6502);
-  assign g520 = in[7];
+  assign g520 = in7;
   assign o1[7] = g6502;
 
   //dff DFF_61(g281,CK,g6107);
-  assign g281 = in[8];
+  assign g281 = in8;
   assign o1[8] = g6107;
 
   //dff DFF_62(g175,CK,g5472);
-  assign g175 = in[9];
+  assign g175 = in9;
   assign o1[9] = g5472;
 
   //dff DFF_63(g15,CK,g6602);
-  assign g15 = in[10];
+  assign g15 = in10;
   assign o1[10] = g6602;
 
   //dff DFF_64(g631,CK,g5581);
-  assign g631 = in[11];
+  assign g631 = in11;
   assign o1[11] = g5581;
 
   //dff DFF_65(g69,CK,g6587);
-  assign g69 = in[12];
+  assign g69 = in12;
   assign o1[12] = g6587;
 
   //dff DFF_66(g693,CK,g4145);
-  assign g693 = in[13];
+  assign g693 = in13;
   assign o1[13] = g4145;
 
   //dff DFF_67(g337,CK,g2585);
-  assign g337 = in[14];
+  assign g337 = in14;
   assign o1[14] = g2585;
 
   //dff DFF_68(g457,CK,g4842);
-  assign g457 = in[15];
+  assign g457 = in15;
   assign o1[15] = g4842;
 
   //dff DFF_69(g486,CK,g2586);
-  assign g486 = in[16];
+  assign g486 = in16;
   assign o1[16] = g2586;
 
   //dff DFF_70(g471,CK,g1291);
-  assign g471 = in[17];
+  assign g471 = in17;
   assign o1[17] = g1291;
 
   //dff DFF_71(g328,CK,g4118);
-  assign g328 = in[18];
+  assign g328 = in18;
   assign o1[18] = g4118;
 
   //dff DFF_72(g285,CK,g3225);
-  assign g285 = in[19];
+  assign g285 = in19;
   assign o1[19] = g3225;
 
   //dff DFF_73(g418,CK,g4853);
-  assign g418 = in[20];
+  assign g418 = in20;
   assign o1[20] = g4853;
 
   //dff DFF_74(g402,CK,g4849);
-  assign g402 = in[21];
+  assign g402 = in21;
   assign o1[21] = g4849;
 
   //dff DFF_75(g297,CK,g6512);
-  assign g297 = in[22];
+  assign g297 = in22;
   assign o1[22] = g6512;
 
   //dff DFF_76(g212,CK,g3233);
-  assign g212 = in[23];
+  assign g212 = in23;
   assign o1[23] = g3233;
 
   //dff DFF_77(g410,CK,g4851);
-  assign g410 = in[24];
+  assign g410 = in24;
   assign o1[24] = g4851;
 
   //dff DFF_78(g430,CK,g4856);
-  assign g430 = in[25];
+  assign g430 = in25;
   assign o1[25] = g4856;
 
   //dff DFF_79(g33,CK,g6854);
-  assign g33 = in[26];
+  assign g33 = in26;
   assign o1[26] = g6854;
 
   //dff DFF_80(g662,CK,g1831);
-  assign g662 = in[27];
+  assign g662 = in27;
   assign o1[27] = g1831;
 
   //dff DFF_81(g453,CK,g4843);
-  assign g453 = in[28];
+  assign g453 = in28;
   assign o1[28] = g4843;
 
   //dff DFF_82(g269,CK,g6510);
-  assign g269 = in[29];
+  assign g269 = in29;
   assign o1[29] = g6510;
 
   //dff DFF_83(g574,CK,g6591);
-  assign g574 = in[30];
+  assign g574 = in30;
   assign o1[30] = g6591;
 
   //dff DFF_84(g441,CK,g4846);
-  assign g441 = in[31];
+  assign g441 = in31;
   assign o1[31] = g4846;
 
   //dff DFF_85(g664,CK,g1288);
-  assign g664 = in[32];
+  assign g664 = in32;
   assign o1[32] = g1288;
 
   //dff DFF_86(g349,CK,g5478);
-  assign g349 = in[33];
+  assign g349 = in33;
   assign o1[33] = g5478;
 
   //dff DFF_87(g211,CK,g6840);
-  assign g211 = in[34];
+  assign g211 = in34;
   assign o1[34] = g6840;
 
   //dff DFF_88(g586,CK,g6594);
-  assign g586 = in[35];
+  assign g586 = in35;
   assign o1[35] = g6594;
 
   //dff DFF_89(g571,CK,g5580);
-  assign g571 = in[36];
+  assign g571 = in36;
   assign o1[36] = g5580;
 
   //dff DFF_90(g29,CK,g6853);
-  assign g29 = in[37];
+  assign g29 = in37;
   assign o1[37] = g6853;
 
   //dff DFF_91(g326,CK,g4840);
-  assign g326 = in[38];
+  assign g326 = in38;
   assign o1[38] = g4840;
 
   //dff DFF_92(g698,CK,g4150);
-  assign g698 = in[39];
+  assign g698 = in39;
   assign o1[39] = g4150;
 
   //dff DFF_93(g654,CK,g5490);
-  assign g654 = in[40];
+  assign g654 = in40;
   assign o1[40] = g5490;
 
   //dff DFF_94(g293,CK,g6511);
-  assign g293 = in[41];
+  assign g293 = in41;
   assign o1[41] = g6511;
 
   //dff DFF_95(g690,CK,g4142);
-  assign g690 = in[42];
+  assign g690 = in42;
   assign o1[42] = g4142;
 
   //dff DFF_96(g445,CK,g4845);
-  assign g445 = in[43];
+  assign g445 = in43;
   assign o1[43] = g4845;
 
   //dff DFF_97(g374,CK,g5694);
-  assign g374 = in[44];
+  assign g374 = in44;
   assign o1[44] = g5694;
 
   //dff DFF_98(g6,CK,g6722);
-  assign g6 = in[45];
+  assign g6 = in45;
   assign o1[45] = g6722;
 
   //dff DFF_99(g687,CK,g4139);
-  assign g687 = in[46];
+  assign g687 = in46;
   assign o1[46] = g4139;
 
   //dff DFF_100(g357,CK,g5480);
-  assign g357 = in[47];
+  assign g357 = in47;
   assign o1[47] = g5480;
 
   //dff DFF_101(g386,CK,g5697);
-  assign g386 = in[48];
+  assign g386 = in48;
   assign o1[48] = g5697;
 
   //dff DFF_102(g504,CK,g6498);
-  assign g504 = in[49];
+  assign g504 = in49;
   assign o1[49] = g6498;
 
   //dff DFF_103(g665,CK,g4126);
-  assign g665 = in[50];
+  assign g665 = in50;
   assign o1[50] = g4126;
 
   //dff DFF_104(g166,CK,g5471);
-  assign g166 = in[51];
+  assign g166 = in51;
   assign o1[51] = g5471;
 
   //dff DFF_105(g541,CK,g6505);
-  assign g541 = in[52];
+  assign g541 = in52;
   assign o1[52] = g6505;
 
   //******************************************
   //dff DFF_106(g74,CK,g6588);
-  assign g74 = in[0];
+  assign g74 = in0;
   assign o2[0] = g6588;
 
   //dff DFF_107(g338,CK,g5475);
-  assign g338 = in[1];
+  assign g338 = in1;
   assign o2[1] = g5475;
 
   //dff DFF_108(g696,CK,g4148);
-  assign g696 = in[2];
+  assign g696 = in2;
   assign o2[2] = g4148;
 
   //dff DFF_109(g516,CK,g6501);
-  assign g516 = in[3];
+  assign g516 = in3;
   assign o2[3] = g6501;
 
   //dff DFF_110(g536,CK,g6506);
-  assign g536 = in[4];
+  assign g536 = in4;
   assign o2[4] = g6506;
 
   //dff DFF_111(g683,CK,g4135);
-  assign g683 = in[5];
+  assign g683 = in5;
   assign o2[5] = g4135;
 
   //dff DFF_112(g353,CK,g5479);
-  assign g353 = in[6];
+  assign g353 = in6;
   assign o2[6] = g5479;
 
   //dff DFF_113(g545,CK,g6824);
-  assign g545 = in[7];
+  assign g545 = in7;
   assign o2[7] = g6824;
 
   //dff DFF_114(g254,CK,g3240);
-  assign g254 = in[8];
+  assign g254 = in8;
   assign o2[8] = g3240;
 
   //dff DFF_115(g341,CK,g5476);
-  assign g341 = in[9];
+  assign g341 = in9;
   assign o2[9] = g5476;
 
   //dff DFF_116(g290,CK,g3230);
-  assign g290 = in[10];
+  assign g290 = in10;
   assign o2[10] = g3230;
 
   //dff DFF_117(g2,CK,g6721);
-  assign g2 = in[11];
+  assign g2 = in11;
   assign o2[11] = g6721;
 
   //dff DFF_118(g287,CK,g3227);
-  assign g287 = in[12];
+  assign g287 = in12;
   assign o2[12] = g3227;
 
   //dff DFF_119(g336,CK,g6925);
-  assign g336 = in[13];
+  assign g336 = in13;
   assign o2[13] = g6925;
 
   //dff DFF_120(g345,CK,g5477);
-  assign g345 = in[14];
+  assign g345 = in14;
   assign o2[14] = g5477;
 
   //dff DFF_121(g628,CK,g5489);
-  assign g628 = in[15];
+  assign g628 = in15;
   assign o2[15] = g5489;
 
   //dff DFF_122(g679,CK,g4131);
-  assign g679 = in[16];
+  assign g679 = in16;
   assign o2[16] = g4131;
 
   //dff DFF_123(g28,CK,g6727);
-  assign g28 = in[17];
+  assign g28 = in17;
   assign o2[17] = g6727;
 
   //dff DFF_124(g688,CK,g4140);
-  assign g688 = in[18];
+  assign g688 = in18;
   assign o2[18] = g4140;
 
   //dff DFF_125(g283,CK,g6842);
-  assign g283 = in[19];
+  assign g283 = in19;
   assign o2[19] = g6842;
 
   //dff DFF_126(g613,CK,g4423);
-  assign g613 = in[20];
+  assign g613 = in20;
   assign o2[20] = g4423;
 
   //dff DFF_127(g10,CK,g6723);
-  assign g10 = in[21];
+  assign g10 = in21;
   assign o2[21] = g6723;
 
   //dff DFF_128(g14,CK,g6724);
-  assign g14 = in[22];
+  assign g14 = in22;
   assign o2[22] = g6724;
 
   //dff DFF_129(g680,CK,g4132);
-  assign g680 = in[23];
+  assign g680 = in23;
   assign o2[23] = g4132;
 
   //dff DFF_130(g143,CK,g6401);
-  assign g143 = in[24];
+  assign g143 = in24;
   assign o2[24] = g6401;
 
   //dff DFF_131(g672,CK,g5491);
-  assign g672 = in[25];
+  assign g672 = in25;
   assign o2[25] = g5491;
 
   //dff DFF_132(g667,CK,g4127);
-  assign g667 = in[26];
+  assign g667 = in26;
   assign o2[26] = g4127;
 
   //dff DFF_133(g366,CK,g6278);
-  assign g366 = in[27];
+  assign g366 = in27;
   assign o2[27] = g6278;
 
   //dff DFF_134(g279,CK,g6106);
-  assign g279 = in[28];
+  assign g279 = in28;
   assign o2[28] = g6106;
 
   //dff DFF_135(g492,CK,g6744);
-  assign g492 = in[29];
+  assign g492 = in29;
   assign o2[29] = g6744;
 
   //dff DFF_136(g170,CK,g6404);
-  assign g170 = in[30];
+  assign g170 = in30;
   assign o2[30] = g6404;
 
   //dff DFF_137(g686,CK,g4138);
-  assign g686 = in[31];
+  assign g686 = in31;
   assign o2[31] = g4138;
 
   //dff DFF_138(g288,CK,g3228);
-  assign g288 = in[32];
+  assign g288 = in32;
   assign o2[32] = g3228;
 
   //dff DFF_139(g638,CK,g1289);
-  assign g638 = in[33];
+  assign g638 = in33;
   assign o2[33] = g1289;
 
   //dff DFF_140(g602,CK,g4123);
-  assign g602 = in[34];
+  assign g602 = in34;
   assign o2[34] = g4123;
 
   //dff DFF_141(g642,CK,g4658);
-  assign g642 = in[35];
+  assign g642 = in35;
   assign o2[35] = g4658;
 
   //dff DFF_142(g280,CK,g5878);
-  assign g280 = in[36];
+  assign g280 = in36;
   assign o2[36] = g5878;
 
   //dff DFF_143(g663,CK,g4125);
-  assign g663 = in[37];
+  assign g663 = in37;
   assign o2[37] = g4125;
 
   //dff DFF_144(g610,CK,g4124);
-  assign g610 = in[38];
+  assign g610 = in38;
   assign o2[38] = g4124;
 
   //dff DFF_145(g148,CK,g5874);
-  assign g148 = in[39];
+  assign g148 = in39;
   assign o2[39] = g5874;
 
   //dff DFF_146(g209,CK,g6103);
-  assign g209 = in[40];
+  assign g209 = in40;
   assign o2[40] = g6103;
 
   //dff DFF_147(g675,CK,g1294);
-  assign g675 = in[41];
+  assign g675 = in41;
   assign o2[41] = g1294;
 
   //dff DFF_148(g478,CK,g1292);
-  assign g478 = in[42];
+  assign g478 = in42;
   assign o2[42] = g1292;
 
   //dff DFF_149(g122,CK,g4115);
-  assign g122 = in[43];
+  assign g122 = in43;
   assign o2[43] = g4115;
 
   //dff DFF_150(g54,CK,g6584);
-  assign g54 = in[44];
+  assign g54 = in44;
   assign o2[44] = g6584;
 
   //dff DFF_151(g594,CK,g6596);
-  assign g594 = in[45];
+  assign g594 = in45;
   assign o2[45] = g6596;
 
   //dff DFF_152(g286,CK,g3226);
-  assign g286 = in[46];
+  assign g286 = in46;
   assign o2[46] = g3226;
 
   //dff DFF_153(g489,CK,g2587);
-  assign g489 = in[47];
+  assign g489 = in47;
   assign o2[47] = g2587;
 
   //dff DFF_154(g616,CK,g4657);
-  assign g616 = in[48];
+  assign g616 = in48;
   assign o2[48] = g4657;
 
   //dff DFF_155(g79,CK,g6589);
-  assign g79 = in[49];
+  assign g79 = in49;
   assign o2[49] = g6589;
 
   //dff DFF_156(g218,CK,g3234);
-  assign g218 = in[50];
+  assign g218 = in50;
   assign o2[50] = g3234;
 
   //dff DFF_157(g242,CK,g3238);
-  assign g242 = in[51];
+  assign g242 = in51;
   assign o2[51] = g3238;
 
   //dff DFF_158(g578,CK,g6592);
-  assign g578 = in[52];
+  assign g578 = in52;
   assign o2[52] = g6592;
 
   // *********************************************
   //dff DFF_159(g184,CK,g5473);
-  assign g184 = in[0];
+  assign g184 = in0;
   assign o3[0] = g5473;
 
   //dff DFF_160(g119,CK,g4114);
-  assign g119 = in[1];
+  assign g119 = in1;
   assign o3[1] = g4114;
 
   //dff DFF_161(g668,CK,g6800);
-  assign g668 = in[2];
+  assign g668 = in2;
   assign o3[2] = g6800;
 
   //dff DFF_162(g139,CK,g5141);
-  assign g139 = in[3];
+  assign g139 = in3;
   assign o3[3] = g5141;
 
   //dff DFF_163(g422,CK,g4854);
-  assign g422 = in[4];
+  assign g422 = in4;
   assign o3[4] = g4854;
 
   //dff DFF_164(g210,CK,g6839);
-  assign g210 = in[5];
+  assign g210 = in5;
   assign o3[5] = g6839;
 
   //dff DFF_165(g394,CK,g5699);
-  assign g394 = in[6];
+  assign g394 = in6;
   assign o3[6] = g5699;
 
   //dff DFF_166(g230,CK,g3236);
-  assign g230 = in[7];
+  assign g230 = in7;
   assign o3[7] = g3236;
 
   //dff DFF_167(g25,CK,g6601);
-  assign g25 = in[8];
+  assign g25 = in8;
   assign o3[8] = g6601;
 
   //dff DFF_168(g204,CK,g5875);
-  assign g204 = in[9];
+  assign g204 = in9;
   assign o3[9] = g5875;
 
   //dff DFF_169(g658,CK,g4425);
-  assign g658 = in[10];
+  assign g658 = in10;
   assign o3[10] = g4425;
 
   //dff DFF_170(g650,CK,g5329);
-  assign g650 = in[11];
+  assign g650 = in11;
   assign o3[11] = g5329;
 
   //dff DFF_171(g378,CK,g5695);
-  assign g378 = in[12];
+  assign g378 = in12;
   assign o3[12] = g5695;
 
   //dff DFF_172(g508,CK,g6499);
-  assign g508 = in[13];
+  assign g508 = in13;
   assign o3[13] = g6499;
 
   //dff DFF_173(g548,CK,g6825);
-  assign g548 = in[14];
+  assign g548 = in14;
   assign o3[14] = g6825;
 
   //dff DFF_174(g370,CK,g5693);
-  assign g370 = in[15];
+  assign g370 = in15;
   assign o3[15] = g5693;
 
   //dff DFF_175(g406,CK,g4850);
-  assign g406 = in[16];
+  assign g406 = in16;
   assign o3[16] = g4850;
 
   //dff DFF_176(g236,CK,g3237);
-  assign g236 = in[17];
+  assign g236 = in17;
   assign o3[17] = g3237;
 
   //dff DFF_177(g500,CK,g6497);
-  assign g500 = in[18];
+  assign g500 = in18;
   assign o3[18] = g6497;
 
   //dff DFF_178(g205,CK,g6100);
-  assign g205 = in[19];
+  assign g205 = in19;
   assign o3[19] = g6100;
 
   //dff DFF_179(g197,CK,g6509);
-  assign g197 = in[20];
+  assign g197 = in20;
   assign o3[20] = g6509;
 
   //dff DFF_180(g666,CK,g4128);
-  assign g666 = in[21];
+  assign g666 = in21;
   assign o3[21] = g4128;
 
   //dff DFF_181(g114,CK,g4116);
-  assign g114 = in[22];
+  assign g114 = in22;
   assign o3[22] = g4116;
 
   //dff DFF_182(g524,CK,g6503);
-  assign g524 = in[23];
+  assign g524 = in23;
   assign o3[23] = g6503;
 
   //dff DFF_183(g260,CK,g3241);
-  assign g260 = in[24];
+  assign g260 = in24;
   assign o3[24] = g3241;
 
   //dff DFF_184(g111,CK,g6277);
-  assign g111 = in[25];
+  assign g111 = in25;
   assign o3[25] = g6277;
 
   //dff DFF_185(g131,CK,g5139);
-  assign g131 = in[26];
+  assign g131 = in26;
   assign o3[26] = g5139;
 
   //dff DFF_186(g7,CK,g6598);
-  assign g7 = in[27];
+  assign g7 = in27;
   assign o3[27] = g6598;
 
   //dff DFF_187(g19,CK,g6600);
-  assign g19 = in[28];
+  assign g19 = in28;
   assign o3[28] = g6600;
 
   //dff DFF_188(g677,CK,g4129);
-  assign g677 = in[29];
+  assign g677 = in29;
   assign o3[29] = g4129;
 
   //dff DFF_189(g582,CK,g6593);
-  assign g582 = in[30];
+  assign g582 = in30;
   assign o3[30] = g6593;
 
   //dff DFF_190(g485,CK,g6801);
-  assign g485 = in[31];
+  assign g485 = in31;
   assign o3[31] = g6801;
 
   //dff DFF_191(g699,CK,g4426);
-  assign g699 = in[32];
+  assign g699 = in32;
   assign o3[32] = g4426;
 
   //dff DFF_192(g193,CK,g5474);
-  assign g193 = in[33];
+  assign g193 = in33;
   assign o3[33] = g5474;
 
   //dff DFF_193(g135,CK,g5140);
-  assign g135 = in[34];
+  assign g135 = in34;
   assign o3[34] = g5140;
 
   //dff DFF_194(g382,CK,g5696);
-  assign g382 = in[35];
+  assign g382 = in35;
   assign o3[35] = g5696;
 
   //dff DFF_195(g414,CK,g4852);
-  assign g414 = in[36];
+  assign g414 = in36;
   assign o3[36] = g4852;
 
   //dff DFF_196(g434,CK,g4848);
-  assign g434 = in[37];
+  assign g434 = in37;
   assign o3[37] = g4848;
 
   //dff DFF_197(g266,CK,g4659);
-  assign g266 = in[38];
+  assign g266 = in38;
   assign o3[38] = g4659;
 
   //dff DFF_198(g49,CK,g6583);
-  assign g49 = in[39];
+  assign g49 = in39;
   assign o3[39] = g6583;
 
   //dff DFF_199(g152,CK,g6402);
-  assign g152 = in[40];
+  assign g152 = in40;
   assign o3[40] = g6402;
 
   //dff DFF_200(g692,CK,g4144);
-  assign g692 = in[41];
+  assign g692 = in41;
   assign o3[41] = g4144;
 
   //dff DFF_201(g277,CK,g6104);
-  assign g277 = in[42];
+  assign g277 = in42;
   assign o3[42] = g6104;
 
   //dff DFF_202(g127,CK,g6941);
-  assign g127 = in[43];
+  assign g127 = in43;
   assign o3[43] = g6941;
 
   //dff DFF_203(g161,CK,g6403);
-  assign g161 = in[44];
+  assign g161 = in44;
   assign o3[44] = g6403;
 
   //dff DFF_204(g512,CK,g6500);
-  assign g512 = in[45];
+  assign g512 = in45;
   assign o3[45] = g6500;
 
   //dff DFF_205(g532,CK,g6508);
-  assign g532 = in[46];
+  assign g532 = in46;
   assign o3[46] = g6508;
 
   //dff DFF_206(g64,CK,g6586);
-  assign g64 = in[47];
+  assign g64 = in47;
   assign o3[47] = g6586;
 
   //dff DFF_207(g694,CK,g4146);
-  assign g694 = in[48];
+  assign g694 = in48;
   assign o3[48] = g4146;
 
   //dff DFF_208(g691,CK,g4143);
-  assign g691 = in[49];
+  assign g691 = in49;
   assign o3[49] = g4143;
 
   //dff DFF_209(g1,CK,g6720);
-  assign g1 = in[50];
+  assign g1 = in50;
   assign o3[50] = g6720;
 
   //dff DFF_210(g59,CK,g6585);
-  assign g59 = in[51];
+  assign g59 = in51;
   assign o3[51] = g6585;
 
   assign o3[52] = 0;
 
   //*********************************************
-  xor XOR_0(out[0], o0[0], o1[0], o2[0], o3[0], o4[0]);
-  xor XOR_1(out[1], o0[1], o1[1], o2[1], o3[1], o4[1]);
-  xor XOR_2(out[2], o0[2], o1[2], o2[2], o3[2], o4[2]);
-  xor XOR_3(out[3], o0[3], o1[3], o2[3], o3[3], o4[3]);
-  xor XOR_4(out[4], o0[4], o1[4], o2[4], o3[4], o4[4]);
-  xor XOR_5(out[5], o0[5], o1[5], o2[5], o3[5], o4[5]);
-  xor XOR_6(out[6], o0[6], o1[6], o2[6], o3[6], o4[6]);
-  xor XOR_7(out[7], o0[7], o1[7], o2[7], o3[7], o4[7]);
-  xor XOR_8(out[8], o0[8], o1[8], o2[8], o3[8], o4[8]);
-  xor XOR_9(out[9], o0[9], o1[9], o2[9], o3[9], o4[9]);
-  xor XOR_10(out[10], o0[10], o1[10], o2[10], o3[10], o4[10]);
-  xor XOR_11(out[11], o0[11], o1[11], o2[11], o3[11], o4[11]);
-  xor XOR_12(out[12], o0[12], o1[12], o2[12], o3[12], o4[12]);
-  xor XOR_13(out[13], o0[13], o1[13], o2[13], o3[13], o4[13]);
-  xor XOR_14(out[14], o0[14], o1[14], o2[14], o3[14], o4[14]);
-  xor XOR_15(out[15], o0[15], o1[15], o2[15], o3[15], o4[15]);
-  xor XOR_16(out[16], o0[16], o1[16], o2[16], o3[16], o4[16]);
-  xor XOR_17(out[17], o0[17], o1[17], o2[17], o3[17], o4[17]);
-  xor XOR_18(out[18], o0[18], o1[18], o2[18], o3[18], o4[18]);
-  xor XOR_19(out[19], o0[19], o1[19], o2[19], o3[19], o4[19]);
-  xor XOR_20(out[20], o0[20], o1[20], o2[20], o3[20], o4[20]);
-  xor XOR_21(out[21], o0[21], o1[21], o2[21], o3[21], o4[21]);
-  xor XOR_22(out[22], o0[22], o1[22], o2[22], o3[22], o4[22]);
-  xor XOR_23(out[23], o0[23], o1[23], o2[23], o3[23], o4[23]);
-  xor XOR_24(out[24], o0[24], o1[24], o2[24], o3[24], o4[24]);
-  xor XOR_25(out[25], o0[25], o1[25], o2[25], o3[25], o4[25]);
-  xor XOR_26(out[26], o0[26], o1[26], o2[26], o3[26], o4[26]);
-  xor XOR_27(out[27], o0[27], o1[27], o2[27], o3[27], o4[27]);
-  xor XOR_28(out[28], o0[28], o1[28], o2[28], o3[28], o4[28]);
-  xor XOR_29(out[29], o0[29], o1[29], o2[29], o3[29], o4[29]);
-  xor XOR_30(out[30], o0[30], o1[30], o2[30], o3[30], o4[30]);
-  xor XOR_31(out[31], o0[31], o1[31], o2[31], o3[31], o4[31]);
-  xor XOR_32(out[32], o0[32], o1[32], o2[32], o3[32], o4[32]);
-  xor XOR_33(out[33], o0[33], o1[33], o2[33], o3[33], o4[33]);
-  xor XOR_34(out[34], o0[34], o1[34], o2[34], o3[34], o4[34]);
-  xor XOR_35(out[35], o0[35], o1[35], o2[35], o3[35], o4[35]);
-  xor XOR_36(out[36], o0[36], o1[36], o2[36], o3[36], o4[36]);
-  xor XOR_37(out[37], o0[37], o1[37], o2[37], o3[37], o4[37]);
-  xor XOR_38(out[38], o0[38], o1[38], o2[38], o3[38], o4[38]);
-  xor XOR_39(out[39], o0[39], o1[39], o2[39], o3[39], o4[39]);
-  xor XOR_40(out[40], o0[40], o1[40], o2[40], o3[40], o4[40]);
-  xor XOR_41(out[41], o0[41], o1[41], o2[41], o3[41], o4[41]);
-  xor XOR_42(out[42], o0[42], o1[42], o2[42], o3[42], o4[42]);
-  xor XOR_43(out[43], o0[43], o1[43], o2[43], o3[43], o4[43]);
-  xor XOR_44(out[44], o0[44], o1[44], o2[44], o3[44], o4[44]);
-  xor XOR_45(out[45], o0[45], o1[45], o2[45], o3[45], o4[45]);
-  xor XOR_46(out[46], o0[46], o1[46], o2[46], o3[46], o4[46]);
-  xor XOR_47(out[47], o0[47], o1[47], o2[47], o3[47], o4[47]);
-  xor XOR_48(out[48], o0[48], o1[48], o2[48], o3[48], o4[48]);
-  xor XOR_49(out[49], o0[49], o1[49], o2[49], o3[49], o4[49]);
-  xor XOR_50(out[50], o0[50], o1[50], o2[50], o3[50], o4[50]);
-  xor XOR_51(out[51], o0[51], o1[51], o2[51], o3[51], o4[51]);
-  xor XOR_52(out[52], o0[52], o1[52], o2[52], o3[52], o4[52]);
+  xor XOR_0(out0, o0[0], o1[0], o2[0], o3[0], o4[0]);
+  xor XOR_1(out1, o0[1], o1[1], o2[1], o3[1], o4[1]);
+  xor XOR_2(out2, o0[2], o1[2], o2[2], o3[2], o4[2]);
+  xor XOR_3(out3, o0[3], o1[3], o2[3], o3[3], o4[3]);
+  xor XOR_4(out4, o0[4], o1[4], o2[4], o3[4], o4[4]);
+  xor XOR_5(out5, o0[5], o1[5], o2[5], o3[5], o4[5]);
+  xor XOR_6(out6, o0[6], o1[6], o2[6], o3[6], o4[6]);
+  xor XOR_7(out7, o0[7], o1[7], o2[7], o3[7], o4[7]);
+  xor XOR_8(out8, o0[8], o1[8], o2[8], o3[8], o4[8]);
+  xor XOR_9(out9, o0[9], o1[9], o2[9], o3[9], o4[9]);
+  xor XOR_10(out10, o0[10], o1[10], o2[10], o3[10], o4[10]);
+  xor XOR_11(out11, o0[11], o1[11], o2[11], o3[11], o4[11]);
+  xor XOR_12(out12, o0[12], o1[12], o2[12], o3[12], o4[12]);
+  xor XOR_13(out13, o0[13], o1[13], o2[13], o3[13], o4[13]);
+  xor XOR_14(out14, o0[14], o1[14], o2[14], o3[14], o4[14]);
+  xor XOR_15(out15, o0[15], o1[15], o2[15], o3[15], o4[15]);
+  xor XOR_16(out16, o0[16], o1[16], o2[16], o3[16], o4[16]);
+  xor XOR_17(out17, o0[17], o1[17], o2[17], o3[17], o4[17]);
+  xor XOR_18(out18, o0[18], o1[18], o2[18], o3[18], o4[18]);
+  xor XOR_19(out19, o0[19], o1[19], o2[19], o3[19], o4[19]);
+  xor XOR_20(out20, o0[20], o1[20], o2[20], o3[20], o4[20]);
+  xor XOR_21(out21, o0[21], o1[21], o2[21], o3[21], o4[21]);
+  xor XOR_22(out22, o0[22], o1[22], o2[22], o3[22], o4[22]);
+  xor XOR_23(out23, o0[23], o1[23], o2[23], o3[23], o4[23]);
+  xor XOR_24(out24, o0[24], o1[24], o2[24], o3[24], o4[24]);
+  xor XOR_25(out25, o0[25], o1[25], o2[25], o3[25], o4[25]);
+  xor XOR_26(out26, o0[26], o1[26], o2[26], o3[26], o4[26]);
+  xor XOR_27(out27, o0[27], o1[27], o2[27], o3[27], o4[27]);
+  xor XOR_28(out28, o0[28], o1[28], o2[28], o3[28], o4[28]);
+  xor XOR_29(out29, o0[29], o1[29], o2[29], o3[29], o4[29]);
+  xor XOR_30(out30, o0[30], o1[30], o2[30], o3[30], o4[30]);
+  xor XOR_31(out31, o0[31], o1[31], o2[31], o3[31], o4[31]);
+  xor XOR_32(out32, o0[32], o1[32], o2[32], o3[32], o4[32]);
+  xor XOR_33(out33, o0[33], o1[33], o2[33], o3[33], o4[33]);
+  xor XOR_34(out34, o0[34], o1[34], o2[34], o3[34], o4[34]);
+  xor XOR_35(out35, o0[35], o1[35], o2[35], o3[35], o4[35]);
+  xor XOR_36(out36, o0[36], o1[36], o2[36], o3[36], o4[36]);
+  xor XOR_37(out37, o0[37], o1[37], o2[37], o3[37], o4[37]);
+  xor XOR_38(out38, o0[38], o1[38], o2[38], o3[38], o4[38]);
+  xor XOR_39(out39, o0[39], o1[39], o2[39], o3[39], o4[39]);
+  xor XOR_40(out40, o0[40], o1[40], o2[40], o3[40], o4[40]);
+  xor XOR_41(out41, o0[41], o1[41], o2[41], o3[41], o4[41]);
+  xor XOR_42(out42, o0[42], o1[42], o2[42], o3[42], o4[42]);
+  xor XOR_43(out43, o0[43], o1[43], o2[43], o3[43], o4[43]);
+  xor XOR_44(out44, o0[44], o1[44], o2[44], o3[44], o4[44]);
+  xor XOR_45(out45, o0[45], o1[45], o2[45], o3[45], o4[45]);
+  xor XOR_46(out46, o0[46], o1[46], o2[46], o3[46], o4[46]);
+  xor XOR_47(out47, o0[47], o1[47], o2[47], o3[47], o4[47]);
+  xor XOR_48(out48, o0[48], o1[48], o2[48], o3[48], o4[48]);
+  xor XOR_49(out49, o0[49], o1[49], o2[49], o3[49], o4[49]);
+  xor XOR_50(out50, o0[50], o1[50], o2[50], o3[50], o4[50]);
+  xor XOR_51(out51, o0[51], o1[51], o2[51], o3[51], o4[51]);
+  xor XOR_52(out52, o0[52], o1[52], o2[52], o3[52], o4[52]);
 
   //******************************************************************
 
