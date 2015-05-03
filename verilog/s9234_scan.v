@@ -5,29 +5,21 @@
 //# 2027 gates (955 ANDs + 528 NANDs + 431 ORs + 113 NORs)
 
 
-module s9234(CK,g102i,g107i,g1290,g1293,g22i,g23i,g2584,g301i,g306i,g310i,g314i,g319i,g32i,
-  g3222,g36i,g3600,g37i,g38i,g39i,g40i,g4098,g4099,g41i,g4100,g4101,g4102,g4103,
-  g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42i,g4307,g4321,g44i,
-  g4422,g45i,g46i,g47i,g4809,g5137,g5468,g5469,g557i,g558i,g559i,g560i,g561i,g562i,g563i,
-  g564i,g567i,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
-  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, bsr_update, bsr_shift, bsr_sel, in_sel, bsr_tdo, in_scan_tdo, bsr_en);
-input CK,g89i,g94i,g98i,g102i,g107i,g301i,g306i,g310i,g314i,g319i,g557i,g558i,g559i,g560i,g561i,
-  g562i,g563i,g564i,g705i,g639i,g567i,g45i,g42i,g39i,g702i,g32i,g38i,g46i,g36i,g47i,g40i,g37i,
-  g41i,g22i,g44i,g23i,//begin testing inputs
-  TDI, bsr_update, bsr_shift, bsr_sel, in_sel, bsr_en;
-output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g6284,g6360,
-  g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
-  g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098,//begin testing outputs
-  bsr_tdo, in_scan_tdo;
-
-in_sel == 1 - internal flops from scan chain
-bsr_capture, bsr_shift, bsr_update - 
-bsr_shirt = 1 - scanin
-bsr_sel = 1 - to take data into circuit
-
+module s9234(CK, TDI, in_scan_tdo, in_sel);
+  input CK, TDI, in_sel;
+  output in_scan_tdo;
 
   wire [35:0] inputs;
   wire [38:0] outputs;
+
+  wire o211, bsr_tdo, bsr_capture, bsr_update, bsr_shift, bsr_sel, in_sel, in_scan_tdo, bsr_en;
+
+  assign bsr_update = 1;
+  assign bsr_shift = in_sel;
+  assign bsr_en = in_sel;
+  assign bsr_capture = CK;
+  assign bsr_sel = in_sel;
+
 
   wire g89,g94,g98,g102,g107,g301,g306,g310,g314,g319,g557,g558,g559,g560,g561,
     g562,g563,g564,g705,g639,g567,g45,g42,g39,g702,g32,g38,g46,g36,g47,g40,g37,
