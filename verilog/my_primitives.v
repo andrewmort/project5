@@ -16,7 +16,7 @@ module sc_dff(q,  clock,  data, tdata, sel, scan_out, capture, en);
     u_mux2 MUX0(d, data, tdata, sel);
     u_mux2 MUX2(o, scan_out, d, capture);
 
-    dff DFF0(scan_out, clock, d);
+    dff DFF0(scan_out, clock, o);
     dff DFF1(x, clock, data);  
 
     u_mux2 MUX1(q, scan_out, x, en);
