@@ -31,9 +31,9 @@ clk = 0; TDI = 0; TMS = 0; TRST_b = 1;
    @(posedge clk); TMS = 1; //transition to: Select DR Scan
    @(posedge clk); TMS = 1; //Select IR Scan
    @(posedge clk); TMS = 0; //Capture IR
-   @(posedge clk); TDI = 1; TMS = 0; //shift IR bit 0
-   @(posedge clk); TDI = 1; TMS = 0; //shift IR bit 1
-   @(posedge clk); TMS = 1; TDI = 0;//Exit1 IR
+   @(posedge clk); TMS = 0; //shift IR bit 0
+   @(posedge clk); TDI = 0; TMS = 0; //shift IR bit 1
+   @(posedge clk); TDI = 1; TMS = 1;//Exit1 IR
    @(posedge clk); TMS = 1; //Update IR
    //@(posedge clk); TMS = 0; //Return to Run Test or Idle load_instruction(TMS, TDI, 2'b00, clk);//load in BSCAN instrucion
    @(posedge clk); TMS = 1; //Select DR Scan

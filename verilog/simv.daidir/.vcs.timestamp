@@ -29,8 +29,8 @@ https_proxy=http://proximus.ece.cmu.edu:3128/
 http_proxy=http://proximus.ece.cmu.edu:3128/
 ftp_proxy=http://proximus.ece.cmu.edu:3128/
 XMODIFIERS=@im=none
-XDG_SESSION_COOKIE=9c955c56ad57cc78d0a81f0f00000046-1430702817.214428-86868909
-XAUTHORITY=/var/run/gdm/auth-for-mkusbit-2eJIVe/database
+XDG_SESSION_COOKIE=9c955c56ad57cc78d0a81f0f00000046-1430768754.109669-1697728780
+XAUTHORITY=/var/run/gdm/auth-for-mkusbit-2dK2hF/database
 WINDOWPATH=11
 VMR_MODE_FLAG=32
 VCS_MX_HOME_INTERNAL=1
@@ -46,9 +46,9 @@ UNAME=/bin/uname
 TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32
 SYN_DIR=/usr/local/synopsys/synopsys-2007.03-SP5
 SYNOPSYS=/afs/ece/support/synopsys/synopsys
-SSH_AUTH_SOCK=/tmp/keyring-yZ0X4f/socket.ssh
+SSH_AUTH_SOCK=/tmp/keyring-6fOegg/socket.ssh
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/15241,unix/unix:/tmp/.ICE-unix/15241
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/12719,unix/unix:/tmp/.ICE-unix/12719
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QT_IM_MODULE=xim
@@ -62,7 +62,7 @@ MODULESHOME=/usr/share/Modules
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
 LOADEDMODULES=
 LESSOPEN=|/usr/bin/lesspipe.sh %s
-KRB5CCNAME=FILE:/var/tmp/krb5cc_mkusbit_Jiq4wv
+KRB5CCNAME=FILE:/var/tmp/krb5cc_mkusbit_zHakU9
 KDEDIRS=/usr
 IMSETTINGS_MODULE=none
 IMSETTINGS_INTEGRATE_DESKTOP=yes
@@ -72,11 +72,11 @@ HOSTNAME=apollo.lab.ece.cmu.local
 HISTCONTROL=ignoredups
 G_BROKEN_FILENAMES=1
 GTK_RC_FILES=/etc/gtk/gtkrc:/afs/ece.cmu.edu/usr/mkusbit/.gtkrc-1.2-gnome2
-GPG_AGENT_INFO=/tmp/seahorse-HsNciZ/S.gpg-agent:15318:1;
-GNOME_KEYRING_SOCKET=/tmp/keyring-yZ0X4f/socket
-GNOME_KEYRING_PID=15229
+GPG_AGENT_INFO=/tmp/seahorse-9HHWkH/S.gpg-agent:12797:1;
+GNOME_KEYRING_SOCKET=/tmp/keyring-6fOegg/socket
+GNOME_KEYRING_PID=12707
 GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-GIO_LAUNCHED_DESKTOP_FILE_PID=15711
+GIO_LAUNCHED_DESKTOP_FILE_PID=13183
 GIO_LAUNCHED_DESKTOP_FILE=/afs/ece.cmu.edu/usr/mkusbit/Desktop/gnome-terminal.desktop
 GDM_LANG=en_US.UTF-8
 GDM_KEYBOARD_LAYOUT=us
@@ -84,7 +84,7 @@ GDMSESSION=gnome
 FTP_PROXY=http://proximus.ece.cmu.edu:3128/
 DESKTOP_SESSION=gnome
 DC_HOME=/usr/local/synopsys/synopsys-2007.03-SP5/linux/syn
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-MoXp46hcQl,guid=f6291072d23beb998a5eed790026d142
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IvdFXtE1Sk,guid=139938bc5ca3dddce66c7b2d0027d2d3
 CVS_RSH=ssh
 COLORTERM=gnome-terminal
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
@@ -94,7 +94,7 @@ AKLOG=/usr/bin/aklog
 5
 1430674325 primitives.v
 1430713113 my_primitives.v
-1430717626 tb.v
+1430718222 tb.v
 1430716749 s9234_BIST.v
 1430715413 TAP.v
 4
@@ -102,4 +102,4 @@ AKLOG=/usr/bin/aklog
 1338179553 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libvirsim.so
 1338176222 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/librterrorinf.so
 1338176038 /afs/ece.cmu.edu/support/synopsys/synopsys/share/image/usr/local/synopsys/vcs-mx_vF-2011.12-SP1/suse32/lib/libsnpsmalloc.so
-1430717631 simv.daidir
+1430768947 simv.daidir

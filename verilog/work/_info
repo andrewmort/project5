@@ -15,7 +15,7 @@ L0 62
 Z8 OV;L;10.1b;51
 r1
 31
-Z9 !s108 1430718227.503978
+Z9 !s108 1430770443.783321
 Z10 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v|
 Z11 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/my_primitives.v|
 Z12 o-work work -O0
@@ -91,7 +91,7 @@ L0 69
 R8
 r1
 31
-Z34 !s108 1430718227.590726
+Z34 !s108 1430770443.884820
 Z35 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v|
 Z36 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/primitives.v|
 R12
@@ -129,7 +129,7 @@ L0 77
 R8
 r1
 31
-Z46 !s108 1430718227.890126
+Z46 !s108 1430770444.154647
 Z47 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v|
 Z48 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/TAP.v|
 R12
@@ -226,7 +226,7 @@ r1
 31
 Z71 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v|
 R12
-Z72 !s108 1430718227.674208
+Z72 !s108 1430770443.965385
 Z73 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/s9234_BIST.v|
 !i10b 1
 !s85 0
@@ -330,11 +330,11 @@ Z92 n@t@a@ptop
 !s101 -O0
 vtb
 !i10b 1
-!s100 8ieN9M4NJ5bWK;MF69aRf3
-IoMMd^3:1bb>:fzN5Dc[bG1
+!s100 WhVd7g=l6BdTNe7L364jC2
+IQlXhA9dcl>n;M]]9i7fCa1
 Z93 VV@Xn<HnSRM[I5c1?BH]3a3
 R4
-w1430718222
+w1430770436
 Z94 8/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/tb.v
 Z95 F/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/tb.v
 L0 2
@@ -342,7 +342,7 @@ R8
 r1
 !s85 0
 31
-!s108 1430718228.030607
+!s108 1430770444.292362
 !s107 /afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/tb.v|
 Z96 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/mkusbit/Private/ece765/project5/project5/verilog/tb.v|
 !s101 -O0

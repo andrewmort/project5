@@ -61,8 +61,8 @@ module Tap(TDO, TCK, TDI, TMS, TRST_b,
     //inst = 0 or 3 -> bsr, inst = 1 -> internal scan, inst = 2 -> bypass reg
     mux4    dr_mux(dr_out, bsr_tdo, in_scan_tdo, bpass_out, bsr_tdo, inst);
     u_mux2  ir_mux(regs_out , dr_out, ir_o, sel);
-    dff     sc_out(scan_out, TCK, regs_out);
-    bufif1  out_buf(TDO, scan_out, test_mode);  //not sure if it is enable high or low     
+    //dff     sc_out(scan_out, TCK, regs_out);
+    bufif1  out_buf(TDO, regs_out, test_mode);  //not sure if it is enable high or low     
 
     ir_reg ir_ff(inst, ir_o, TCK, upir, TDI, captir);
 
