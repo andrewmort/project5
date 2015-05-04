@@ -117,12 +117,12 @@ module mux4(out, in0, in1, in2, in3, sel);
     not NOT1(sel_b[1], sel[1]);
    
     //NANDs driving NAND ~= ANDs driving OR
-    and NAND0(a, in0, sel_b[1], sel_b[0]);  //selected when sel=00
-    and NAND1(b, in1, sel_b[1], sel[0]);    //selected when sel=01
-    and NAND2(c, in2, sel[1], sel_b[0]);    //sel=10
-    and NAND3(d, in3, sel[1], sel[0]);      //sel=11
+    nand NAND0(a, in0, sel_b[1], sel_b[0]);  //selected when sel=00
+    nand NAND1(b, in1, sel_b[1], sel[0]);    //selected when sel=01
+    nand NAND2(c, in2, sel[1], sel_b[0]);    //sel=10
+    nand NAND3(d, in3, sel[1], sel[0]);      //sel=11
     //output
-    nor NAND4(out, a, b, c, d);
+    nand NAND4(out, a, b, c, d);
 
 endmodule //mux4
      
