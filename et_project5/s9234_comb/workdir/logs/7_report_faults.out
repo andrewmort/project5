@@ -1,0 +1,162 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            report_faults faulttype=static reportcircuit=yes faultstatus=untested experiment=exp_comb testmode=FULLSCAN inputcommitted=no workdir=workdir  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday May 04 09:36:58 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 8851.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=workdir
+            TESTMODE=FULLSCAN
+            EXPERIMENT=exp_comb
+
+            reportcircuit=yes
+            logfile=workdir/testresults/logs/log_report_faults_FULLSCAN_exp_comb_050415093658-433570000
+          + inputcommitted=no
+          + faultstatus=untested
+          + faulttype=static
+[end TDA_009]
+
+TFMlist 
+
+Logic Model(GM)   05/04/15
+                  13:36:45
+
+Circuit Summary
+---------------
+
+Hierarchical Model:                  Flattened Model:
+     6269  Blocks                          5824  Blocks
+    15425  Pins                            5824  Nodes
+     7083  Nets
+
+Primary Inputs:                      Primary Outputs:
+       53  Input Only                        53  Output Only
+        0  Input/Output                       0  Input/Output
+       53  Total Inputs                      53  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+       15  Tied to 0                          0  Two-State
+        0  Tied to 1                          0  Three-State
+        0  Tied to X                          0  Total Dotted Nets
+       15  Total Tied Nets
+
+Selected Primitive Functions:
+        0  Clock Chopper (CHOP) primitives 
+        0  RAMs
+        0  ROMs
+        0  TSDs
+        0  Resistors
+        0  Transistors
+        0  Latches
+
+        0  Flip-Flops
+
+File Id     faultModel        faultStatus         experiment
+Created (GM)  05/04/15           05/04/15           05/04/15
+              13:36:46           13:36:47           13:36:49
+Modified(GM)  05/04/15           05/04/15           05/04/15
+              13:36:46           13:36:47           13:36:57
+Code Level        2012.1             2012.1             2012.1            
+Max Fault Id       24842
+
+
+Global Ignored Static Fault Count         36
+Global Ignored Dynamic Fault Count         0
+
+
+INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_comb Fault List:   
+
+
+     Fault Status  Type    Sim Func / Cell Name           Fault pin name
+
+       701 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_256.01  PATTERN 1: 
+       702 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_256.01  PATTERN 2: 
+       704 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_256.01  PATTERN 4: 
+      1473 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_43.01  PATTERN 1: 
+      1474 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_43.01  PATTERN 2: 
+      1673 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.01  PATTERN 1: 
+      1674 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.01  PATTERN 2: 
+      1675 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.01  PATTERN 3: 
+      1676 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.01  PATTERN 4: 
+      2010 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_550.01  PATTERN 2: 
+      2078 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_566.01  PATTERN 2: 
+      2080 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_566.01  PATTERN 4: 
+      3245 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_829.01  PATTERN 1: 
+      3246 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_829.01  PATTERN 2: 
+      3247 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_829.01  PATTERN 3: 
+      3248 A       SPAT           AND                     Pin.f.l.s9234_comb5new.nl.AND2_829.01  PATTERN 4: 
+      8873 A       ISA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_256.A1   
+      8875 A       OSA0           AND                     Pin.f.l.s9234_comb5new.nl.AND2_256.01   
+     17233 c       OSA0           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_2106.01   
+      8876 A       OSA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_256.01   
+      9645 A       ISA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_43.A1   
+      9648 A       OSA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_43.01   
+      9845 A       ISA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.A1   
+      9846 A       ISA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.A2   
+     20144 c       OSA1           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_3416.01   
+      9847 A       OSA0           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.01   
+     20143 c       OSA0           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_3416.01   
+      9848 A       OSA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_475.01   
+     10181 A       ISA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_550.A1   
+     10184 A       OSA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_550.01   
+     10249 A       ISA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_566.A1   
+     10252 A       OSA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_566.01   
+     11420 A       OSA1           AND                     Pin.f.l.s9234_comb5new.nl.AND2_829.01   
+     12605 A       OSA1           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_2628.01   
+     18787 c       OSA0           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_2806.01   
+     18972 c       OSA1           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_289.01   
+     12606 A       OSA0           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_2628.01   
+     18788 c       OSA1           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_2806.01   
+     18971 c       OSA0           NBUF                    Pin.f.l.s9234_comb5new.nl.NOT_289.01   
+
+[end TFM_705]
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            9,866,496  bytes
+
+                      CPU Time =    0:00:00.05
+                  Elapsed Time =    0:00:00.07                    [end TDA_001]
+
+     Date Ended:  Monday May 04 09:36:58 2015  EDT
+
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-705): Testmode: FULLSCAN Experiment: exp_comb Fault List:   
+
+
+*******************************************************************************

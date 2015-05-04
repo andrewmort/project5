@@ -59,10 +59,7 @@ module s9234_scan(CK, scan_in, scan_out, scan_en);
   input CK, scan_in, scan_en;
   output scan_out;
 
-
   wire o211; 
-
-
 
   wire g89,g94,g98,g102,g107,g301,g306,g310,g314,g319,g557,g558,g559,g560,g561,
     g562,g563,g564,g705,g639,g567,g45,g42,g39,g702,g32,g38,g46,g36,g47,g40,g37,
@@ -595,7 +592,7 @@ module s9234_scan(CK, scan_in, scan_out, scan_en);
   //Output BSR
   //bsr_sel = 0 -> get value from circuit
   //bsr_sel = 1 -> get value from scan chain
-  scanff BSR_36(g2584p, CK, g2584, g23, scan_en); 
+  scanff BSR_36(g2584p, CK, g2584, 1'b0, scan_en); 
   scanff BSR_37(g3222p, CK, g3222, g2584p, scan_en); 
   scanff BSR_38(g3600p, CK, g3600, g3222p, scan_en); 
   scanff BSR_39(g4307p, CK, g4307, g3600p, scan_en); 

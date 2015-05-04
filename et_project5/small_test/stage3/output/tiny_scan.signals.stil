@@ -1,0 +1,42 @@
+STIL 1.0;
+
+// --- STIL SIGNAL FILE ---
+// stage3/output/tiny_scan.signals.stil
+// Input file: stage3/input/tiny_scan.etr
+// Converted from etr to STIL
+
+// 25 vectors in file
+// 1 clock signals present
+// 1 input signals present (not including clocks)
+// 1 output signals preset
+
+// CLOCKS: CK
+// INPUTS: scan_en, scan_in
+// OUTPUTS: scan_out
+
+
+// --- DEFINE SIGNALS ---
+
+  Signals {
+    "CK" In;
+    "scan_en" In;
+    "scan_in" In;
+    "scan_out" Out;
+  }
+
+
+// --- DEFINE SIGNAL GROUPS ---
+
+  SignalGroups {
+    "ALLPIs" = '"CK"+"scan_en"+"scan_in"';
+    "ALLPOs" = '"scan_out"';
+  }
+
+// --- DEFINE MACROS --- 
+
+  MacroDefs {
+    "TEST" { WaveformTable "test_cycle";
+      Vector {
+        "ALLPOs" = %;
+        "ALLPIs" = %; } }
+}

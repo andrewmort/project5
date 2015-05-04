@@ -1,0 +1,62 @@
+EASY-TO-READ ** do not remove, file type detection
+-- output/tiny_scan.Setr --
+Initial etr input: input/tiny.etr
+Mapped using: input/tiny.p5map
+
+6 vectors in file
+1 clock signals present
+1 control signals present
+2 total input signals present (with controls & scanins, not including clocks)
+1 total output signals preset (including scanouts)
+3 internal scan flip flops
+0 boundary scan cells
+1 scan chains present
+
+
+** Ordering of signals corresponds to order of bits in test vectors **
+
+CLOCKS: CK
+CONTROLS: scan_en
+
+SCAN_INS: scan_in
+SCAN_OUTS: scan_out
+
+**SCAN_CHAIN scan: SI_scan >> out[0], out[1], out[2] >> SO_scan
+
+** User must define change values on control signal vectors
+** Inputs must have value '0', '1', or 'Z'
+** Outputs must have value 'L', 'H', or 'X'
+
+
+#	CK	CTL	SI	SO	PIN	POUT	FIN	FOUT
+1:	0	Z	Z	X				
+2:	P	1	0	X				
+3:	P	1	0	X				
+4:	P	1	1	X				
+5:	P	0	Z	L				
+** END OF VECTOR 1 **
+6:	P	1	0	H				
+7:	P	1	1	H				
+8:	P	1	1	X				
+9:	P	0	Z	H				
+** END OF VECTOR 2 **
+10:	P	1	0	H				
+11:	P	1	1	H				
+12:	P	1	0	X				
+13:	P	0	Z	L				
+** END OF VECTOR 3 **
+14:	P	1	0	H				
+15:	P	1	0	H				
+16:	P	1	0	X				
+17:	P	0	Z	H				
+** END OF VECTOR 4 **
+18:	P	1	0	H				
+19:	P	1	0	L				
+20:	P	1	0	X				
+21:	P	0	Z	X				
+** END OF VECTOR 5 **
+22:	P	1	Z	X				
+23:	P	1	Z	X				
+24:	P	1	Z	X				
+25:	P	0	Z	X				
+** END OF VECTOR 6 **

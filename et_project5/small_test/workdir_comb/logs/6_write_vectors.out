@@ -1,0 +1,87 @@
+
+INFO (TDA-005): Command Line Invocation: 
+            write_vectors WORKDIR=workdir_comb TESTMODE=FULLSCAN language=stil inexperiment=exp_comb  [end TDA_005]
+
+***********************************************************************
+Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121)
+ 
+Licensed Materials - Property of Cadence Design Systems, Inc. 
+ 
+Copyright (C) 2002-2012 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks. All others are 
+properties of their respective holders. 
+ 
+Copyright (C) 1994-2002 IBM Corporation. All rights reserved. 
+  IBM is a Trademark of International Business Machines Corporation. 
+Copyright (C) 2001-2003 The Trustees of Indiana University. All rights reserved. 
+Copyright (C) 1998-2001 University of Notre Dame. All rights reserved. 
+Copyright (C) 1994-1998 The Ohio State University. All rights reserved. 
+Perl Copyright 1987-2002, Larry Wall 
+
+
+***********************************************************************
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday May 04 10:43:40 2015  EDT
+            Host machine is masters04.ece.cmu.edu, x86_64 running Linux 2.6.32-431.29.2.el6.x86_64.
+            This job is process number 10923.
+[end TDA_007]
+
+INFO (TDA-009): Keywords/Values information.
+            (keywords marked with '*' have program generated values,
+             keywords marked with '+' were specified to default.)
+
+            WORKDIR=workdir_comb
+            TESTMODE=FULLSCAN
+
+            INEXPERIMENT=exp_comb
+            logfile=workdir_comb/testresults/logs/log_write_vectors_FULLSCAN_exp_comb_050415104340-664403000
+            language=stil
+[end TDA_009]
+INFO (TVE-001): STIL write vectors started.   [end TVE_001] 
+INFO (TVE-004): Reading test section 1.1.  Test section type equals logic.   [end TVE_004] 
+INFO (TVE-003): STIL write vectors output file will be: workdir_comb/testresults/stil/cycleMap.FULLSCAN.exp_comb.   [end TVE_003] 
+INFO (TVE-003): STIL write vectors output file will be: workdir_comb/testresults/stil/STIL.FULLSCAN.exp_comb.logic.ex1.ts1.stil.   [end TVE_003] 
+INFO (TVE-005): Created 5 total cycles, of which 5 are test cycles, 0 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-003): STIL write vectors output file will be: workdir_comb/testresults/stil/STIL.FULLSCAN.exp_comb.signals.stil.   [end TVE_003] 
+
+INFO (TVE-050):         TEST SEQUENCE COVERAGE SUMMARY REPORT  
+    Test       | Static   | Static   | Dynamic  | Dynamic  | Sequence   | Overlapped | Total      | 
+    Sequence   | Total    | Delta    | Total    | Delta    | Cycle      | Cycle      | Cycle      | 
+               | Coverage | Coverage | Coverage | Coverage | Count      | Count      | Count      | 
+     1.1.1.1.1 |  0.00    |  0.00    |  0.00    |  0.00    |          0 |          0 |          0 |
+     1.1.1.2.1 |  39.34   |  39.34   |  0.00    |  0.00    |          1 |          0 |          1 |
+     1.1.1.2.2 |  59.02   |  19.67   |  0.00    |  0.00    |          1 |          0 |          2 |
+     1.1.1.2.3 |  77.05   |  18.03   |  0.00    |  0.00    |          1 |          0 |          3 |
+     1.1.1.2.4 |  93.44   |  16.39   |  0.00    |  0.00    |          2 |          0 |          5 |
+  [end TVE_050] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            5,562,400  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.28                    [end TDA_001]
+
+     Date Ended:  Monday May 04 10:43:41 2015  EDT
+
+INFO (TVE-002): STIL write vectors has completed.   [end TVE_002] 
+
+
+
+*******************************************************************************
+*                      Message Summary                                        *
+*******************************************************************************
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TVE-001): STIL write vectors started.    
+      1 INFO (TVE-002): STIL write vectors has completed.    
+      3 INFO (TVE-003): STIL write vectors output file will be: workdir_comb/testresults/stil/cycleMap.FULLSCAN.exp_comb.    
+      1 INFO (TVE-004): Reading test section 1.1.  Test section type equals logic.    
+      1 INFO (TVE-005): Created 5 total cycles, of which 5 are test cycles, 0 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.    
+      1 INFO (TVE-050):         TEST SEQUENCE COVERAGE SUMMARY REPORT  
+
+
+*******************************************************************************

@@ -1,0 +1,72 @@
+STIL 1.0; 
+
+//***************************************************************************//
+//                             STIL SIGNALS FILE                             //
+//Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121) //
+//***************************************************************************//
+//                                                                           //
+//  FILE CREATED..............May 04, 2015 at 10:43:41                       //
+//                                                                           //
+//  PROJECT NAME..............tbdata                                         //
+//                                                                           //
+//  TESTMODE..................FULLSCAN                                       //
+//                                                                           //
+//  INEXPERIMENT..............exp_comb                                       //
+//                                                                           //
+//  TDR.......................dummy.tdr                                      //
+//                                                                           //
+//  TEST PERIOD...............80.000   TEST TIME UNITS...........ns          //
+//  TEST PULSE WIDTH..........8.000                                          //
+//  TEST STROBE OFFSET........72.000   TEST STROBE TYPE..........edge        //
+//  TEST BIDI OFFSET..........0.000                                          //
+//  TEST PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//                                     SCAN OVERLAP..............yes         //
+//  SCAN PERIOD...............80.000   SCAN TIME UNITS...........ns          //
+//  SCAN PULSE WIDTH..........8.000                                          //
+//  SCAN STROBE OFFSET........0.000    SCAN STROBE TYPE..........edge        //
+//  SCAN BIDI OFFSET..........0.000                                          //
+//  SCAN PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//  Active TESTMODEs TM = 1 ..FULLSCAN                                       //
+//                                                                           //
+//***************************************************************************//
+
+//***************************************************************************//
+//                              DEFINE SIGNALS                               //
+//***************************************************************************//
+
+  Signals { 
+    "in[0]" In;      // pinName = in[0]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in[1]" In;      // pinName = in[1]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in[2]" In;      // pinName = in[2]; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "out[0]" Out;      // pinName = out[0]; 
+    "out[1]" Out;      // pinName = out[1]; 
+    "out[2]" Out;      // pinName = out[2]; 
+  } 
+
+//***************************************************************************//
+//                           DEFINE SIGNAL GROUPS                            //
+//***************************************************************************//
+
+  SignalGroups { 
+
+    "ALLPIs" = '"in[0]"+"in[1]"+"in[2]"'; 
+
+    "ALLPOs" = '"out[0]"+"out[1]"+"out[2]"'; 
+
+  } 
+
+//***************************************************************************//
+//                               DEFINE MACROS                               //
+//***************************************************************************//
+
+  MacroDefs { 
+
+    "TEST" { WaveformTable "test_cycle"; 
+      Vector { 
+        "ALLPOs" = %; 
+        "ALLPIs" = %; } } 
+} 

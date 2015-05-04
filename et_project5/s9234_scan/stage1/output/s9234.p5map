@@ -13,8 +13,8 @@ OUTPUTS: out0, out1, out10, out11, out12, out13, out14, out15, out16, out17, out
 ** Each signal group definition must be on one line **
 
 ** Which of the inputs/outputs are to remain primary I/Os?
-PRIMARY_INPUTS:  in0
-PRIMARY_OUTPUTS: out52
+PRIMARY_INPUTS: 
+PRIMARY_OUTPUTS: 
 
 ** Which of the inputs/outputs are being used in boundary scan cells?
 INPUT_BS_SIGNALS: 
@@ -24,14 +24,9 @@ OUTPUT_BS_SIGNALS:
 ** If 'A_in' (PO of comb circuit) is the serial input to the scan flip flop and
 **    'A_out' (PI of comb circuit) is the serial output of the scan flip flop
 ** Use form:    'A_in+A_out, ...'
-SCAN_PAIRS: in1+out0, in2+out1, in3+out2, in4+out3, in5+out4, in6+out5, in7+out6,
-in8+out7, in9+out8, in10+out9, in11+out10, in12+out11, in13+out12, in14+out13,
-in15+out14, in16+out15, in17+out16, in18+out17, in19+out18, in20+out19, in21+out20,
-in22+out21, in23+out22, in24+out23, in25+out24, in26+out25, in27+out26, in28+out27,
-in29+out28, in30+out29, in31+out30, in32+out31, in33+out32, in34+out33, in35+out34,
-in36+out35, in37+out36, in38+out37, in39+out38, in40+out39, in41+out40, in42+out41,
-in43+out42, in44+out43, in45+out44, in46+out45, in47+out46, in48+out47, in49+out48,
-in50+out49, in51+out50, in52+out51
+SCAN_PAIRS: out0+in0, out1+in1, out2+in2, out3+in3, out4+in4, out5+in5, out6+in6, out7+in7, out8+in8, out9+in9, out10+in10, out11+in11, out12+in12, out13+in13, out14+in14, out15+in15, out16+in16, out17+in17, out18+in18, out19+in19, out20+in20, out21+in21, out22+in22, out23+in23, out24+in24, out25+in25, out26+in26, out27+in27, out28+in28, out29+in29, out30+in30, out31+in31, out32+in32, out33+in33, out34+in34, out35+in35, out36+in36, out37+in37, out38+in38, out39+in39, out40+in40, out41+in41, out42+in42, out43+in43, out44+in44, out45+in45, out46+in46, out47+in47, out48+in48, out49+in49, out50+in50, out51+in51, out52+in52 
+
+
 
 
 ** Define clock or control signals if desired.
@@ -40,7 +35,7 @@ in50+out49, in51+out50, in52+out51
 **	'CNTLA=1, CNTLB=1110, CNTLC=ABC'
 ** If value is not assigned for control signal the value '%' will be given
 CLOCKS: CK
-CONTROLS: in_sel 111111111111111111111111111111111111111111111111111110
+CONTROLS: scan_en=111111111111111111111111111111111111111111111111111110
 
 
 ** How many filler vectors should print before stimulating PIs or reading POs?
@@ -49,7 +44,7 @@ ADD_VECTORS_BEFORE_IO:
 
 ** How many filler vectors should print at the end of each cycle?
 ** Use digit, or leave blank if no added vectors are desired
-END_OF_CYCLE_VECTORS: 
+END_OF_CYCLE_VECTORS: 1
 
 
 ** User defines scan chains to produce corresponding serialized output
@@ -62,8 +57,5 @@ END_OF_CYCLE_VECTORS:
 ** Multiple scan chains can be defined
 ** For internal scan FFs give only the serial input signal (comb circuit output)
 ** Reference help document 'Project 5 Scripts Help' for details on serialization
-SCAN_CHAIN A: out0, out1, out2, out3, out4, out5, out6, out7, out8, out9,
-out10, out11, out12, out13, out14, out15, out16, out17, out18, out19, out20,
-out21, out22, out23, out24, out25, out26, out27, out28, out29, out30, out31,
-out32, out33, out34, out35, out36, out37, out38, out39, out40, out41, out42,
-out43, out44, out45, out46, out47, out48, out49, out50, out51
+SCAN_CHAIN scan: out0, out1, out2, out3, out4, out5, out6, out7, out8, out9, out10, out11, out12, out13, out14, out15, out16, out17, out18, out19, out20, out21, out22, out23, out24, out25, out26, out27, out28, out29, out30, out31, out32, out33, out34, out35, out36, out37, out38, out39, out40, out41, out42, out43, out44, out45, out46, out47, out48, out49, out50, out51, out52
+
