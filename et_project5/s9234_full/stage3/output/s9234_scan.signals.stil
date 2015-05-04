@@ -1,0 +1,43 @@
+STIL 1.0;
+
+// --- STIL SIGNAL FILE ---
+// stage3/output/s9234_scan.signals.stil
+// Input file: stage3/input/s9234_scan.etr
+// Converted from etr to STIL
+
+// 22400 vectors in file
+// 1 clock signals present
+// 2 input signals present (not including clocks)
+// 1 output signals preset
+
+// CLOCKS: CK
+// INPUTS: TMS, scan_en, SI_scan
+// OUTPUTS: SO_scan
+
+
+// --- DEFINE SIGNALS ---
+
+  Signals {
+    "CK" In;
+    "TMS" In;
+    "scan_en" In;
+    "SI_scan" In;
+    "SO_scan" Out;
+  }
+
+
+// --- DEFINE SIGNAL GROUPS ---
+
+  SignalGroups {
+    "ALLPIs" = '"CK"+"TMS"+"scan_en"+"SI_scan"';
+    "ALLPOs" = '"SO_scan"';
+  }
+
+// --- DEFINE MACROS --- 
+
+  MacroDefs {
+    "TEST" { WaveformTable "test_cycle";
+      Vector {
+        "ALLPOs" = %;
+        "ALLPIs" = %; } }
+}

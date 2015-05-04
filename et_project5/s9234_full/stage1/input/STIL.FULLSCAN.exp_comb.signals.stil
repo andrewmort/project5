@@ -1,0 +1,185 @@
+STIL 1.0; 
+
+//***************************************************************************//
+//                             STIL SIGNALS FILE                             //
+//Encounter(R) Test and Diagnostics 12.1.101 Feb 21, 2013 (linux26_64 ET121) //
+//***************************************************************************//
+//                                                                           //
+//  FILE CREATED..............May 03, 2015 at 00:03:40                       //
+//                                                                           //
+//  PROJECT NAME..............tbdata                                         //
+//                                                                           //
+//  TESTMODE..................FULLSCAN                                       //
+//                                                                           //
+//  INEXPERIMENT..............exp_comb                                       //
+//                                                                           //
+//  TDR.......................dummy.tdr                                      //
+//                                                                           //
+//  TEST PERIOD...............80.000   TEST TIME UNITS...........ns          //
+//  TEST PULSE WIDTH..........8.000                                          //
+//  TEST STROBE OFFSET........72.000   TEST STROBE TYPE..........edge        //
+//  TEST BIDI OFFSET..........0.000                                          //
+//  TEST PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//                                     SCAN OVERLAP..............yes         //
+//  SCAN PERIOD...............80.000   SCAN TIME UNITS...........ns          //
+//  SCAN PULSE WIDTH..........8.000                                          //
+//  SCAN STROBE OFFSET........0.000    SCAN STROBE TYPE..........edge        //
+//  SCAN BIDI OFFSET..........0.000                                          //
+//  SCAN PI OFFSET............0.000    X VALUE...................Z           //
+//                                                                           //
+//                                                                           //
+//  Active TESTMODEs TM = 1 ..FULLSCAN                                       //
+//                                                                           //
+//***************************************************************************//
+
+//***************************************************************************//
+//                              DEFINE SIGNALS                               //
+//***************************************************************************//
+
+  Signals { 
+    "in50" In;      // pinName = in50; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in21" In;      // pinName = in21; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in3" In;      // pinName = in3; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in4" In;      // pinName = in4; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in27" In;      // pinName = in27; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in25" In;      // pinName = in25; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in22" In;      // pinName = in22; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in16" In;      // pinName = in16; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in1" In;      // pinName = in1; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in43" In;      // pinName = in43; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in2" In;      // pinName = in2; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in18" In;      // pinName = in18; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in26" In;      // pinName = in26; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in34" In;      // pinName = in34; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in24" In;      // pinName = in24; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in39" In;      // pinName = in39; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in10" In;      // pinName = in10; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in40" In;      // pinName = in40; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in49" In;      // pinName = in49; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in44" In;      // pinName = in44; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in51" In;      // pinName = in51; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in30" In;      // pinName = in30; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in9" In;      // pinName = in9; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in6" In;      // pinName = in6; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in0" In;      // pinName = in0; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in29" In;      // pinName = in29; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in28" In;      // pinName = in28; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in33" In;      // pinName = in33; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in20" In;      // pinName = in20; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in11" In;      // pinName = in11; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in19" In;      // pinName = in19; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in52" In;      // pinName = in52; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in37" In;      // pinName = in37; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in5" In;      // pinName = in5; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in23" In;      // pinName = in23; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in46" In;      // pinName = in46; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in35" In;      // pinName = in35; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in7" In;      // pinName = in7; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in17" In;      // pinName = in17; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in38" In;      // pinName = in38; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in8" In;      // pinName = in8; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in42" In;      // pinName = in42; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in36" In;      // pinName = in36; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in12" In;      // pinName = in12; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in32" In;      // pinName = in32; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in13" In;      // pinName = in13; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in41" In;      // pinName = in41; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in45" In;      // pinName = in45; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in31" In;      // pinName = in31; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in14" In;      // pinName = in14; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in47" In;      // pinName = in47; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in15" In;      // pinName = in15; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "in48" In;      // pinName = in48; testOffset = 0.000000;  scanOffset = 0.000000;  
+    "out0" Out;      // pinName = out0; 
+    "out1" Out;      // pinName = out1; 
+    "out10" Out;      // pinName = out10; 
+    "out11" Out;      // pinName = out11; 
+    "out12" Out;      // pinName = out12; 
+    "out13" Out;      // pinName = out13; 
+    "out14" Out;      // pinName = out14; 
+    "out15" Out;      // pinName = out15; 
+    "out16" Out;      // pinName = out16; 
+    "out17" Out;      // pinName = out17; 
+    "out18" Out;      // pinName = out18; 
+    "out19" Out;      // pinName = out19; 
+    "out2" Out;      // pinName = out2; 
+    "out20" Out;      // pinName = out20; 
+    "out21" Out;      // pinName = out21; 
+    "out22" Out;      // pinName = out22; 
+    "out23" Out;      // pinName = out23; 
+    "out24" Out;      // pinName = out24; 
+    "out25" Out;      // pinName = out25; 
+    "out26" Out;      // pinName = out26; 
+    "out27" Out;      // pinName = out27; 
+    "out28" Out;      // pinName = out28; 
+    "out29" Out;      // pinName = out29; 
+    "out3" Out;      // pinName = out3; 
+    "out30" Out;      // pinName = out30; 
+    "out31" Out;      // pinName = out31; 
+    "out32" Out;      // pinName = out32; 
+    "out33" Out;      // pinName = out33; 
+    "out34" Out;      // pinName = out34; 
+    "out35" Out;      // pinName = out35; 
+    "out36" Out;      // pinName = out36; 
+    "out37" Out;      // pinName = out37; 
+    "out38" Out;      // pinName = out38; 
+    "out39" Out;      // pinName = out39; 
+    "out4" Out;      // pinName = out4; 
+    "out40" Out;      // pinName = out40; 
+    "out41" Out;      // pinName = out41; 
+    "out42" Out;      // pinName = out42; 
+    "out43" Out;      // pinName = out43; 
+    "out44" Out;      // pinName = out44; 
+    "out45" Out;      // pinName = out45; 
+    "out46" Out;      // pinName = out46; 
+    "out47" Out;      // pinName = out47; 
+    "out48" Out;      // pinName = out48; 
+    "out49" Out;      // pinName = out49; 
+    "out5" Out;      // pinName = out5; 
+    "out50" Out;      // pinName = out50; 
+    "out51" Out;      // pinName = out51; 
+    "out52" Out;      // pinName = out52; 
+    "out6" Out;      // pinName = out6; 
+    "out7" Out;      // pinName = out7; 
+    "out8" Out;      // pinName = out8; 
+    "out9" Out;      // pinName = out9; 
+  } 
+
+//***************************************************************************//
+//                           DEFINE SIGNAL GROUPS                            //
+//***************************************************************************//
+
+  SignalGroups { 
+
+    "ALLPIs" = '"in50"+"in21"+"in3"+"in4"+"in27"+"in25"+"in22"+"in16"+"in1"
+               +"in43"+"in2"+"in18"+"in26"+"in34"+"in24"+"in39"+"in10"
+               +"in40"+"in49"+"in44"+"in51"+"in30"+"in9"+"in6"+"in0"+"in29"
+               +"in28"+"in33"+"in20"+"in11"+"in19"+"in52"+"in37"+"in5"
+               +"in23"+"in46"+"in35"+"in7"+"in17"+"in38"+"in8"+"in42"+"in36"
+               +"in12"+"in32"+"in13"+"in41"+"in45"+"in31"+"in14"+"in47"
+               +"in15"+"in48"'; 
+
+    "ALLPOs" = '"out0"+"out1"+"out10"+"out11"+"out12"+"out13"+"out14"+"out15"
+               +"out16"+"out17"+"out18"+"out19"+"out2"+"out20"+"out21"
+               +"out22"+"out23"+"out24"+"out25"+"out26"+"out27"+"out28"
+               +"out29"+"out3"+"out30"+"out31"+"out32"+"out33"+"out34"
+               +"out35"+"out36"+"out37"+"out38"+"out39"+"out4"+"out40"
+               +"out41"+"out42"+"out43"+"out44"+"out45"+"out46"+"out47"
+               +"out48"+"out49"+"out5"+"out50"+"out51"+"out52"+"out6"+"out7"
+               +"out8"+"out9"'; 
+
+  } 
+
+//***************************************************************************//
+//                               DEFINE MACROS                               //
+//***************************************************************************//
+
+  MacroDefs { 
+
+    "TEST" { WaveformTable "test_cycle"; 
+      Vector { 
+        "ALLPOs" = %; 
+        "ALLPIs" = %; } } 
+} 

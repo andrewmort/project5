@@ -1,8 +1,8 @@
 STIL 1.0;
 
 // --- STIL SIGNAL FILE ---
-// output/s9234_scan.signals.stil
-// Input file: input/s9234_scan.etr
+// stage3/output/s9234_scan.signals.stil
+// Input file: stage3/input/s9234_scan.etr
 // Converted from etr to STIL
 
 // 20459 vectors in file

@@ -13,7 +13,7 @@ rm -rf $ARG_WORKDIR/testresults
 # ----------- Tasks to Generate Test Vectors ------------
 rm -f $TEMP_FILE
 echo "echo Building Model" >> $TEMP_FILE
-echo "build_model WORKDIR=$ARG_WORKDIR DESIGNSOURCE=$ARG_DESIGNSOURCE > $LOG_DIR/build_mode.out" > $TEMP_FILE
+echo "build_model WORKDIR=$ARG_WORKDIR DESIGNSOURCE=$ARG_DESIGNSOURCE > $LOG_DIR/build_model.out" > $TEMP_FILE
 
 echo "echo Building Test Mode" >> $TEMP_FILE
 echo "build_testmode TESTMODE=FULLSCAN WORKDIR=$ARG_WORKDIR > $LOG_DIR/build_testmode.out" >> $TEMP_FILE
