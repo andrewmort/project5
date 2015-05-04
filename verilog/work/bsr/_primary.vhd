@@ -9,7 +9,7 @@ entity bsr is
         scan_in         : in     vl_logic;
         shift           : in     vl_logic;
         update          : in     vl_logic;
-        sel             : in     vl_logic;
+        clk             : in     vl_logic;
         en              : in     vl_logic
     );
 end bsr;

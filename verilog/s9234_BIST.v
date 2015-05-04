@@ -3,18 +3,18 @@
 //# 211 D-type flipflops
 //# 3570 inverters
 //# 2027 gates (955 ANDs + 528 NANDs + 431 ORs + 113 NORs)
-
+`timescale 1ns / 1ps
 
 module s9234(CK,g102i,g107i,g1290,g1293,g22i,g23i,g2584,g301i,g306i,g310i,g314i,g319i,g32i,
   g3222,g36i,g3600,g37i,g38i,g39i,g40i,g4098,g4099,g41i,g4100,g4101,g4102,g4103,
   g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42i,g4307,g4321,g44i,
   g4422,g45i,g46i,g47i,g4809,g5137,g5468,g5469,g557i,g558i,g559i,g560i,g561i,g562i,g563i,
   g564i,g567i,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
-  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, bsr_capture, bsr_update, bsr_shift, bsr_sel, bsr_tdo, in_scan_tdo);
+  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, bsr_capt, in_scan_capt, updr, shftdr, test_mode, bsr_tdo, in_scan_tdo);
 input CK,g89i,g94i,g98i,g102i,g107i,g301i,g306i,g310i,g314i,g319i,g557i,g558i,g559i,g560i,g561i,
   g562i,g563i,g564i,g705i,g639i,g567i,g45i,g42i,g39i,g702i,g32i,g38i,g46i,g36i,g47i,g40i,g37i,
   g41i,g22i,g44i,g23i,//begin testing inputs
-  TDI, bsr_capture, bsr_update, bsr_shift, bsr_sel;
+  TDI, bsr_capt, in_scan_capt, updr, shftdr, test_mode;  
 output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g6284,g6360,
   g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
   g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098,//begin testing outputs
@@ -508,9 +508,21 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g
 
 
   wire [73:0] sc_out;
-  wire bsr_scan_in;//, bsr_tdo;
-  wire bsr_capture;//, bsr_shift, bsr_update, bsr_sel;
-  assign bsr_capture = CK;
+  //wire bsr_scan_in;//, bsr_tdo;
+  wire bsr_capture, bsr_shift, bsr_update, bsr_sel, bsr_en;
+  //assign bsr_capture = ;
+
+  assign bsr_sel = CK;
+  assign bsr_capture = bsr_capt;
+  assign bsr_update = updr;
+  assign bsr_shift = shftdr;
+  assign bsr_en = test_mode;
+
+  //bsr_capture enables loading DFF1
+  //bsr_shit selects scan_in via mux
+  //bsr_update lets DFF2 update
+  // bsr_sel is the clock for DFF1, bad naming I know
+  //bsr_en is the test_mode signal
 
   //input BSR
   bsr BSR_0(g89, sc_out[0], bsr_capture, g89i, TDI, bsr_shift, bsr_update, bsr_sel, bsr_en);
@@ -543,17 +555,19 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g
   bsr BSR_27(g46, sc_out[27], bsr_capture, g46i, sc_out[26], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_28(g36, sc_out[28], bsr_capture, g36i, sc_out[27], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_29(g47, sc_out[29], bsr_capture, g47i, sc_out[28], bsr_shift, bsr_update, bsr_sel, bsr_en);
-  bsr BSR_30(g40, sc_out[20], bsr_capture, g40i, sc_out[29], bsr_shift, bsr_update, bsr_sel, bsr_en);
-  bsr BSR_31(g37, sc_out[31], bsr_capture, g37i, sc_out[20], bsr_shift, bsr_update, bsr_sel, bsr_en);
+  bsr BSR_30(g40, sc_out[30], bsr_capture, g40i, sc_out[29], bsr_shift, bsr_update, bsr_sel, bsr_en);
+  bsr BSR_31(g37, sc_out[31], bsr_capture, g37i, sc_out[30], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_32(g41, sc_out[32], bsr_capture, g41i, sc_out[31], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_33(g22, sc_out[33], bsr_capture, g22i, sc_out[32], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_34(g44, sc_out[34], bsr_capture, g44i, sc_out[33], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_35(g23, sc_out[35], bsr_capture, g23i, sc_out[34], bsr_shift, bsr_update, bsr_sel, bsr_en);
 
+  wire shmoo;
+  u_mux2 doo(shmoo, sc_out[35], 1'b0, in_scan_capt);
   //Output BSR
   //bsr_sel = 0 -> get value from circuit
   //bsr_sel = 1 -> get value from scan chain
-  bsr BSR_36(g2584p, sc_out[36], bsr_capture, g2584, sc_out[35], bsr_shift, bsr_update, bsr_sel, bsr_en);
+  bsr BSR_36(g2584p, sc_out[36], bsr_capture, g2584, shmoo, bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_37(g3222p, sc_out[37], bsr_capture, g3222, sc_out[36], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_38(g3600p, sc_out[38], bsr_capture, g3600, sc_out[37], bsr_shift, bsr_update, bsr_sel, bsr_en);
   bsr BSR_39(g4307p, sc_out[39], bsr_capture, g4307, sc_out[38], bsr_shift, bsr_update, bsr_sel, bsr_en);
@@ -597,10 +611,10 @@ output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g
   //wire in_scan_in, in_scan_out, in_sel;
   //in_sel chooses between normal operation and scan mode operation
   wire [211:0] sco;
-  wire in_sel, clk_dr, sc_en;
-  assign in_sel = bsr_sel;
-  assign clk_dr = bsr_capture;
-  assign sc_en = bsr_sel;
+  wire in_sel, sc_en, clk_dr;
+  assign in_sel = shftdr;
+  assign clk_dr = in_scan_capt;
+  assign sc_en = test_mode;
 
   //sc_dff     q, clk, data, tdata, sel, scan_out, clk_dr, en
   sc_dff DFF_0(g678,CK,g4130, TDI, in_sel, sco[0], clk_dr, sc_en);

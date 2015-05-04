@@ -79,10 +79,11 @@ entity s9234 is
         g94i            : in     vl_logic;
         g98i            : in     vl_logic;
         TDI             : in     vl_logic;
-        bsr_capture     : in     vl_logic;
-        bsr_update      : in     vl_logic;
-        bsr_shift       : in     vl_logic;
-        bsr_sel         : in     vl_logic;
+        bsr_capt        : in     vl_logic;
+        in_scan_capt    : in     vl_logic;
+        updr            : in     vl_logic;
+        shftdr          : in     vl_logic;
+        test_mode       : in     vl_logic;
         bsr_tdo         : out    vl_logic;
         in_scan_tdo     : out    vl_logic
     );

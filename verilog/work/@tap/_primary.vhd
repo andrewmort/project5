@@ -9,9 +9,10 @@ entity Tap is
         TRST_b          : in     vl_logic;
         bsr_tdo         : in     vl_logic;
         in_scan_tdo     : in     vl_logic;
-        clkdr           : out    vl_logic;
+        bsr_capt        : out    vl_logic;
+        in_scan_capt    : out    vl_logic;
         shftdr          : out    vl_logic;
         updr            : out    vl_logic;
-        bs_en           : out    vl_logic
+        test_mode       : out    vl_logic
     );
 end Tap;
