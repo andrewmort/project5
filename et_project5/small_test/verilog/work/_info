@@ -1,0 +1,387 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog
+vbilbo_bsr
+Z1 I2Dbc`lC>U6NmI:?[GjH_63
+Z2 VZP=m0HWk0hkH^ZKV>A5hS3
+Z3 d/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog
+Z4 w1430781003
+Z5 8/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/my_primitives.v
+Z6 F/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/my_primitives.v
+L0 62
+Z7 OV;L;10.1b;51
+r1
+31
+Z8 !s108 1430843791.026828
+Z9 !s107 /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/my_primitives.v|
+Z10 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/my_primitives.v|
+Z11 o-work work -O0
+Z12 !s100 ZQ[K<NVGWOb]9Yc32;Qj>3
+!i10b 1
+!s85 0
+!s101 -O0
+vbilbo_dff
+Z13 IZAH@USfD>>bNQQ=zVgm3a3
+Z14 VCG7Uz08JR>^1^ke>K4SPh1
+R3
+R4
+R5
+R6
+L0 87
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z15 !s100 [3=Ug><P8PX2<66<jV5Ql1
+!i10b 1
+!s85 0
+!s101 -O0
+vbsr
+Z16 I3Q9`>S]0RgegX_LaMV0XZ2
+Z17 V`gS?1UQMP>>fKQiA48cQN1
+R3
+R4
+R5
+R6
+L0 40
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z18 !s100 RA^X`RUbJoRE2213f=9z;1
+!i10b 1
+!s85 0
+!s101 -O0
+vdff
+Z19 IBUiM[cnmn5fnal_JiBohm3
+Z20 VEb44RIGA77oYkU<ojHeT61
+R3
+Z21 w1430771596
+Z22 8/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/primitives.v
+Z23 F/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/primitives.v
+L0 69
+R7
+r1
+31
+Z24 !s108 1430843791.183618
+Z25 !s107 /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/primitives.v|
+Z26 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/primitives.v|
+R11
+Z27 !s100 ej0eM[Ld;H9[mf>T_DaQJ2
+!i10b 1
+!s85 0
+!s101 -O0
+vdff_r
+Z28 I36?LAX:9L1486bTi2z[oO0
+Z29 V5l>2i@Fc89X[BlbWPA=0d2
+R3
+R21
+R22
+R23
+L0 31
+R7
+r1
+31
+R24
+R25
+R26
+R11
+Z30 !s100 YM9[@fnj@GT_VFbKiP<4:1
+!i10b 1
+!s85 0
+!s101 -O0
+vir_decode
+Z31 I9:D1J`BNBR0C9RUYFQ=fJ0
+Z32 VF85_nfnNF_Rl0C<9JPfiX2
+R3
+Z33 w1430774403
+Z34 8/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TAP.v
+Z35 F/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TAP.v
+L0 39
+R7
+r1
+31
+Z36 !s108 1430843791.307817
+Z37 !s107 /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TAP.v|
+Z38 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TAP.v|
+R11
+Z39 !s100 ZhL`l9_7V>o@nJC:boR<93
+!i10b 1
+!s85 0
+!s101 -O0
+vir_reg
+Z40 IDoN5:JBc<Cli[MiRIk>S42
+Z41 VOHO0kLKhAgYFl@cJHebj<2
+R3
+R33
+R34
+R35
+Z42 L0 270
+R7
+r1
+31
+R36
+R37
+R38
+R11
+Z43 !s100 SK?D0SB8VPjfG7XE>W6PX1
+!i10b 1
+!s85 0
+!s101 -O0
+vir_slice
+Z44 IoKBEcbF`4zc4WfLj^GH3?1
+Z45 Vni`OlB5l4BkDmg2K_[>zG0
+R3
+R33
+R34
+R35
+Z46 L0 288
+R7
+r1
+31
+R36
+R37
+R38
+R11
+Z47 !s100 iomnd_UZ]4j@5^ijZ=fbZ3
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4
+Z48 I]3P1>hH>Pd^4NDN>NlHGm3
+Z49 VHWzzHUEdUfT>a7P?XQcYg2
+R3
+R4
+R5
+R6
+Z50 L0 108
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z51 !s100 1D0G6h4?2nDd5d[G[mlZ12
+!i10b 1
+!s85 0
+!s101 -O0
+vmy_tap_cntrl
+Z52 IVI<09^RIc7=@enISjIABd1
+Z53 VC8BkNAXS_ZH7^lAFDcmXS3
+R3
+R33
+R34
+R35
+L0 80
+R7
+r1
+31
+R36
+R37
+R38
+R11
+Z54 !s100 B<_M6kT=mjM9T1Kblk8@j2
+!i10b 1
+!s85 0
+!s101 -O0
+vsc_dff
+Z55 I]:z]5f7T1i;i[VXA7R3D^0
+Z56 VV^j5Sm6;UH^ZY8X9m:E3L0
+R3
+R4
+R5
+R6
+L0 7
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z57 !s100 >SzLD8S85@b:c]YTg42nZ0
+!i10b 1
+!s85 0
+!s101 -O0
+vsc_dff_r
+Z58 I:]IUO:jaUThbD>E8FZ@kb2
+Z59 V:LPH<GgNaF>jY?zd72hni0
+R3
+R4
+R5
+R6
+L0 28
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z60 !s100 =8:MMG?Tj4KE6l=fjWS[`0
+!i10b 1
+!s85 0
+!s101 -O0
+vTap
+Z61 IOIfQS>No2MmZK0DU]zkGz2
+Z62 V[WE`;[IT^IX2^7Yzj2e;J1
+R3
+R33
+R34
+R35
+L0 4
+R7
+r1
+31
+R36
+R37
+R38
+R11
+n@tap
+Z63 !s100 J:dKV73D1N@Yk<Rh?Yhf93
+!i10b 1
+!s85 0
+!s101 -O0
+vtapcontroller
+Z64 I1l93TWUQ;MVk3=o_IRYhj1
+Z65 VJRNmEHJ1o]_Beh`PE9aiU3
+R3
+R33
+R34
+R35
+Z66 L0 169
+R7
+r1
+31
+R36
+R37
+R38
+R11
+Z67 !s100 5T1`6C[3?_iZXKPIlOQ0]3
+!i10b 1
+!s85 0
+!s101 -O0
+vTB_modulename
+Z68 IZGMXARzNf^c1fSMz5N:HI1
+Z69 V;CRD^D69dYRXK^;oG;F;D3
+R3
+Z70 w1430780544
+Z71 8/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TB_tiny_tap.v
+Z72 F/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TB_tiny_tap.v
+L0 17
+R7
+r1
+31
+R11
+Z73 n@t@b_modulename
+!i10b 1
+Z74 !s100 l[8jXklA8A<M52HzKLh423
+!s85 0
+Z75 !s108 1430843791.474523
+Z76 !s107 /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TB_tiny_tap.v|
+Z77 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/TB_tiny_tap.v|
+!s101 -O0
+vtiny_mod
+!i10b 1
+!s100 g`n9VV@3F]C4z;1]WgNd21
+IPMb[YOfk`KUHaNUjSAL<?1
+VmYNJ<ZT=aX8?zgf3[Mk5O1
+R3
+Z78 w1430794367
+Z79 8/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/tiny_tap.v
+Z80 F/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/tiny_tap.v
+L0 27
+R7
+r1
+!s85 0
+31
+Z81 !s108 1430843791.540982
+Z82 !s107 /afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/tiny_tap.v|
+Z83 !s90 -reportprogress|300|-work|work|/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/verilog/tiny_tap.v|
+!s101 -O0
+R11
+vtiny_tap
+!i10b 1
+!s100 kWSNFV8bV0mc<g=?W=aR41
+IP9ANf9Lbd`BIa`dO5e09]3
+VGb<5oCWI9QMEiCm1EOmWE2
+R3
+R78
+R79
+R80
+L0 1
+R7
+r1
+!s85 0
+31
+R81
+R82
+R83
+!s101 -O0
+R11
+vu_mux2
+Z84 I;A^_n^lfX<SCOPab6K?lY0
+Z85 V^[aSEW^oUVZD4[JkZEcOe0
+R3
+R21
+R22
+R23
+L0 84
+R7
+r1
+31
+R24
+R25
+R26
+R11
+Z86 !s100 Obhb[O5@k<6iBJ8ZfII4V2
+!i10b 1
+!s85 0
+!s101 -O0
+Uudff
+Z87 IcdQU?888>8_2gdn[I@VII3
+Z88 VMe6KZGPk2efVm73TZD@bl3
+R3
+R21
+R22
+R23
+L0 46
+R7
+r1
+31
+R24
+R25
+R26
+R11
+Z89 !s100 N;@MMz3>>Tn<E@[dL98Vh2
+!i10b 1
+!s85 0
+!s101 -O0
+Uudff_r
+Z90 ImNEGJXdY3U?_KQ?<m@IP<2
+Z91 VS;RoF?XF3U<518^`PT<T^0
+R3
+R21
+R22
+R23
+L0 4
+R7
+r1
+31
+R24
+R25
+R26
+R11
+Z92 !s100 7TefNfckm45ha>S[?4D1S2
+!i10b 1
+!s85 0
+!s101 -O0

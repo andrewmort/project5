@@ -1,0 +1,5 @@
+# Loading project full_small
+# reading /afs/ece.cmu.edu/support/altera/release/12.1/modelsim_ase/linux/../modelsim.ini
+# Load canceled
+dataset close vsim
+# Dataset "vsim" closed.

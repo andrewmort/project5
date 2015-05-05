@@ -1,4 +1,5 @@
 #!/bin/bash
 
-cd .. 
-../../scripts/p5convert.py stage3/input/tiny_scan.etr -f etr -t stil stage3/output/tiny_scan
+../../../scripts/p5convert.py input/tiny_tap.etr -f etr -t stil output/tiny_tap
+#cd output
+#../../../../scripts/p5convert.py ../input/tiny_tap.etr -f etr -t verilog tiny_tap

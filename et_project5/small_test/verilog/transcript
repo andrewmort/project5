@@ -1,0 +1,39 @@
+# Loading project tiny_tap_proj
+# reading /afs/ece.cmu.edu/support/altera/release/12.1/modelsim_ase/linux/../modelsim.ini
+# Loading project s9234_full_test
+# Compile of my_primitives.v was successful.
+# Compile of primitives.v was successful.
+# Compile of s9234_tap.v was successful.
+# Compile of TAP.v was successful.
+# Compile of TB_s9234_tap_small.v was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim work.TB_modulename
+# vsim work.TB_modulename 
+# Loading work.TB_modulename
+# Loading work.s9234_tap
+# Loading work.s9234
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.sc_dff
+# Loading work.Tap
+# Loading work.my_tap_cntrl
+# Loading work.dff_r
+# Loading work.ir_decode
+# Loading work.mux4
+# Loading work.ir_reg
+# Loading work.ir_slice
+# Loading work.udff
+# Loading work.udff_r
+add wave -position end  sim:/TB_modulename/TDO
+add wave -position end  sim:/TB_modulename/CK
+add wave -position end  sim:/TB_modulename/TRST_b
+add wave -position end  sim:/TB_modulename/TMS
+add wave -position end  sim:/TB_modulename/TDI
+run -all
+# Can't move the Now cursor.
+add wave -position end  sim:/TB_modulename/TOP/in_scan_tdo
+add wave -position end  sim:/TB_modulename/TOP/bsr_tdo
+run -all
+restart -f
+run -all

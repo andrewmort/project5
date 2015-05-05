@@ -24,7 +24,7 @@ OUTPUT_BS_SIGNALS:
 ** If 'A_in' (PO of comb circuit) is the serial input to the scan flip flop and
 **    'A_out' (PI of comb circuit) is the serial output of the scan flip flop
 ** Use form:    'A_in+A_out, ...'
-SCAN_PAIRS: out[0]+in[0], out[1]+in[1], out[2]+in[2]
+SCAN_PAIRS: 
 
 
 
@@ -33,8 +33,8 @@ SCAN_PAIRS: out[0]+in[0], out[1]+in[1], out[2]+in[2]
 ** Control signals can be assigned a cycle using the form:
 **	'CNTLA=1, CNTLB=1110, CNTLC=ABC'
 ** If value is not assigned for control signal the value '%' will be given
-CLOCKS: CK
-CONTROLS: scan_en=1110
+CLOCKS: 
+CONTROLS: 
 
 
 ** How many filler vectors should print before stimulating PIs or reading POs?
@@ -56,5 +56,5 @@ END_OF_CYCLE_VECTORS:
 ** Multiple scan chains can be defined
 ** For internal scan FFs give only the serial input signal (comb circuit output)
 ** Reference help document 'Project 5 Scripts Help' for details on serialization
-SCAN_CHAIN scan: out[0], out[1], out[2]
+SCAN_CHAIN A: 
 

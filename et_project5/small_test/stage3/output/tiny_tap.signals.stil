@@ -1,0 +1,43 @@
+STIL 1.0;
+
+// --- STIL SIGNAL FILE ---
+// output/tiny_tap.signals.stil
+// Input file: input/tiny_tap.etr
+// Converted from etr to STIL
+
+// 57 vectors in file
+// 1 clock signals present
+// 2 input signals present (not including clocks)
+// 1 output signals preset
+
+// CLOCKS: CK
+// INPUTS: TRST_b, TMS, TDI
+// OUTPUTS: TDO
+
+
+// --- DEFINE SIGNALS ---
+
+  Signals {
+    "CK" In;
+    "TRST_b" In;
+    "TMS" In;
+    "TDI" In;
+    "TDO" Out;
+  }
+
+
+// --- DEFINE SIGNAL GROUPS ---
+
+  SignalGroups {
+    "ALLPIs" = '"CK"+"TRST_b"+"TMS"+"TDI"';
+    "ALLPOs" = '"TDO"';
+  }
+
+// --- DEFINE MACROS --- 
+
+  MacroDefs {
+    "TEST" { WaveformTable "test_cycle";
+      Vector {
+        "ALLPOs" = %;
+        "ALLPIs" = %; } }
+}

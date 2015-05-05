@@ -1,11 +1,11 @@
 #!/bin/bash
-ARG_DESIGNSOURCE=verilog/tiny_scan.v
+ARG_DESIGNSOURCE=verilog/tiny_tap.v,verilog/TAP.v,verilog/my_primitives.v,verilog/primitives.v
 ARG_WORKDIR=workdir_scan
 TEMP_FILE=temp
 LOG_DIR=$ARG_WORKDIR/logs
 PFAULT_DIR=../pfaults
-PINASSIGN=tiny_scan.FULLSCAN.pinassign
-INPUTVECTOR=stage3/output/tiny_scan.vectors.stil
+PINASSIGN=tiny_tap.FULLSCAN.pinassign
+INPUTVECTOR=stage3/output/tiny_tap.vectors.stil
 
 mkdir -p $LOG_DIR
 rm -f $LOG_DIR/*

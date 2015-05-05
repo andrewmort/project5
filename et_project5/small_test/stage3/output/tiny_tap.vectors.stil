@@ -1,0 +1,387 @@
+STIL 1.0;
+
+// --- STIL VECTOR FILE --- // Do not remove, file type detection
+// output/tiny_tap.vectors.stil
+// Input file: input/tiny_tap.etr
+// Converted from etr to STIL
+
+// 57 vectors in file
+// 1 clock signals present
+// 2 input signals present (not including clocks)
+// 1 output signals preset
+
+// CLOCKS: CK
+// INPUTS: TRST_b, TMS, TDI
+// OUTPUTS: TDO
+
+
+  Include "/afs/ece.cmu.edu/usr/amort/Private/18-765/project5/et_project5/small_test/stage3/output/tiny_tap.signals.stil";
+
+// ----TIMING DEFINITIONS---- //
+
+  Timing {
+    WaveformTable "test_cycle" { Period '80.000000ns';
+      Waveforms {
+        "CK" { 01ZP { '0ns' P/P/P/P; '8.000000ns' D/U/Z/U; '16.000000ns' D/U/Z/D; } }
+        "TRST_b" { 01Z  { '0.000000ns' D/U/Z; } }
+        "TMS" { 01Z  { '0.000000ns' D/U/Z; } }
+        "TDI" { 01Z  { '0.000000ns' D/U/Z; } }
+        "TDO" { LHTX { '0ns' X/X/X/X; '72.000000ns' L/H/T/X; } }
+  } }
+}
+
+// ----TEST VECTORS---- //
+
+PatternBurst
+  MAIN_BRST { Termination { "ALLPOs" TerminateOff; }
+    PatList { MAIN_TEST; } }
+
+PatternExec
+  MAIN_EXEC { PatternBurst MAIN_BRST; }
+
+Pattern
+  MAIN_TEST {
+
+  // -- Pattern 1 -- 
+  "1.1.1.1.2.1.2":
+  Macro "TEST" {
+    "ALLPIs" = 0ZZZ;
+    "ALLPOs" = X; }
+
+  // -- Pattern 2 -- 
+  "1.1.1.1.2.2.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 3 -- 
+  "1.1.1.1.2.3.2":
+  Macro "TEST" {
+    "ALLPIs" = P01Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 4 -- 
+  "1.1.1.1.2.4.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 5 -- 
+  "1.1.1.1.2.5.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 6 -- 
+  "1.1.1.1.2.6.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 7 -- 
+  "1.1.1.1.2.7.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 8 -- 
+  "1.1.1.1.2.8.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 9 -- 
+  "1.1.1.1.2.9.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 10 -- 
+  "1.1.1.1.2.10.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = X; }
+
+  // -- Pattern 11 -- 
+  "1.1.1.1.2.11.2":
+  Macro "TEST" {
+    "ALLPIs" = P111;
+    "ALLPOs" = X; }
+
+  // -- Pattern 12 -- 
+  "1.1.1.1.2.12.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 13 -- 
+  "1.1.1.1.2.13.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 14 -- 
+  "1.1.1.1.2.14.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 15 -- 
+  "1.1.1.1.2.15.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 16 -- 
+  "1.1.1.1.2.16.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = X; }
+
+  // -- Pattern 17 -- 
+  "1.1.1.1.2.17.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = X; }
+
+  // -- Pattern 18 -- 
+  "1.1.1.1.2.18.2":
+  Macro "TEST" {
+    "ALLPIs" = P111;
+    "ALLPOs" = X; }
+
+  // -- Pattern 19 -- 
+  "1.1.1.1.2.19.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 20 -- 
+  "1.1.1.1.2.20.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 21 -- 
+  "1.1.1.1.2.21.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 22 -- 
+  "1.1.1.1.2.22.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = L; }
+
+  // -- Pattern 23 -- 
+  "1.1.1.1.2.23.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = H; }
+
+  // -- Pattern 24 -- 
+  "1.1.1.1.2.24.2":
+  Macro "TEST" {
+    "ALLPIs" = P101;
+    "ALLPOs" = H; }
+
+  // -- Pattern 25 -- 
+  "1.1.1.1.2.25.2":
+  Macro "TEST" {
+    "ALLPIs" = P111;
+    "ALLPOs" = X; }
+
+  // -- Pattern 26 -- 
+  "1.1.1.1.2.26.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 27 -- 
+  "1.1.1.1.2.27.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 28 -- 
+  "1.1.1.1.2.28.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 29 -- 
+  "1.1.1.1.2.29.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = H; }
+
+  // -- Pattern 30 -- 
+  "1.1.1.1.2.30.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = H; }
+
+  // -- Pattern 31 -- 
+  "1.1.1.1.2.31.2":
+  Macro "TEST" {
+    "ALLPIs" = P101;
+    "ALLPOs" = H; }
+
+  // -- Pattern 32 -- 
+  "1.1.1.1.2.32.2":
+  Macro "TEST" {
+    "ALLPIs" = P110;
+    "ALLPOs" = X; }
+
+  // -- Pattern 33 -- 
+  "1.1.1.1.2.33.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 34 -- 
+  "1.1.1.1.2.34.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 35 -- 
+  "1.1.1.1.2.35.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 36 -- 
+  "1.1.1.1.2.36.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = L; }
+
+  // -- Pattern 37 -- 
+  "1.1.1.1.2.37.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = H; }
+
+  // -- Pattern 38 -- 
+  "1.1.1.1.2.38.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = H; }
+
+  // -- Pattern 39 -- 
+  "1.1.1.1.2.39.2":
+  Macro "TEST" {
+    "ALLPIs" = P110;
+    "ALLPOs" = X; }
+
+  // -- Pattern 40 -- 
+  "1.1.1.1.2.40.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 41 -- 
+  "1.1.1.1.2.41.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 42 -- 
+  "1.1.1.1.2.42.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 43 -- 
+  "1.1.1.1.2.43.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = H; }
+
+  // -- Pattern 44 -- 
+  "1.1.1.1.2.44.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = H; }
+
+  // -- Pattern 45 -- 
+  "1.1.1.1.2.45.2":
+  Macro "TEST" {
+    "ALLPIs" = P100;
+    "ALLPOs" = L; }
+
+  // -- Pattern 46 -- 
+  "1.1.1.1.2.46.2":
+  Macro "TEST" {
+    "ALLPIs" = P110;
+    "ALLPOs" = X; }
+
+  // -- Pattern 47 -- 
+  "1.1.1.1.2.47.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 48 -- 
+  "1.1.1.1.2.48.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 49 -- 
+  "1.1.1.1.2.49.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 50 -- 
+  "1.1.1.1.2.50.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 51 -- 
+  "1.1.1.1.2.51.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 52 -- 
+  "1.1.1.1.2.52.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 53 -- 
+  "1.1.1.1.2.53.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 54 -- 
+  "1.1.1.1.2.54.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 55 -- 
+  "1.1.1.1.2.55.2":
+  Macro "TEST" {
+    "ALLPIs" = P11Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 56 -- 
+  "1.1.1.1.2.56.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  // -- Pattern 57 -- 
+  "1.1.1.1.2.57.2":
+  Macro "TEST" {
+    "ALLPIs" = P10Z;
+    "ALLPOs" = X; }
+
+  }

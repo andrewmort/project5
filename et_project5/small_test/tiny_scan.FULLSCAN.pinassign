@@ -1,1 +1,3 @@
 assign pin=CK	test_function=-SC;
+assign pin=TDI  test_function=-SI;
+assign pin=TDO  test_function=-SO;

@@ -1,0 +1,97 @@
+EASY-TO-READ ** do not remove, file type detection
+-- output/tiny_tap.Setr --
+Initial etr input: input/tiny.etr
+Mapped using: input/tiny.p5map
+
+6 vectors in file
+1 clock signals present
+2 control signals present
+3 total input signals present (with controls & scanins, not including clocks)
+1 total output signals preset (including scanouts)
+3 internal scan flip flops
+0 boundary scan cells
+1 scan chains present
+
+
+** Ordering of signals corresponds to order of bits in test vectors **
+
+CLOCKS: CK
+CONTROLS: TRST_b, TMS
+
+SCAN_INS: TDI
+SCAN_OUTS: TDO
+
+**SCAN_CHAIN scan: TDI >> out[0], out[1], out[2] >> TDO
+
+** User must define change values on control signal vectors
+** Inputs must have value '0', '1', or 'Z'
+** Outputs must have value 'L', 'H', or 'X'
+
+
+#	CK	CTL	SI	SO	PIN	POUT	FIN	FOUT
+1:	0	ZZ	Z	X				
+** Reset Tap **
+2:	P	11	Z	X				
+3:	P	01	Z	X				
+4:	P	11	Z	X				
+** Input instruction and go **
+5:	P	10	Z	X				
+6:	P	11	Z	X				
+7:	P	11	Z	X				
+8:	P	10	Z	X				
+9:	P	10	Z	X				
+10:	P	10	0	X				
+11:	P	11	1	X				
+12:	P	11	Z	X				
+13:	P	11	Z	X				
+14:	P	10	Z	X				
+15:	P	10	Z	X				
+** BEGIN VECTOR 0 **
+2:	P	10	0	X				
+3:	P	10	0	X				
+4:	P	11	1	X				
+5:	P	11	Z	X				
+6:	P	11	Z	X				
+7:	P	10	Z	X				
+8:	P	10	Z	L				
+** END OF VECTOR 1 **
+9:	P	10	0	H				
+10:	P	10	1	H				
+11:	P	11	1	X				
+12:	P	11	Z	X				
+13:	P	11	Z	X				
+14:	P	10	Z	X				
+15:	P	10	Z	H				
+** END OF VECTOR 2 **
+16:	P	10	0	H				
+17:	P	10	1	H				
+18:	P	11	0	X				
+19:	P	11	Z	X				
+20:	P	11	Z	X				
+21:	P	10	Z	X				
+22:	P	10	Z	L				
+** END OF VECTOR 3 **
+23:	P	10	0	H				
+24:	P	10	0	H				
+25:	P	11	0	X				
+26:	P	11	Z	X				
+27:	P	11	Z	X				
+28:	P	10	Z	X				
+29:	P	10	Z	H				
+** END OF VECTOR 4 **
+30:	P	10	0	H				
+31:	P	10	0	L				
+32:	P	11	0	X				
+33:	P	11	Z	X				
+34:	P	11	Z	X				
+35:	P	10	Z	X				
+36:	P	10	Z	X				
+** END OF VECTOR 5 **
+37:	P	10	Z	X				
+38:	P	10	Z	X				
+39:	P	11	Z	X				
+40:	P	11	Z	X				
+41:	P	11	Z	X				
+42:	P	10	Z	X				
+43:	P	10	Z	X				
+** END OF VECTOR 6 **

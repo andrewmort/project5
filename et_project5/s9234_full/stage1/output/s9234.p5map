@@ -32,7 +32,7 @@ SCAN_PAIRS: out0+in0, out1+in1, out2+in2, out3+in3, out4+in4, out5+in5, out6+in6
 **	'CNTLA=1, CNTLB=1110, CNTLC=ABC'
 ** If value is not assigned for control signal the value '%' will be given
 CLOCKS: CK
-CONTROLS: scan_en=1111111111111111111111111111111111111111111111111111000000, TMS=0000000000000000000000000000000000000000000000000000011100
+CONTROLS: TMS=000000000000000000000000000000000000000000000000000011100, TRST_b = 1
 
 
 ** How many filler vectors should print before stimulating PIs or reading POs?
@@ -41,7 +41,7 @@ ADD_VECTORS_BEFORE_IO: 0
 
 ** How many filler vectors should print at the end of each cycle?
 ** Use digit, or leave blank if no added vectors are desired
-END_OF_CYCLE_VECTORS: 5
+END_OF_CYCLE_VECTORS: 4
 
 
 ** User defines scan chains to produce corresponding serialized output

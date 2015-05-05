@@ -1,11 +1,11 @@
 #!/bin/bash
-ARG_DESIGNSOURCE=verilog/s9234_scan.v
+ARG_DESIGNSOURCE=verilog/s9234_tap.v,verilog/TAP.v,verilog/my_primitives.v,verilog/primitives.v
 ARG_WORKDIR=workdir
 TEMP_FILE=temp
 LOG_DIR=$ARG_WORKDIR/logs
 PFAULT_DIR=../pfaults
 PINASSIGN=s9234_scan.FULLSCAN.pinassign
-INPUTVECTOR=stage3/output/s9234_scan.vectors.stil
+INPUTVECTOR=stage3/output/s9234_tap.vectors.stil
 
 mkdir -p $LOG_DIR
 rm -f $LOG_DIR/*
