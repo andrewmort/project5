@@ -37,3 +37,26 @@ add wave -position end  sim:/TB_modulename/TOP/bsr_tdo
 run -all
 restart -f
 run -all
+add wave -position end  sim:/TB_modulename/TOP/CUT/doo/out
+add wave -position end  sim:/TB_modulename/TOP/CUT/doo/in0
+add wave -position end  sim:/TB_modulename/TOP/CUT/doo/in1
+add wave -position end  sim:/TB_modulename/TOP/CUT/doo/sel
+add wave -position end  sim:/TB_modulename/TOP/CUT/doo/nsel
+add wave -position end  sim:/TB_modulename/TOP/CUT/doo/w1
+add wave -position end  sim:/TB_modulename/TOP/CUT/doo/w0
+restart -f
+run -all
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/q
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/scan_out
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/capture
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/data
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/scan_in
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/shift
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/update
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/clk
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/en
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/o
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/p
+add wave -position end  sim:/TB_modulename/TOP/CUT/BSR_36/x
+restart -f
+run -all
