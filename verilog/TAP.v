@@ -1,43 +1,5 @@
 `timescale 1ns / 1ps
 // tapcntlr.v
-module top(TDO, TCK, TDI, TMS, TRST_b,
-            g89i,g94i,g98i,g102i,g107i,g301i,g306i,g310i,g314i,g319i,g557i,g558i,g559i,g560i,g561i,
-        g562i,g563i,g564i,g705i,g639i,g567i,g45i,g42i,g39i,g702i,g32i,g38i,g46i,g36i,g47i,g40i,g37i,
-        g41i,g22i,g44i,g23i,
-        g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g6284,g6360,
-        g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
-        g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098);
-    //TEST IO
-    output TDO;
-    input TCK, TDI, TMS, TRST_b;
-    //CUT IO
-    input g89i,g94i,g98i,g102i,g107i,g301i,g306i,g310i,g314i,g319i,g557i,g558i,g559i,g560i,g561i,
-        g562i,g563i,g564i,g705i,g639i,g567i,g45i,g42i,g39i,g702i,g32i,g38i,g46i,g36i,g47i,g40i,g37i,
-        g41i,g22i,g44i,g23i;
-    output g2584,g3222,g3600,g4307,g4321,g4422,g4809,g5137,g5468,g5469,g5692,g6282,g6284,g6360,
-        g6362,g6364,g6366,g6368,g6370,g6372,g6374,g6728,g1290,g4121,g4108,g4106,g4103,g1293,g4099,
-        g4102,g4109,g4100,g4112,g4105,g4101,g4110,g4104,g4107,g4098;
-    
-    wire bsr_capt, in_scan_capt, shftdr, bsr_tdo, in_scan_tdo, test_mode;
-    //clkdr is the capture_dr signal from the TAP controller (pulses during capture state and shift state)
-    //bsr_en effectively gates clkdr inside bsr module, so as to not load regs except during BSR scan
-    //bsr_sel controls    
-
-    s9234 CUT(TCK,g102i,g107i,g1290,g1293,g22i,g23i,g2584,g301i,g306i,g310i,g314i,g319i,g32i,
-  g3222,g36i,g3600,g37i,g38i,g39i,g40i,g4098,g4099,g41i,g4100,g4101,g4102,g4103,
-  g4104,g4105,g4106,g4107,g4108,g4109,g4110,g4112,g4121,g42i,g4307,g4321,g44i,
-  g4422,g45i,g46i,g47i,g4809,g5137,g5468,g5469,g557i,g558i,g559i,g560i,g561i,g562i,g563i,
-  g564i,g567i,g5692,g6282,g6284,g6360,g6362,g6364,g6366,g6368,g6370,g6372,g6374,
-  g639i,g6728,g702i,g705i,g89i,g94i,g98i, TDI, bsr_capt, in_scan_capt, updr, shftdr, test_mode, bsr_tdo, in_scan_tdo);
-    //TDI, bsr_capture, bsr_update, bsr_shift, bsr_sel, bsr_test+mode
-
-    //instantiate Tap moduule
-
-    Tap control(TDO, TCK, TDI, TMS, TRST_b,
-            bsr_tdo, in_scan_tdo, bsr_capt, in_scan_capt, shftdr, updr, test_mode);
-    
-
-endmodule //top
 
 module Tap(TDO, TCK, TDI, TMS, TRST_b,
             bsr_tdo, in_scan_tdo, bsr_capt, in_scan_capt, shftdr, updr, test_mode);

@@ -1,36 +1,246 @@
-# Loading project 765p5
+# Loading project project5_test
+# reading /afs/ece.cmu.edu/support/altera/release/12.1/modelsim_ase/linux/../modelsim.ini
+# Loading project project5tester
 # Compile of my_primitives.v was successful.
+# Compile of normaltb.v failed with 1 errors.
 # Compile of primitives.v was successful.
 # Compile of s9234.v was successful.
-# Compile of s9234_BIST.v was successful.
+# Compile of s9234_tap.v was successful.
 # Compile of TAP.v was successful.
-# Compile of bsr_tb.v was successful.
-# 6 compiles, 0 failed with no errors. 
+# 6 compiles, 1 failed with 1 error. 
 # Compile of my_primitives.v was successful.
+# Compile of normaltb.v was successful.
 # Compile of primitives.v was successful.
 # Compile of s9234.v was successful.
-# Compile of s9234_BIST.v was successful.
+# Compile of s9234_tap.v was successful.
 # Compile of TAP.v was successful.
-# Compile of bsr_tb.v was successful.
 # 6 compiles, 0 failed with no errors. 
 # Compile of my_primitives.v was successful.
+# Compile of normaltb.v was successful.
 # Compile of primitives.v was successful.
 # Compile of s9234.v was successful.
-# Compile of s9234_BIST.v was successful.
+# Compile of s9234_tap.v was successful.
 # Compile of TAP.v was successful.
-# Compile of bsr_tb.v was successful.
 # 6 compiles, 0 failed with no errors. 
+vsim work.normaltb
+# vsim work.normaltb 
+# Loading work.normaltb
+# Loading work.s9234_tap
+# Loading work.s9234_wtester
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.sc_dff
+# Loading work.Tap
+# Loading work.my_tap_cntrl
+# Loading work.dff_r
+# Loading work.ir_decode
+# Loading work.mux4
+# Loading work.ir_reg
+# Loading work.ir_slice
+# Loading work.s9234
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g2584'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g3222'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g3600'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4307'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4321'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4422'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4809'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g5137'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g5468'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g5469'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g5692'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6282'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6284'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6360'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6362'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6364'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6366'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6368'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6370'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6372'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6374'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g6728'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g1290'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4121'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4108'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4106'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4103'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g1293'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4099'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4102'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4109'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4100'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4112'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4105'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4101'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4110'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4104'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4107'".
+#         Region: /normaltb/cut1
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(36): Illegal output or inout port connection for "port 'g4098'".
+#         Region: /normaltb/cut1
+# Loading work.udff
+# Loading work.udff_r
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g2584'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g3222'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g3600'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4307'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4321'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4422'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4809'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g5137'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g5468'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g5469'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g5692'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6282'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6284'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6360'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6362'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6364'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6366'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6368'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6370'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6372'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6374'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g6728'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g1290'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4121'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4108'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4106'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4103'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g1293'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4099'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4102'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4109'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4100'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4112'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4105'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4101'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4110'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4104'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4107'".
+#         Region: /normaltb/cut2
+# ** Error: (vsim-3053) /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v(38): Illegal output or inout port connection for "port 'g4098'".
+#         Region: /normaltb/cut2
+# Error loading design
 # Compile of my_primitives.v was successful.
+# Compile of normaltb.v was successful.
 # Compile of primitives.v was successful.
 # Compile of s9234.v was successful.
-# Compile of s9234_BIST.v was successful.
+# Compile of s9234_tap.v was successful.
 # Compile of TAP.v was successful.
-# Compile of bsr_tb.v was successful.
 # 6 compiles, 0 failed with no errors. 
-# Compile of my_primitives.v was successful.
-# Compile of primitives.v was successful.
-# Compile of s9234.v was successful.
-# Compile of s9234_BIST.v was successful.
-# Compile of TAP.v was successful.
-# Compile of bsr_tb.v was successful.
-# 6 compiles, 0 failed with no errors. 
+vsim work.normaltb
+# vsim work.normaltb 
+# Loading work.normaltb
+# Loading work.s9234_tap
+# Loading work.s9234_wtester
+# Loading work.bsr
+# Loading work.u_mux2
+# Loading work.dff
+# Loading work.sc_dff
+# Loading work.Tap
+# Loading work.my_tap_cntrl
+# Loading work.dff_r
+# Loading work.ir_decode
+# Loading work.mux4
+# Loading work.ir_reg
+# Loading work.ir_slice
+# Loading work.s9234
+# Loading work.udff
+# Loading work.udff_r
+# ** Warning: Design size of 811 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+run -all
+#                    0 TMS=1, TDI=0, TDO=x
+#                    1 TMS=1, TDI=0, TDO=z
+# Outputs Match!!!
+# Break in Module normaltb at /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v line 33
+add wave -position insertpoint  \
+sim:/normaltb/outnormal
+add wave -position insertpoint  \
+sim:/normaltb/outtester
+run -all
+restart -f
+restart -f
+run -all
+#                    0 TMS=1, TDI=0, TDO=x
+#                    1 TMS=1, TDI=0, TDO=z
+# Outputs Match!!!
+# Break in Module normaltb at /afs/ece.cmu.edu/usr/cjcole/Private/765/project5/verilog/normaltb.v line 33

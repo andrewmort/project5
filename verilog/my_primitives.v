@@ -19,7 +19,7 @@ module sc_dff(q,  clock,  data, tdata, sel, scan_out, capture, en);
     dff DFF0(scan_out, clock, o);
     dff DFF1(x, clock, data);  
 
-    u_mux2 MUX1(q, scan_out, x, en);
+    u_mux2 MUX1(q, x, scan_out, en);
 
 endmodule //sc_dff
 
